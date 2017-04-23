@@ -17,7 +17,7 @@ slug: Typographie-a-Manual-of-Design
 categories: typography
 
 date:   2017-04-21 08:38:18 -0500
-published: false
+published: true
 ---
 
 

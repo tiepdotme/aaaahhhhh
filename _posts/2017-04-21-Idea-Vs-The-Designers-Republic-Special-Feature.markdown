@@ -17,6 +17,8 @@ slug: Idea-Vs-The-Designers-Republic-Special-Feature
 categories: design
 
 date:   2017-04-21 08:38:18 -0500
+published: true
+
 ---
 
 

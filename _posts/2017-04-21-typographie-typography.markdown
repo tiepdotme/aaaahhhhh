@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Typographie; A Manual of Design Hardcover 
+title: Typographie; A Manual of Design 
 author: Emil Ruder
 publisher: Verlag Niggli AG; 8th Revised edition
 publicationDate: 2009
@@ -17,6 +17,7 @@ slug: Typographie-a-Manual-of-Design
 categories: typography
 
 date:   2017-04-21 08:38:18 -0500
+published: false
 ---
 
 

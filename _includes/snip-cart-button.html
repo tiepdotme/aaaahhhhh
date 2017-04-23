@@ -1,0 +1,8 @@
+<button class="snipcart-add-item button"
+    data-item-name="{{ page.title }}"
+    data-item-id="{{ page.ISBN }}"
+    data-item-image="{{ site.url }}/assets/product-images/{{page.featured_image}}.jpg"
+    data-item-url="{{ site.url }}{{ page.url }}"
+    data-item-price="{{ page.price }}">
+    <p class="type">Buy it now<br>${{ page.price }}</p>
+  </button>

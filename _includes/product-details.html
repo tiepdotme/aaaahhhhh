@@ -1,0 +1,53 @@
+{% include aside-1.html %}
+
+
+<section>
+
+
+<div id="product">
+
+<div class="button-container">
+
+<img class="featured_image" src="/assets/product-images/{{page.featured_image}}.jpg" alt="image of {{page.title}}">
+
+
+{% include snip-cart-button.html %}
+{% include social-share.html %}
+
+
+</div>   <!-- end button container -->
+
+
+
+
+<h2 class="title">{{page.title}}</h2>
+
+<h3 class="author">{{page.author}}</h3>
+
+<h5 class="publisher">{{page.publisher}} ({{page.publicationDate}})</h5>
+<div id="product-details">
+<ul>
+
+
+<li><h5>{{page.condition}} {{page.binding}} in {{page.binding_condition}} condition</h5></li>
+
+<li><h5>dust jacket condition: {{page.dust_jacket_condition}} </h5></li>
+
+<li><h5>ISBN: {{page.ISBN}}</h5></li>
+
+</ul>
+
+</div>  <!-- end product details -->
+<div class="description">{{content}}</div>
+
+
+
+
+
+
+
+</div>   <!-- end product -->
+
+</section>
+
+

@@ -1,0 +1,299 @@
+
+
+#product, #home{
+@include grid-column(10);
+@include grid-shift(1);
+
+}
+
+
+.featured_image {
+
+width:100%;
+		
+	
+}
+
+
+
+
+
+h2.title, h3.author, h5.publisher, h5.ISBN, .description, #product-details{
+
+	@include grid-column(7);
+
+	@include grid-shift(.25);
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+.button-container{
+		
+
+	
+
+	@include grid-column(3);
+
+	.button{
+		margin: 1em  0;
+
+.type{
+	color:white;
+	font-weight:300;
+	text-align:center;
+}
+	
+	
+
+}
+}
+
+
+
+////////////////////////////////////////
+
+	//  800  //
+
+///////////////////////////////////////
+
+
+
+
+@media (max-width: 800px) {
+
+
+
+#product, #home{
+@include grid-column(12);
+@include grid-shift(0);
+
+}
+
+
+.featured_image {
+
+width:100%;
+		
+	
+}
+
+
+
+
+
+h2.title, h3.author, h5.publisher, h5.ISBN, #product-details{
+
+	@include grid-column(6);
+
+	@include grid-shift(0);
+
+	
+}
+
+
+.description{
+	@include grid-column(6);
+
+	@include grid-shift(0);
+
+
+}
+
+
+
+
+
+
+
+.button-container{
+		
+
+	
+
+	@include grid-column(6);
+
+	.button{
+		margin: 1em  0;
+
+.type{
+	color:white;
+	font-weight:300;
+	text-align:center;
+}
+	
+	
+
+}
+}
+}
+
+
+
+
+////////////////////////////////////////
+
+	//  670  //
+
+///////////////////////////////////////
+
+
+
+
+@media (max-width: 670px) {
+
+
+
+#product, #home{
+@include grid-container;
+@include grid-shift(0);
+
+}
+
+
+.featured_image {
+
+width:100%;
+		
+	
+}
+
+
+
+
+
+h2.title, h3.author, h5.publisher, h5.ISBN, #product-details{
+
+	@include grid-column(6);
+
+	@include grid-shift(0);
+
+	
+}
+
+
+.description{
+	@include grid-column(12);
+
+	@include grid-shift(0);
+
+
+}
+
+
+
+
+
+
+
+.button-container{
+		
+
+	
+
+	@include grid-column(6);
+
+	.button{
+		margin: 1em  0;
+
+.type{
+	color:white;
+	font-weight:300;
+	text-align:center;
+}
+	
+	
+
+}
+}
+}
+
+
+
+////////////////////////////////////////
+
+	//  470  //
+
+///////////////////////////////////////
+
+
+
+
+@media (max-width: 470px) {
+
+
+
+#product, #home{
+@include grid-container;
+@include grid-shift(0);
+
+}
+
+
+.featured_image {
+
+width:100%;
+		
+	
+}
+
+
+
+
+
+h2.title, h3.author, h5.publisher, h5.ISBN, #product-details{
+
+	@include grid-column(12);
+
+	@include grid-shift(0);
+
+	
+}
+
+
+.description{
+	@include grid-column(12);
+
+	@include grid-shift(0);
+
+
+}
+
+
+
+
+
+
+
+.button-container{
+		
+
+	
+
+	@include grid-column(12);
+
+	.button{
+		margin: 1em  0;
+
+.type{
+	color:white;
+	font-weight:300;
+	text-align:center;
+}
+	
+	
+
+}
+}
+}
+
+
+

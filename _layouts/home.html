@@ -1,0 +1,43 @@
+{% include head.html %}
+{% include header.html %}
+
+
+{% include aside-1.html %}
+
+
+
+
+<div id="home" >
+
+
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 0 }'>
+
+
+  {% for post in site.posts %}
+
+<div class="grid-item">
+<div class="grid-item-text">
+<h4>{{ post.author }}</h4>
+<h5>{{ post.title }}</h5>
+</div>
+<a  href="{{ post.url }}"><img src="assets/product-images/{{ post.featured_image}}.jpg" alt="{{ post.title }}">
+
+</a>
+<hr>
+
+
+
+
+</div>  <!-- end grid item -->
+
+  {% endfor %}
+
+</div>  <!-- end grid -->
+</div>  <!-- end home -->
+
+
+
+{% include footer.html %}
+
+
+

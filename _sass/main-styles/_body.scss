@@ -1,0 +1,46 @@
+main,
+header,
+footer {
+    //@include grid-visual;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    @include grid-container;
+
+    
+}
+
+
+
+
+
+
+
+section {
+    @include grid-container;
+}
+
+aside {
+    @include grid-column(2);
+}
+
+
+
+main img{
+     -webkit-filter: contrast(80%); /* Safari 6.0 - 9.0 */
+        filter: contrast(80%);
+        box-shadow: $shadow;
+    
+}

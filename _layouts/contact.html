@@ -1,0 +1,65 @@
+{% include head.html %}
+{% include header.html %}
+
+
+{% include aside-1.html %}
+
+
+
+
+
+<div id="about" >
+
+<h1>Contact</h1>
+<hr>
+
+
+
+
+
+<script language="JavaScript">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+"Please enter a valid email address");
+</script>
+
+
+<h4>Do you have Questions or concerns about your order?</h4>
+<br>
+<h4>Do you have design or graphic arts books to sell or trade?</h4>
+<br>
+
+<form method="post" name="contact_form"
+action="https://formspree.io/hello@aaaahhhhh.com">
+<input type="hidden" name="_format" value="plain" />
+<ul>
+<li >
+<input type="text" name="name" placeholder="Please enter your name">
+</li>
+<li>
+<input type="text" name="_replyto" name="email" placeholder="Please provide your email address">
+</li>
+<li>
+<textarea name="message" placeholder="Please enter your message and I'll get back to you ASAP"></textarea>
+</li>
+<li>
+<input class="button" type="submit" value="Submit">
+</li>
+
+</ul>
+</form>   
+
+
+
+
+
+</div>  <!-- end home -->
+
+
+
+{% include footer.html %}
+
+
+

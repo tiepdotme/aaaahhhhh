@@ -23,6 +23,6 @@ published: true
 ---
 
 
-40 pages original design works and layout by DR, GTF -Graphic Thought Facility, Mevis & Van Deursen, ABC in Pittsburgh: Fumio Tachibana, Me Company: BPM the Game Graphics, Nendo Graphixxx 1995-1999, Gianluigi Toccafondo -Pinocchio- primal vision, Serials: !! New !! Kyoichi Tsuzuki -When Pig Design, Tadanori Yokoo -Source Vision of Design, Serial Bound-in Posters-Part 6: Shinro Ohtake and more.
+Original design works and layout by DR, GTF -Graphic Thought Facility, Mevis & Van Deursen, ABC in Pittsburgh: Fumio Tachibana, Me Company: BPM the Game Graphics, Nendo Graphixxx 1995-1999, Gianluigi Toccafondo -Pinocchio- primal vision, Serials: !! New !! Kyoichi Tsuzuki -When Pig Design, Tadanori Yokoo -Source Vision of Design, Serial Bound-in Posters-Part 6: Shinro Ohtake and more.
 <br>
- Established in 1986 by Ian Anderson. Sheffield based design group. They are the most infulential design compnay in recent decade and produced many followers. Major works include Warp Records, Wipeout, Satoshie Tomiie, Pop Will Eat Itself, Issey Miyake, Towa Tei, Pulp, The Orb, Autechre.
+ Established in 1986 by Ian Anderson, tDR is a Sheffield based design group. They are the most infulential design comany in recent decades and influenced many followers. Major works and clients include Warp Records, Wipeout, Satoshie Tomiie, Pop Will Eat Itself, Issey Miyake, Towa Tei, Pulp, The Orb, Autechre, etc.

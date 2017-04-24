@@ -17,3 +17,35 @@ display: inline
 }
 
 
+
+
+@media (max-width: 470px) {
+footer{
+	
+	
+	background:$black;
+	
+#footer-content, #footer-content a {
+   color:white;
+
+    
+}
+
+}
+
+	ul#a-h li, ul#h-a li{
+		font-size:80%;
+
+	}
+
+	ul.footer-social-media  li a {
+		   color:white;
+
+
+
+	}
+
+
+
+}
+

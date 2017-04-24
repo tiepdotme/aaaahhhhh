@@ -288,9 +288,10 @@ margin-top:1em;
 
      #home{
 
-@include grid-column(12);
+@include grid-collapse;
 @include grid-shift(0);
-margin-top:1em;
+width:99%;
+margin:0 auto;
 
 
 

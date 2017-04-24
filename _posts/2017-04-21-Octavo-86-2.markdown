@@ -11,7 +11,7 @@ dust_jacket_condition: very good with normal wear, small chips at head &amp; hee
 featured_image: Octavo-86-2
 thumbnail_images:
 
-ISBN: none
+ISBN:
 price: 100
 slug: Octavo-86-2
 categories: design

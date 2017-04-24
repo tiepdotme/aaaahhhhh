@@ -67,6 +67,20 @@ var $grid = $('.grid').imagesLoaded( function() {
 
 </script>
 
+<script>
+	
+function openWin() {
+    myWindow = window.open("", "", "width=100, height=100");  // Opens a new window
+}
+
+function resizeWin() {
+    myWindow.resizeTo(250, 250);                             // Resizes the new window
+    myWindow.focus();                                        // Sets focus to the new window
+}
+
+
+</script>
+
 </head>
 
 
@@ -146,19 +160,21 @@ var $grid = $('.grid').imagesLoaded( function() {
 <div id="home" >
 
 
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 0 }'>
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 10 }'>
 
 
   
 
 <div class="grid-item">
-<div class="grid-item-text">
-<h4>Emil Ruder</h4>
-<h5>Typographie; A Manual of Design</h5>
-</div>
+
 <a  href="/typography/2017/04/21/Typographie-a-Manual-of-Design.html"><img src="assets/product-images/Typographie-a-Manual-of-Design.jpg" alt="Typographie; A Manual of Design">
+<div class="grid-item-text">
+<h4>Typographie; A Manual of Design</h4>
 
+<h5>Emil Ruder</h5>
+</div>
 </a>
+
 <hr>
 
 
@@ -169,13 +185,15 @@ var $grid = $('.grid').imagesLoaded( function() {
   
 
 <div class="grid-item">
-<div class="grid-item-text">
-<h4>Josef Müller-Brockmann</h4>
-<h5>The Graphic Artist and His Design Problems</h5>
-</div>
+
 <a  href="/design/2017/04/21/the-Graphic-Artist-and-His-Design-Problems.html"><img src="assets/product-images/the-Graphic-Artist-and-His-Design-Problems.jpg" alt="The Graphic Artist and His Design Problems">
+<div class="grid-item-text">
+<h4>The Graphic Artist and His Design Problems</h4>
 
+<h5>Josef Müller-Brockmann</h5>
+</div>
 </a>
+
 <hr>
 
 
@@ -186,13 +204,15 @@ var $grid = $('.grid').imagesLoaded( function() {
   
 
 <div class="grid-item">
-<div class="grid-item-text">
-<h4>Simon Johnston, Mark Holt, MIchael Burke, Hamish Muir (editors)</h4>
-<h5>Octavo Journal of Typography, Second of Eight Issues (86.2)</h5>
-</div>
+
 <a  href="/design/2017/04/21/Octavo-86-2.html"><img src="assets/product-images/Octavo-86-2.jpg" alt="Octavo Journal of Typography, Second of Eight Issues (86.2)">
+<div class="grid-item-text">
+<h4>Octavo Journal of Typography, Second of Eight Issues (86.2)</h4>
 
+<h5>Simon Johnston, Mark Holt, MIchael Burke, Hamish Muir (editors)</h5>
+</div>
 </a>
+
 <hr>
 
 
@@ -203,13 +223,15 @@ var $grid = $('.grid').imagesLoaded( function() {
   
 
 <div class="grid-item">
-<div class="grid-item-text">
-<h4>Karel Martens</h4>
-<h5>Prints</h5>
-</div>
+
 <a  href="/design/2017/04/21/Karel-Martens-Prints.html"><img src="assets/product-images/Karel-Martens-Prints.jpg" alt="Prints">
+<div class="grid-item-text">
+<h4>Prints</h4>
 
+<h5>Karel Martens</h5>
+</div>
 </a>
+
 <hr>
 
 
@@ -220,13 +242,15 @@ var $grid = $('.grid').imagesLoaded( function() {
   
 
 <div class="grid-item">
-<div class="grid-item-text">
-<h4>The Designers Republic</h4>
-<h5>Idea No. 278 Idea Vs The Designers Republic (Special Feature)</h5>
-</div>
+
 <a  href="/design/2017/04/21/Idea-Vs-The-Designers-Republic-Special-Feature.html"><img src="assets/product-images/Idea-Vs-The-Designers-Republic-Special-Feature.jpg" alt="Idea No. 278 Idea Vs The Designers Republic (Special Feature)">
+<div class="grid-item-text">
+<h4>Idea No. 278 Idea Vs The Designers Republic (Special Feature)</h4>
 
+<h5>The Designers Republic</h5>
+</div>
 </a>
+
 <hr>
 
 
@@ -237,13 +261,15 @@ var $grid = $('.grid').imagesLoaded( function() {
   
 
 <div class="grid-item">
-<div class="grid-item-text">
-<h4>Carsten Nicolai</h4>
-<h5>Grid Index</h5>
-</div>
+
 <a  href="/design/2017/04/21/Carsten-Nicolai-Grid-Index.html"><img src="assets/product-images/Carsten-Nicolai-Grid-Index.jpg" alt="Grid Index">
+<div class="grid-item-text">
+<h4>Grid Index</h4>
 
+<h5>Carsten Nicolai</h5>
+</div>
 </a>
+
 <hr>
 
 
@@ -254,13 +280,15 @@ var $grid = $('.grid').imagesLoaded( function() {
   
 
 <div class="grid-item">
-<div class="grid-item-text">
-<h4>Wolfgang Pehnt</h4>
-<h5>German Architecture, 1960–1970</h5>
-</div>
+
 <a  href="/architecture/2017/04/21/German-Architecture-1960-1970.html"><img src="assets/product-images/German-Architecture-1960–1970.jpg" alt="German Architecture, 1960–1970">
+<div class="grid-item-text">
+<h4>German Architecture, 1960–1970</h4>
 
+<h5>Wolfgang Pehnt</h5>
+</div>
 </a>
+
 <hr>
 
 
@@ -271,13 +299,15 @@ var $grid = $('.grid').imagesLoaded( function() {
   
 
 <div class="grid-item">
-<div class="grid-item-text">
-<h4>Paul Rand</h4>
-<h5>Design, Form and Chaos</h5>
-</div>
-<a  href="/design/2017/04/21/Design-Form-and-Chaos.html"><img src="assets/product-images/Design-Form-and-Chaos.jpg" alt="Design, Form and Chaos">
 
+<a  href="/design/2017/04/21/Design-Form-and-Chaos.html"><img src="assets/product-images/Design-Form-and-Chaos.jpg" alt="Design, Form and Chaos">
+<div class="grid-item-text">
+<h4>Design, Form and Chaos</h4>
+
+<h5>Paul Rand</h5>
+</div>
 </a>
+
 <hr>
 
 
@@ -314,11 +344,23 @@ var $grid = $('.grid').imagesLoaded( function() {
 <hr>
  <a  href="http://www.discoform.com"> 
            
-<h6>     	 built by discoform 2017
+<h6>     	 built &amp; maintained by discoform 2017
              </h6>             
         </a>	
 </div>
-
+<ul id="a-h" class="six columns">
+  <li id="a1-1" class="fourafiveh">aaaa</li>
+  <li id="a1-2" class="fourafiveh">aaaa</li>
+  <li id="a1-3" class="fourafiveh">aaaa</div>
+  <li id="a1-4" class="fourafiveh">aaaa</li>
+</ul>   <!-- end a-h -->
+<ul id="h-a" class="six columns">
+  <li id="h1-1" class="fourafiveh">hhhhh</li>
+  <li id="h1-2" class="fourafiveh">hhhhh</li>
+  <li id="h1-3" class="fourafiveh">hhhhh</li>
+  <li id="h1-4" class="fourafiveh">hhhhh</li>
+  <li id="h1-5" class="fourafiveh">hhhhh</li> 
+</ul>   <!-- end h-a -->
 </footer>
 
 
@@ -334,6 +376,9 @@ var $grid = $('.grid').imagesLoaded( function() {
 
 
 <script src="/js/slideout.min.js"></script>
+
+
+<script src="/js/acronym.js"></script>
 
 <script>
   var slideout = new Slideout({

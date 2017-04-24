@@ -72,6 +72,20 @@ var $grid = $('.grid').imagesLoaded( function() {
 
 </script>
 
+<script>
+	
+function openWin() {
+    myWindow = window.open("", "", "width=100, height=100");  // Opens a new window
+}
+
+function resizeWin() {
+    myWindow.resizeTo(250, 250);                             // Resizes the new window
+    myWindow.focus();                                        // Sets focus to the new window
+}
+
+
+</script>
+
 </head>
 
 
@@ -242,11 +256,23 @@ var $grid = $('.grid').imagesLoaded( function() {
 <hr>
  <a  href="http://www.discoform.com"> 
            
-<h6>     	 built by discoform 2017
+<h6>     	 built &amp; maintained by discoform 2017
              </h6>             
         </a>	
 </div>
-
+<ul id="a-h" class="six columns">
+  <li id="a1-1" class="fourafiveh">aaaa</li>
+  <li id="a1-2" class="fourafiveh">aaaa</li>
+  <li id="a1-3" class="fourafiveh">aaaa</div>
+  <li id="a1-4" class="fourafiveh">aaaa</li>
+</ul>   <!-- end a-h -->
+<ul id="h-a" class="six columns">
+  <li id="h1-1" class="fourafiveh">hhhhh</li>
+  <li id="h1-2" class="fourafiveh">hhhhh</li>
+  <li id="h1-3" class="fourafiveh">hhhhh</li>
+  <li id="h1-4" class="fourafiveh">hhhhh</li>
+  <li id="h1-5" class="fourafiveh">hhhhh</li> 
+</ul>   <!-- end h-a -->
 </footer>
 
 
@@ -262,6 +288,9 @@ var $grid = $('.grid').imagesLoaded( function() {
 
 
 <script src="/js/slideout.min.js"></script>
+
+
+<script src="/js/acronym.js"></script>
 
 <script>
   var slideout = new Slideout({

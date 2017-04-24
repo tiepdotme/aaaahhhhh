@@ -1,7 +1,13 @@
-footer {
+footer{
+	@include grid-container;
+	margin-top:1em;
+	
+#footer-content {
     @include grid-column(12);
     padding: 2em 0;
     
+}
+
 }
 
 

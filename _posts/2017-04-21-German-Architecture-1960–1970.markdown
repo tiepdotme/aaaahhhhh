@@ -12,7 +12,7 @@ featured_image: German-Architecture-1960–1970
 thumbnail_images:
 
 
-ISBN: none
+ISBN:
 price: 45
 slug: German-Architecture-1960–1970
 categories: architecture

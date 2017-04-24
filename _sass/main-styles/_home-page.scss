@@ -145,9 +145,10 @@ margin-top:1em;
 
      #home{
 
-@include grid-column(10);
-@include grid-shift(1);
-margin-top:1em;
+@include grid-collapse;
+@include grid-shift(0);
+width:100%;
+margin:0 auto;
 
 
 
@@ -216,11 +217,10 @@ margin-top:1em;
 
      #home{
 
-@include grid-column(12);
+@include grid-collapse;
 @include grid-shift(0);
-margin-top:1em;
-
-
+width:100%;
+margin:0 auto;
 
 
 
@@ -290,7 +290,7 @@ margin-top:1em;
 
 @include grid-collapse;
 @include grid-shift(0);
-width:99%;
+width:100%;
 margin:0 auto;
 
 

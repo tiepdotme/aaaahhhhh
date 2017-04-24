@@ -232,8 +232,10 @@ h2.title, h3.author, h5.publisher, h5.ISBN, #product-details{
 
 
 #product, #home{
-@include grid-container;
+@include grid-collapse;
 @include grid-shift(0);
+width:99%;
+margin: 0 auto;
 
 }
 

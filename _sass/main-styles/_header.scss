@@ -157,7 +157,7 @@ img#logo{
 
      header {
     @include grid-container;
-        margin:2em 0 0em;
+        margin:1em 0 0;
 
 img#logo{
 
@@ -169,7 +169,7 @@ img#logo{
     #header-content-left {
         @include grid-collapse;
         @include grid-column(12);
-        @include grid-shift(0);
+        @include grid-push(0);
         h1 {
             font-size: 90%;
         }

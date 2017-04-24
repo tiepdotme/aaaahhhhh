@@ -20,8 +20,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Four A's Five H's is an online shop for books and periodicals on graphic design and architecture
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://aaaahhhhh.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 4a-5h
-instagram_username:  4a-5h
+twitter_username: discoform
+instagram_username:  discoform
 
 # Build settings
 markdown: kramdown

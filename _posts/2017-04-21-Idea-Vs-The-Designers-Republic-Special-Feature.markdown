@@ -13,9 +13,10 @@ thumbnail_images:
 
 ISBN: 978-4416602034
 price: 75
+weight: 500
+quantity: 1
 slug: Idea-Vs-The-Designers-Republic-Special-Feature
 categories: design
-
 date:   2017-04-21 08:38:18 -0500
 published: true
 

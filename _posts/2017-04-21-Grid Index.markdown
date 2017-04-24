@@ -13,9 +13,10 @@ thumbnail_images:
 
 ISBN: 978-3899552416
 price: 200
+weight: 500
+quantity: 1
 slug: Carsten-Nicolai-Grid-Index
 categories: design
-
 date:   2017-04-21 08:38:18 -0500
 published: true
 

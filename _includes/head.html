@@ -19,21 +19,16 @@
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ page.url }}" href="/feed.xml">
 
-
-
-
-
 <!-- fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 {% include fonts.html %}
-
 
 <!-- Social Media
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="{{site.twitter_username}}">
 <meta name="twitter:creator" content="{{site.twitter_username}}">{% if page.title %}
-<meta name="twitter:title" content="{{ page.title }}">{% else %}
+<meta name="twitter:title" content="{{ page.title }} | {{page.author}}">{% else %}
 <meta name="twitter:title" content="{{ site.title }}"> {% endif %}{% if page.url %}
 <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">{% endif %}{% if page.description %}
 <meta name="twitter:description" content="{{ page.description }}">{% else %}
@@ -41,7 +36,7 @@
 <meta name="twitter:image:src" content="{{ site.url }}/assets/product-images/{{page.featured_image}}.jpg">{% else %}
 <meta name="twitter:image:src" content="{{ site.url }}/assets/logos/logo.png"> {% endif %}
 <meta content="{{ site.title }}" property="og:site_name">{% if page.title %}
-<meta content="{{ page.title }}" property="og:title">{% else %}
+<meta content="{{ page.title }} | {{page.author}}" property="og:title">{% else %}
 <meta content="{{ site.title }}" property="og:title"> {% endif %}{% if page.title %}
 <meta content="article" property="og:type"> {% else %}
 <meta content="website" property="og:type">{% endif %}{% if page.description %}
@@ -54,6 +49,12 @@
 <meta content="{{ site.url }}{{ site.url }}/assets/logos/logo.png" property="og:image">{% endif %}{% if page.categories %}{% for category in page.categories limit:1 %}
 <meta content="{{ category }}" property="article:section">{% endfor %}{% endif %}{% if page.tags %}{% for tag in page.tags %}
 <meta content="{{ tag }}" property="article:tag">{% endfor %} {% endif %}
+
+<!-- Enable iOS Standalone Mode
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="touch-icon-iphone.png">
 
 
 <script>

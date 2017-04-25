@@ -16,7 +16,8 @@ price: 70
 weight: 500
 quantity: 1
 slug: Typographie-a-Manual-of-Design
-categories: typography
+categories: books
+tags: Emil Ruder
 date:   2017-04-21 08:38:18 -0500
 published: true
 ---

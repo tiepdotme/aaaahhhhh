@@ -16,7 +16,8 @@ price: 200
 weight: 500
 quantity: 1
 slug: Carsten-Nicolai-Grid-Index
-categories: design
+categories: books
+tags: Grid Carsten Nicolai
 date:   2017-04-21 08:38:18 -0500
 published: true
 

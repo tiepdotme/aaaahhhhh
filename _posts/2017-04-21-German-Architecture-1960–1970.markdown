@@ -17,8 +17,8 @@ price: 45
 weight: 500
 quantity: 1
 slug: German-Architecture-1960–1970
-categories: architecture
-
+categories: books
+tags: Architecture
 date:   2017-04-21 08:38:18 -0500
 published: true
 ---

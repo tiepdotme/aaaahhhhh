@@ -12,11 +12,12 @@ featured_image: Design-Form-and-Chaos
 thumbnail_images:
 
 ISBN: 978-0300055535
-price: 70
+price: 100
 weight: 500
 quantity: 1
 slug: Design-Form-and-Chaos
-categories: design
+categories: books
+tags: Paul Rand
 date:   2017-04-21 08:38:18 -0500
 published: true
 ---

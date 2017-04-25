@@ -22,6 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aaaahhhhh.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: discoform
 instagram_username:  discoform
+author: Matthew howe
 Snipcart_API: MGU4ZGQ1YjItZWU3Ni00OTkwLWE0NzMtMmZhYWVjZjIxODc5NjM2MjgzOTM4OTY3MjkwNjE3
 # Build settings
 markdown: kramdown

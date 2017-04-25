@@ -31,7 +31,10 @@
 
 <li><h5>{{page.condition}} {{page.binding}} in {{page.binding_condition}} condition</h5></li>
 
+{% if page.dust_jacket_condition %}
 <li><h5>dust jacket condition: {{page.dust_jacket_condition}} </h5></li>
+{% endif %}
+
 {% if page.ISBN %}
 <li><h5>ISBN: {{page.ISBN}}</h5></li>
 {% endif %}

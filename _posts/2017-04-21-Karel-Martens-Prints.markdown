@@ -7,7 +7,7 @@ publicationDate: 2016
 condition: Used
 binding: paperback
 binding_condition: near fine
-dust_jacket_condition: none
+dust_jacket_condition:
 featured_image: Karel-Martens-Prints
 thumbnail_images:
 

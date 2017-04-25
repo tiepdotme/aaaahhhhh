@@ -19,7 +19,7 @@ email: hello@aaaahhhhh.com
 description: > # this means to ignore newlines until "baseurl:"
   Four A's Five H's is an online shop for books and periodicals on graphic design and architecture
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://aaaahhhhh.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://aaaahhhhh.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: discoform
 instagram_username:  discoform
 Snipcart_API: MGU4ZGQ1YjItZWU3Ni00OTkwLWE0NzMtMmZhYWVjZjIxODc5NjM2MjgzOTM4OTY3MjkwNjE3

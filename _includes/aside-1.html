@@ -1,13 +1,7 @@
 <aside id="aside-1" class="site-nav">
 	
 
-    <ul>
-      {% for p in site.pages %}
-        <li>
-        <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
-        </li>
-      {% endfor %}
-    </ul>
+   {% include navigation.html %}
 
 
 

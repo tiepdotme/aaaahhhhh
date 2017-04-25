@@ -3,17 +3,12 @@
 
 
 
-<nav id="blurry-nav" class="site-nav">
+<nav id="top-nav" class="site-nav">
 
 
       
-    <ul>
-      {% for p in site.pages %}
-        <li>
-        <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
-        </li>
-      {% endfor %}
-    </ul>
+   {% include navigation.html %}
+
 
 
         </nav>	

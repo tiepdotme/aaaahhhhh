@@ -12,7 +12,7 @@ featured_image: Carsten-Nicolai-Grid-Index
 thumbnail_images:
 
 ISBN: 978-3899552416
-price: 200
+price: 300
 weight: 500
 quantity: 1
 slug: Carsten-Nicolai-Grid-Index

@@ -11,7 +11,7 @@ dust_jacket_condition: none
 featured_image: Idea-Vs-The-Designers-Republic-Special-Feature
 thumbnail_images:
 
-ISBN: 978-4416602034
+ISBN:
 price: 75
 weight: 500
 quantity: 1

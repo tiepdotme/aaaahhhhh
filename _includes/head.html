@@ -100,15 +100,21 @@ var $grid = $('#home').imagesLoaded( function() {
 
 <script>
 	
-function openWin() {
-    myWindow = window.open("", "", "width=100, height=100");  // Opens a new window
-}
-
-function resizeWin() {
-    myWindow.resizeTo(250, 250);                             // Resizes the new window
-    myWindow.focus();                                        // Sets focus to the new window
-}
-
+$('#home').imagesLoaded()
+  .always( function( instance ) {
+    console.log('all images loaded');
+  })
+  .done( function( instance ) {
+    console.log('all images successfully loaded');
+  })
+  .fail( function() {
+    console.log('all images loaded, at least one is broken');
+  })
+  .progress( function( instance, image ) {
+    var result = image.isLoaded ? 'loaded' : 'broken';
+    console.log( 'image is ' + result + ' for ' + image.img.src );
+  });
+                             
 
 </script>
 

@@ -89,7 +89,7 @@
 <script>
 
 
-var $grid = $('#home').imagesLoaded( function() {
+var $grid = $('.grid').imagesLoaded( function() {
   // init Masonry after all images have loaded
   $grid.masonry({
     // options...
@@ -100,7 +100,7 @@ var $grid = $('#home').imagesLoaded( function() {
 
 <script>
 	
-$('#home').imagesLoaded()
+$('.grid').imagesLoaded()
   .always( function( instance ) {
     console.log('all images loaded');
   })

@@ -16,7 +16,7 @@ price: 100
 weight: 500
 quantity: 1
 slug: Design-Form-and-Chaos
-categories: books
+category: design
 tags: Paul Rand
 date:   2017-04-21 08:38:18 -0500
 published: true

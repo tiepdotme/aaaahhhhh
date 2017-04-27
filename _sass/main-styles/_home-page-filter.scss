@@ -1,0 +1,26 @@
+#filter{
+
+	@include grid-column(10);
+@include grid-shift(1.15);
+
+font-family:$sans-serif;
+
+
+.filter-button-group ul li {
+
+	display:inline;
+	margin-right:2em;
+
+}
+
+a{
+	background:none;
+	color:$black;
+ text-transform: uppercase;
+ }
+
+ 
+
+
+
+}

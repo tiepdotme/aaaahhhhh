@@ -344,3 +344,78 @@ margin:0 auto;
 }
 }
 }
+
+
+
+
+////////////////////////////////////////
+
+	//  >1800  //
+
+///////////////////////////////////////
+
+
+
+
+@media (min-width: 1800px) {
+
+	 main {
+    @include grid-container;
+
+     #home{
+
+@include grid-column(10.5);
+@include grid-shift(1.5);
+margin:2em auto;
+
+
+
+
+
+#grid{
+
+	margin-top:2em;
+	@include grid-column(10);
+	@include grid-shift(0);
+
+
+}
+
+.grid-item{
+
+
+
+
+	@include grid-column(2);
+
+	
+	
+	
+
+
+
+	img{
+		width: 100%;
+				
+	}
+
+	.grid-item-text{
+
+		
+		
+		margin: 0em 0;
+		font-size: 60%;
+		
+		font-size: 100%;
+		background: white;
+		
+
+	}
+
+	
+
+}
+
+}
+}
+}

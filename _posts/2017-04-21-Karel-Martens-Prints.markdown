@@ -16,7 +16,7 @@ price: 40
 weight: 250
 quantity: 1
 slug: Karel-Martens-Prints
-categories: books
+category: design
 tags: Karel Martens
 date:   2017-04-21 08:38:18 -0500
 published: true

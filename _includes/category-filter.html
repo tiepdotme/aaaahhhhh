@@ -1,0 +1,13 @@
+	<div class="button-group filter-button-group">
+		<ul>
+		<li><a class="button active" data-filter="*">All</a></li>
+
+		{% for category in site.categories %}
+
+			<li><a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a></li>
+			{% endfor %}
+
+			
+
+			</ul>
+	</div> 

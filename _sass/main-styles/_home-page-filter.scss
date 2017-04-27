@@ -1,7 +1,7 @@
 #filter{
 
 	@include grid-column(10);
-@include grid-shift(1.15);
+@include grid-shift(1);
 
 font-family:$sans-serif;
 
@@ -9,18 +9,124 @@ font-family:$sans-serif;
 .filter-button-group ul li {
 
 	display:inline;
-	margin-right:2em;
 
 }
 
 a{
-	background:none;
-	color:$black;
+		@include grid-column(2);
+
+background:none;
+	color:white;
  text-transform: uppercase;
+
+ padding:20px 10px;
+ background:$dark-gray;
+ border-radius:200px;
+ 	margin-bottom:2em;
+ 	font-size: 80%;
+
  }
 
+a:hover{
+	background:yellow;
+	color:$black;
+}
  
 
 
+
+}
+
+
+
+@media (max-width: 800px) {
+
+	
+#filter{
+
+		@include grid-column(12);
+@include grid-shift(0);
+
+font-family:$sans-serif;
+
+
+.filter-button-group ul li {
+
+	display:inline;
+
+}
+
+a{
+		@include grid-column(2.5);
+
+background:none;
+	color:white;
+ text-transform: uppercase;
+
+ padding:10px 1px;
+ background:$dark-gray;
+ border-radius:200px;
+ 	margin-bottom:2em;
+ 	font-size: 80%;
+
+ }
+
+a:hover{
+	background:yellow;
+		color:$black;
+
+}
+ 
+
+
+
+}
+
+}
+
+
+
+@media (max-width: 500px) {
+
+	
+#filter{
+
+		@include grid-column(12);
+@include grid-shift(0);
+
+font-family:$sans-serif;
+
+
+.filter-button-group ul li {
+
+	display:inline;
+
+}
+
+a{
+		@include grid-column(6);
+
+background:none;
+	color:white;
+ text-transform: uppercase;
+
+ padding:10px 1px;
+ background:$dark-gray;
+ border-radius:200px;
+ 	margin-bottom:2em;
+ 	font-size: 80%;
+
+ }
+
+a:hover{
+	background:yellow;
+		color:$black;
+
+}
+ 
+
+
+
+}
 
 }

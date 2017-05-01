@@ -364,8 +364,8 @@ margin:0 auto;
 
      #home{
 
-@include grid-column(10.5);
-@include grid-shift(1.15);
+@include grid-column(11.05);
+@include grid-shift(1.2);
 margin:2em auto;
 
 
@@ -419,3 +419,4 @@ margin:2em auto;
 }
 }
 }
+

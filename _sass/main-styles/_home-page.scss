@@ -365,7 +365,7 @@ margin:0 auto;
      #home{
 
 @include grid-column(10.5);
-@include grid-shift(1.5);
+@include grid-shift(1);
 margin:2em auto;
 
 

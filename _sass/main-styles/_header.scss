@@ -197,3 +197,62 @@ img#logo{
 
 
 
+
+
+ ////////////////////////////////////////
+
+    //  >1800  //
+
+///////////////////////////////////////
+
+
+
+
+@media (min-width: 1800px) {
+
+
+  header {
+    @include grid-container;
+      margin:2em 0 4em;
+                  font-size: 160%;
+
+
+img#logo{
+
+          @include grid-column(1);
+
+
+}
+
+    #header-content-left {
+        @include grid-collapse;
+        @include grid-column(10);
+        @include grid-shift(0);
+        h1 {
+            font-size: 90%;
+        }
+
+        h5{
+          font-weight: 400;
+        }
+
+
+    }
+
+     #header-content-right{
+              
+
+         @include grid-column(4);
+                  @include grid-push(8);
+        position:absolute;
+
+        text-align: right;
+     }
+
+
+}
+
+
+
+}
+

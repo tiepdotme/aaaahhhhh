@@ -18,7 +18,6 @@ quantity: 1
 slug: Octavo-86-2
 category: typography
 tags: 8v0 Octavo
-date:   2017-04-21 08:38:18 -0500
 published: true
 
 ---

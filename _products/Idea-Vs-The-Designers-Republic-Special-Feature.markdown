@@ -18,7 +18,6 @@ quantity: 1
 slug: Idea-Vs-The-Designers-Republic-Special-Feature
 category: design
 tags: tDR The Designers Republic
-date:   2017-04-21 08:38:18 -0500
 published: true
 
 ---

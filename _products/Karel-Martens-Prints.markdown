@@ -18,7 +18,6 @@ quantity: 1
 slug: Karel-Martens-Prints
 category: design
 tags: Karel Martens
-date:   2017-04-21 08:38:18 -0500
 published: true
 
 ---

@@ -18,7 +18,6 @@ quantity: 1
 slug: the-Graphic-Artist-and-His-Design-Problems
 category: design
 tags: Josef Müller-Brockmann 
-date:   2017-04-21 08:38:18 -0500
 published: true
 ---
 

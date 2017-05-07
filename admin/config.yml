@@ -1,0 +1,11 @@
+backend:
+  name: github
+  repo: discoform/aaaahhhhh # Path to your Github repository
+  branch: master # Branch to update
+  site_domain: aaaahhhhh.netlify.com # Your Netlify site address if different from host
+
+publish_mode: editorial_workflow
+
+media_folder: "assets/product-images" # Media files will be stored in the repo under images/uploads
+
+

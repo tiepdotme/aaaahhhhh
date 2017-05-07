@@ -1,46 +1,51 @@
 {% include head.html %}
+
 {% include header.html %}
-
-
 {% include aside-1.html %}
 
 
 <div id="filter">{% include category-filter.html %}</div>
 
 
+
+
 <div id="home" >
 
 
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 10 }'>
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 1 }'>
 
   
 
- {% for post in site.posts %}
+ {% for product in site.products %}
 
-<div class="grid-item element-item {{ post.category }}" >
+<div class="grid-item element-item {{ product.category }}" >
 
-<a  href="{{ post.url }}"><img src="assets/product-images/{{ post.featured_image}}.jpg" alt="{{ post.title }}">
+<a  href="{{ product.url }}"><img src="assets/product-images/{{ product.featured_image}}.jpg" alt="{{ product.title }}">
 <div class="grid-item-text">
-<h4>{{ post.title }}</h4>
+<h4>{{ product.title }}</h4>
 
-<h5>{{ post.author }}</h5>
-<h6>(${{ post.price }}) +Shipping</h6>
-</div>
+<h5>{{ poduct.author }}</h5>
+<h6>(${{ product.price }}) +Shipping</h6>
+	</div>
+
 </a>
-
-<hr>
-
 
 
 
 </div>  <!-- end grid item -->
 
+
   {% endfor %}
+
+
+
+  
 
 </div>  <!-- end grid -->
 </div>  <!-- end home -->
 
-
+<!-- {% include aside-1.html %}
+ -->
 
 {% include footer.html %}
 

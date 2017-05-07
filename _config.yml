@@ -40,4 +40,16 @@ sass:
     style: compressed
 
 collections:
-    - products
+      products:
+        output: true
+        permalink: /product/:path/
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+      
+

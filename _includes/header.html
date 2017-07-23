@@ -1,26 +1,49 @@
+<div id="header-wrapper">
 <header>
-<a href="/"><img  id="logo" src="/assets/logos/logo.svg" alt="image of {{site.title}} logo"></a>
-<div id="header-content-left">
-<a href="/"><h1>FOUR A'<sup><sub>S</sub></sup> FIVE H'<sup><sub>S</sub></sup></h1>
-<h5>{{site.subtitle}}</h5>	
-</a>
-           
-<h6>built &amp; maintained by discoform {{ 'now' | date: "%Y" }}</h6>    
-<h6>Minneapolis, Minnesota</h6>         
-{% include blurry-nav.html %}
-</div>  <!-- end content header left -->
+
+<section>
+<ul>
+		<li><a href="/"><h1>FOUR A'<sup><sub>S</sub></sup> FIVE H'<sup><sub>S</sub></sup></h1>
+					<h6>{{site.subtitle}}</h6>
+				</a></li>
 
 
-<div id="header-content-right">
 
-  <div class="snipcart-summary">
-      <a href="#" class="snipcart-checkout">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        View cart (<span class="snipcart-total-items">0</span>)
-      </a>
-</div>  <!-- end cart summary -->
-</div>  <!-- end header content right --> 
+			{% if page.layout == 'home' %}
+		
+				
+
+			{% endif %}
+
+
+
+
+</ul>
+
+
+	{% include navigation.html %}
+
+</section>
+
+<section>
+				{% include snip-cart-cart.html %}
+
+
+</section>
+
+
 
 </header>
+
+
+</div>
+<div id="modal">
+    <div class="modalconent">
+
+        <h4>THIS SHOP IS IN DEVELOPMENT</h4>
+        <h2>ORDERS WILL NOT BE PROCESSED</h2>
+        <h4>INQUIRIES TO HELLO@DISCOFORM.COM</h4>
+    </div>
+</div>
 
 <main>

@@ -1,53 +1,5 @@
 {% include head.html %}
-
 {% include header.html %}
-{% include aside-1.html %}
-
-
-<div id="filter">{% include category-filter.html %}</div>
-
-
-
-
-<div id="home" >
-
-
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 1 }'>
-
-  
-
- {% for product in site.products %}
-
-<div class="grid-item element-item {{ product.category }}" >
-
-<a  href="{{ product.url }}"><img src="assets/product-images/{{ product.featured_image}}.jpg" alt="{{ product.title }}">
-<div class="grid-item-text">
-<h4>{{ product.title }}</h4>
-
-<h5>{{ poduct.author }}</h5>
-<h6>(${{ product.price }}) +Shipping</h6>
-	</div>
-
-</a>
-
-
-
-</div>  <!-- end grid item -->
-
-
-  {% endfor %}
-
-
-
-  
-
-</div>  <!-- end grid -->
-</div>  <!-- end home -->
-
-<!-- {% include aside-1.html %}
- -->
-
+{% include grid-items.html %}
 {% include footer.html %}
-
-
-
+{% include tags.html %}

@@ -1,46 +1,39 @@
-main,
-header,
-footer {
-    //@include grid-visual;
-}
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    cursor: default;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-main {
-    @include grid-container;
-
-    
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	-ms-box-sizing: border-box !important;
+	box-sizing: border-box !important;
 }
 
 
 
 
+html, body{
+
+	
+	margin:0;
+	padding:0;
+
+	cursor:default;
+	background:$yellow;
+	overflow-x:hidden;
 
 
 
-section {
-    @include grid-container;
+
 }
 
-aside {
-    @include grid-column(2);
+
+body * {
+
+		  -webkit-transition:  .1s ease;
+    transition:  .1s ease;
+
+
 }
 
 
 
-main img{
-     -webkit-filter: contrast(80%); /* Safari 6.0 - 9.0 */
-        filter: contrast(80%);
-        box-shadow: $shadow;
-    
-}

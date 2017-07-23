@@ -12,7 +12,7 @@ featured_image: Karel-Martens-Prints
 thumbnail_images:
 
 ISBN: 978-9491843778
-price: 40
+price: 70
 weight: 250
 quantity: 1
 slug: Karel-Martens-Prints

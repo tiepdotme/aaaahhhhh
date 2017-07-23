@@ -1,27 +1,25 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
-@import "../_sass/normalize";
-@import "../_sass/neat/neat";
-@import "../_sass/mixins/mixins";
-
-@import "../_sass/main-styles/breakpoints";
-@import "../_sass/main-styles/typography";
 @import "../_sass/main-styles/color";
+@import "../_sass/normalize";
+@import "../_sass/mixins/mixins";
+@import "../_sass/variables/variables";
+
+
+@import "../_sass/main-styles/typography";
 @import "../_sass/main-styles/body";
 @import "../_sass/main-styles/home-page";
-@import "../_sass/main-styles/about-page";
-@import "../_sass/main-styles/header";
-@import "../_sass/main-styles/home-page-filter";
-@import "../_sass/main-styles/navigation";
-@import "../_sass/main-styles/aside-1";
 @import "../_sass/main-styles/product-page";
+@import "../_sass/main-styles/about-page";
+@import "../_sass/main-styles/contact-page";
+@import "../_sass/main-styles/header";
+@import "../_sass/main-styles/nav";
 @import "../_sass/main-styles/buttons";
-@import "../_sass/main-styles/aside-2";
 @import "../_sass/main-styles/footer";
-@import "../_sass/main-styles/contact";
 @import "../_sass/main-styles/share-page";
-@import "../_sass/main-styles/404";
+@import "../_sass/main-styles/snip-cart";
+@import "../_sass/main-styles/scrollbar";
 
 
 

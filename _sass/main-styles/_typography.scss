@@ -5,7 +5,7 @@ $base-border-radius: 3px !default;
   $dark-gray: #231f20 !default;
   $light-gray: #ddd !default;
   $medium-screen: 40em !default;
-  $base-font-color: $dark-gray !default;
+  $base-font-color: $black;
   $sans-serif: "PT Sans", sans-serif;
   $sans-serif-2: "Titillium Web", sans-serif;
 
@@ -17,7 +17,7 @@ body {
   $dark-gray: #231f20 !default;
   $light-gray: #ddd !default;
   $medium-screen: 40em !default;
-  $base-font-color: $dark-gray !default;
+  $base-font-color: $black !default;
   $sans-serif: "PT Sans", sans-serif;
   $sans-serif-2: "Titillium Web", sans-serif;
 
@@ -34,7 +34,8 @@ body {
     margin: 0;
     font-family:$sans-serif;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 500;
+    color: $base-font-color;
 
 
   }
@@ -50,7 +51,7 @@ body {
   }
 
   hr {
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid $black;
     border-left: 0;
     border-right: 0;
     border-top: 0;
@@ -84,7 +85,7 @@ body {
 
   h1 {
     font-family: $sans-serif-2;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
     //margin-bottom: 0.6em;
 
@@ -100,6 +101,12 @@ body {
 
     
   }
+
+  h4, h5{
+    font-size:90%;
+  }
+
+
 
   code {
     background: #f7f7f7;
@@ -186,16 +193,16 @@ ul {
 }
 
 ::-moz-selection { /* Code for Firefox */
-    color: red;
-    background: yellow;
+    color: $yellow;
+    background: $red;
 }
 
 ::selection {
-    color: red;
-    background: yellow;
+    color: $yellow;
+    background: $red;
 }
 
-
-p a {
-  font-weight: 700;
+a{
+color:$white;
 }
+

@@ -1,57 +1,59 @@
 
-
-
-
-
-
-
 </main>
 
+      <footer>
 
-<footer>
+     <section>
 
-<div id="footer-content">
-<hr>
-<a href="http://www.discoform.com"> 
-           
-<h6>built &amp; maintained by discoform {{ 'now' | date: "%Y" }}</h6>
-<h6>Minneapolis Minnesota</h6>          
-        </a>  
-<hr>
- <h6>follow</h6>
+      {% include social-media.html %}
+3
+              <a href="http://www.discoform.com">     
+                     <h6>built &amp; maintained by discoform {{ 'now' | date: "%Y" }}</h6>
+                     <h6>Minneapolis Minnesota USA</h6>          
+              </a>  
 
-        {% include social-media.html %}
+       </section>
 
-<ul id="a-h" class="six columns">
-  <li id="a1-1" class="fourafiveh">aaaa</li>
-  <li id="a1-2" class="fourafiveh">aaaa</li>
-  <li id="a1-3" class="fourafiveh">aaaa</li>
-  <li id="a1-4" class="fourafiveh">aaaa</li>
-</ul>   <!-- end a-h -->
-<ul id="h-a" class="six columns">
-  <li id="h1-1" class="fourafiveh">hhhhh</li>
-  <li id="h1-2" class="fourafiveh">hhhhh</li>
-  <li id="h1-3" class="fourafiveh">hhhhh</li>
-  <li id="h1-4" class="fourafiveh">hhhhh</li>
-  <li id="h1-5" class="fourafiveh">hhhhh</li> 
-</ul>   <!-- end h-a -->
 
-</div>  <!-- end footer-content -->
+     <section>
+     
+      {% include social-media.html %}
+2
+              <a href="http://www.discoform.com">     
+                     <h6>built &amp; maintained by discoform {{ 'now' | date: "%Y" }}</h6>
+                     <h6>Minneapolis Minnesota USA</h6>          
+              </a>  
 
-</footer>
+       </section>
 
+
+     <section>
+     
+      {% include social-media.html %}
+1
+              <a href="http://www.discoform.com">     
+                     <h6>built &amp; maintained by discoform {{ 'now' | date: "%Y" }}</h6>
+                     <h6>Minneapolis Minnesota USA</h6>          
+              </a>  
+
+       </section>
+      </footer>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-98058167-1', 'auto');
   ga('send', 'pageview');
-
 </script>
-
-
-
 {% include javascript.html %}
+
+
+<script>
+  window.onload = function () {
+    document.getElementById('button').onclick = function () {
+        document.getElementById('modal').style.display = "none"
+    };
+};
+</script>

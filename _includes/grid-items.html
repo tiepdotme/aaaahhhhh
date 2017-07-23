@@ -1,0 +1,25 @@
+<section id="products">
+
+	<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 1 }'>
+	  {% for product in site.products %}
+
+	  <ul>
+	  <li>
+		<a  href="{{ product.url }}">	
+			<div class="grid-item element-item {{ product.category }}"  style="background-image:  url(../assets/product-images/{{ product.featured_image}}.jpg);">
+						<div class="grid-item-text">
+							<h4>{{ product.title }}</h4>
+							<h5>{{ product.author }}</h5>
+							<h6>(${{ product.price }}) +Shipping</h6>
+						</div>
+			</div>  <!-- end grid item -->
+		</a>
+</li>
+		</ul>
+
+		 {% endfor %}
+
+		 		<div class="grid-item"></div>
+
+	</div>  <!-- end grid -->
+</section>

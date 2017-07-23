@@ -12,7 +12,7 @@ featured_image: the-Graphic-Artist-and-His-Design-Problems
 thumbnail_images:
 
 ISBN: 978-3721204667
-price: 40
+price: 60
 weight: 500
 quantity: 1
 slug: the-Graphic-Artist-and-His-Design-Problems

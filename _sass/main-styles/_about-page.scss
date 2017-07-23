@@ -1,49 +1,104 @@
-main {
+#about{
+	float:left;
+	width: 100vw;
+	border-right: 2.5px solid $yellow;
+	border-left: 2.5px solid $yellow;
+	//padding: 25px 0 ;
 	
-    @include grid-container;
-
-     #about, #about h2{
-
-@include grid-column(8);
-@include grid-shift(2);
-margin-bottom:1em;
-
-
-
-}
-}
-
-
-
-
-
-////////////////////////////////////////
-
-	//  800  //
-
-///////////////////////////////////////
-
-
-
-
-@media (max-width: 800px) {
-
-
-
-
-main {
+	background-color:$grey;
 	
-    @include grid-container;
+	box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position:relative;
 
-     #about, #about h2{
-
-@include grid-column(12);
-@include grid-shift(0);
-margin-bottom:1em;
+    	@include linear-gradient-home;
 
 
+    @media only screen and (max-width: $mobile) {
+
+			width: 100vw;
+			float:left;
+			padding: 0;
+			border:0;
+
+}
+
+
+    .logo-container{
+
+    	box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+text-align:center;
+			float:left;
+			width: 24vw;
+			padding:10px 0 0 25px;
+
+
+			@media only screen and (max-width: $tablet) {
+
+			width: 20vw;
+			float:left;
+
+}
+
+@media only screen and (max-width: $mobile) {
+
+			width: 100vw;
+			float:left;
+			padding: 0;
+
+}
+
+.featured_image{
+
+
+	
+	box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+				
+
+	@media only screen and (max-width: $mobile) {
+
+			display: none;
+
+}
+	
+
+}
+
+}
+
+#about-content{
+
+padding-top:5px;
+margin-right:25px;
+	width: 72vw;
+		float:right;
+
+
+			@media only screen and (max-width: $tablet) {
+
+			width: auto;
+padding:15px;
 
 }
 }
-}
 
+
+    h2{
+    	font-size: 300%;
+	line-height: 1;
+	 	 	 	 		font-style: italic;	
+	 	 	 	 		padding-bottom:5px;
+	 	 	 	 		 	 	 	 	 	border-bottom:1px solid $black;
+	 	 	 	 		 	 	 	 	 		 	 	 	 		padding-bottom:5px;
+margin-bottom:35px;
+
+
+    }
+
+}

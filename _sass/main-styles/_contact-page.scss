@@ -1,0 +1,56 @@
+.contact-form{
+	width: 100vw;
+
+			
+	border-right: 2.5px solid $yellow;
+	border-left: 2.5px solid $yellow;
+	padding:50px 25px;
+	@include linear-gradient-home;
+
+    h2{
+    	font-size: 300%;
+	line-height: 1;
+	 	 	 	 		font-style: italic;	
+	 	 	 	 		padding-bottom:5px;
+	 	 	 	 		 	 	 	 	 	border-bottom:1px solid $black;
+	 	 	 	 		 	 	 	 	 		 	 	 	 		padding-bottom:5px;
+margin-bottom:35px;
+
+
+    }
+
+
+	input, textarea{
+		height:70px;
+		padding:35px 0;
+				font-size: 200%;
+				text-align: left;
+				margin:5px 0;
+		text-transform: uppercase;
+		background: transparent;
+		border-bottom: 1px solid $black;
+
+		color:black;
+
+
+	}
+
+	textarea{
+				height:200px;
+								font-size: 100%;
+
+						color:black;
+
+
+						
+
+
+	}
+
+	.button{
+		text-align: center;
+		text-transform: uppercase;
+		height: 100px;
+		border-bottom:0;
+	}
+}

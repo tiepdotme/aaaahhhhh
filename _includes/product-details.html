@@ -1,55 +1,60 @@
-{% include aside-1.html %}
+<section id="products">
+
+	<div id="product-page">
+
+		<div class="button-container">
+
+		<img class="featured_image" src="/assets/product-images/{{page.featured_image}}.jpg" alt="image of {{page.title}}">
 
 
-<section>
+		{% include snip-cart-button.html %}
 
 
-<div id="product">
-
-<div class="button-container">
-
-<img class="featured_image" src="/assets/product-images/{{page.featured_image}}.jpg" alt="image of {{page.title}}">
+		</div>   <!-- end button container -->
 
 
-{% include snip-cart-button.html %}
-{% include social-share.html %}
+		<div id="product-details">
 
 
-</div>   <!-- end button container -->
+			<h2 class="title">{{page.title}}</h2>
 
+			<h3 class="author">{{page.author}}</h3>
 
+			<h5 class="publisher">{{page.publisher}} ({{page.publicationDate}})</h5>
 
+			{% if page.ISBN %}
+			<h5 class="isbn">ISBN: {{page.ISBN}}</h5>
+			{% endif %}
 
-<h2 class="title">{{page.title}}</h2>
+			{% include social-share.html %}
+			
+		</div>  <!-- end product details -->
 
-<h3 class="author">{{page.author}}</h3>
+	<div class="description">
 
-<h5 class="publisher">{{page.publisher}} ({{page.publicationDate}})</h5>
-<div id="product-details">
-<ul>
-
-
-<li><h5>{{page.condition}} {{page.binding}} in {{page.binding_condition}} condition</h5></li>
-
-{% if page.dust_jacket_condition %}
-<li><h5>dust jacket condition: {{page.dust_jacket_condition}} </h5></li>
-{% endif %}
-
-{% if page.ISBN %}
-<li><h5>ISBN: {{page.ISBN}}</h5></li>
-{% endif %}
-</ul>
-
-</div>  <!-- end product details -->
-<div class="description">{{content}}</div>
+	{{content}}
 
 
 
+	</div>  <!--  end description -->
 
 
+	</div> <!--  end product-page -->
 
+	<div id="product-page-aside">
+		
+			<h2>Condition Notes:</h2>
 
-</div>   <!-- end product -->
+			<ul class="condition">
+				<li><h5>{{page.condition}} {{page.binding}} in {{page.binding_condition}} condition</h5></li>
+			
+				{% if page.dust_jacket_condition %}
+				<li><h5>dust jacket condition: {{page.dust_jacket_condition}} </h5></li>
+				{% endif %}
+
+				
+			</ul>
+	</div>
 
 </section>
 

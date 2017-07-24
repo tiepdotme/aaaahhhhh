@@ -1,8 +1,8 @@
 
 @mixin linear-gradient-home {
     background-color: transparent;
-    background-image: -webkit-linear-gradient(bottom right, transparent, transparent, royalblue);
-    background-image: linear-gradient( top right, transparent, transparent, royalblue);
+    background-image: -webkit-linear-gradient(bottom right, transparent, transparent, $blue);
+    background-image: linear-gradient( top right, transparent, transparent, $blue);
 }
 
 @mixin linear-gradient-grid {

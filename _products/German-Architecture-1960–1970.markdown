@@ -13,7 +13,7 @@ thumbnail_images:
 
 
 ISBN:
-price: 45
+price: 25
 weight: 500
 quantity: 1
 slug: German-Architecture-1960–1970

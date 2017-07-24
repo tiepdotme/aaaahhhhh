@@ -21,7 +21,7 @@ float:left;
 
 
 .grid-item {
-
+position:relative;
 	box-sizing: border-box;
 	 -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -46,7 +46,38 @@ display:inline-block;  background-repeat: no-repeat;
 
 
        
+.sold-out{
 
+
+  background:$red;
+  position:absolute;
+  top:50px;
+  left:30px;
+  height:8vw;
+  width: 8vw;
+text-align:center;  
+line-height:120px;
+border-radius:100px;
+z-index:1;
+//box-shadow:$shadow;
+opacity:.9;
+-ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg);
+
+
+
+h4{
+    color: $white;
+
+     &:hover{
+     	    font-size: 101%;
+
+
+     }
+
+}
+}
 
 
   	 

@@ -7,7 +7,7 @@ publicationDate: 2000/1
 condition: Used
 binding: softcover
 binding_condition: near fine
-dust_jacket_condition: (Slipcased) fine
+dust_jacket_condition: (Slipcase) fine
 featured_image: The-Designers-Republic-vs-Idea-Special-Projects-01
 thumbnail_images:
 

@@ -12,7 +12,7 @@ featured_image: Design-Form-and-Chaos
 thumbnail_images:
 
 ISBN: 978-0300055535
-price: 100
+price: 150
 weight: 500
 quantity: 1
 slug: Design-Form-and-Chaos

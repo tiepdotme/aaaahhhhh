@@ -1,3 +1,13 @@
+
+
+{% if page.quantity < 1 %}
+
+			<h2>sold out</h2>
+
+
+
+			{% else %}
+
 <button class="snipcart-add-item button"
     data-item-name="{{ page.title }}"
     data-item-id="{{ page.slug }}"
@@ -8,3 +18,8 @@
     data-item-max-quantity="{{ page.quantity }}">
     <p class="type">ADD TO CART<br>${{ page.price }}</p>
   </button>
+
+
+
+
+  	  {% endif %}

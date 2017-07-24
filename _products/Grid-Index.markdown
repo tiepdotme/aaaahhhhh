@@ -7,12 +7,12 @@ publicationDate: 2009
 condition: Used
 binding: hardcover
 binding_condition: fine
-dust_jacket_condition: fine
+dust_jacket_condition:
 featured_image: Carsten-Nicolai-Grid-Index
 thumbnail_images:
 
 ISBN: 978-3899552416
-price: 300
+price: 200
 weight: 500
 quantity: 1
 slug: Carsten-Nicolai-Grid-Index

@@ -14,7 +14,7 @@ thumbnail_images:
 ISBN: 978-9491843778
 price: 70
 weight: 250
-quantity: 1
+quantity: 0
 slug: Karel-Martens-Prints
 category: design
 tags: Karel Martens

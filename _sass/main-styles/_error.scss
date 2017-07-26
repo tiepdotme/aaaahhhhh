@@ -1,125 +1,109 @@
-
-
-.page-full-error{
- 	float:left;
-	width: 100vw;
-	border: 1vw solid $blue;
-	
-	
-	padding: 35px;
-    	
-color:$white;
-	
-	background-color:$blue;
-	
-	box-sizing: border-box;
-   -moz-box-sizing: border-box;
+.page-full-error {
+    float: left;
+    width: 100vw;
+    border: 1vw solid $blue;
+    border-left: 2.5px solid $yellow;
+    border-right: 2.5px solid $yellow;
+    border-bottom: 2.5px solid $yellow;
+    border-top: 0px solid $yellow;
+    padding: 35px;
+    color: $yellow;
+    background-color: $blue;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    position:relative;
+    position: relative;
 
-     @media only screen and (max-width: $tablet) {
-
-     }
-
-
-     @media only screen and (max-width: $mobile) {
-	border: 0;
-		padding: 15px;
-
-
-     }
+    background-image: url(/assets/logos/logo-blue.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
 
 
 
+    @media only screen and (max-width: $tablet) {}
+    @media only screen and (max-width: $mobile) {
+        padding: 1px;
+        border-top: 2.5px solid $yellow;
+          background-position: top;
+
+         -webkit-background-size: 200%;
+  -moz-background-size: 200%;
+  -o-background-size: 200%;
+  background-size: 200%;
+    }
 }
 
 .message{
-	width:80%;
-	margin: 0 auto;
-  font-size:200%;
-
-	 @media only screen and (max-width: $mobile) {
-	font-size:200%;
-
-     }
-
-  
-
-
-  small{
-  	text-align:right;
-  	float: right;
-  	line-height: 2;
-  }
+    width: 80%;
+    margin: 0 auto;
+    font-size: 200%;
+    @media only screen and (max-width: $mobile) {
+        font-size: 200%;
+    }
+    small {
+        text-align: right;
+        float: right;
+        line-height: 2;
+    }
 }
 
 @media (max-width: 414px) {
-  .message{
-	width:90%;
-	margin: 0 auto;
+    .message {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
-}
-
-
-
-#sorry{
-	text-align:left;
+#sorry {
+    text-align: left;
     text-decoration: underline;
-      color: $white;
-
-
+    color: $yellow;
 }
-
-
-
 
 .page-full-error small {
-	font-size:80%;
-	text-align:left;
-	  color: $white;
-	      text-decoration: underline;
-
-
-
-
+    font-size: 80%;
+    text-align: left;
+    color: $yellow;
+    text-decoration: underline;
 }
 
-
-
- span#error{
-  padding: 1% 10%;
-  margin:35px;
-  border: 15px solid $yellow;
-  color: $yellow;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  background:$blue;
-  font-size:400%;
-
-
-  @media only screen and (max-width: $mobile) {
-	font-size:200%;
-
-     }
-
-
+span#error {
+	position:relative;
+    padding: 1% 10%;
+    margin: 35px;
+    border: 15px solid $yellow;
+    color: $yellow;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $blue;
+    font-size: 400%;
+    #square-1{
+    	position:absolute;
+width:30px;
+height:30px;
+background:$yellow;
+left:10px;
+top:10px;
+  animation: blinker .5s linear infinite;
+  @keyframes blinker {  
+  50% { opacity: 0; }
 }
+@media only screen and (max-width: $mobile) {
+        width:10px;
+height:10px;
+
+    }
+    }
 
 
-ul#a-h{
-			position:fixed;
-			top:10vw;
-
-
-	li{
-				position:absolute;
-
-	}
-	li:first-child{
-		top:30px;
-	}
+    @media only screen and (max-width: $mobile) {
+        font-size: 200%;
+    }
 }

@@ -13,7 +13,7 @@ footer{
 	color:$white;
 	display:inline-block;
 	float:left;
-	    border-top:2.5px solid $yellow;
+	    border-top:0px solid $yellow;
 
 
 
@@ -24,7 +24,8 @@ footer{
 	    	width: 33.33333vw;
 	    	text-align: left;
 	    	float:right;
-	    	border: 2.5px solid $yellow;
+	    	border: 1.75px solid $yellow;
+	    	border-top: 0px solid $yellow;
 	    	border-bottom: 2.5px solid $yellow;
 	    	border-top: 0;
 

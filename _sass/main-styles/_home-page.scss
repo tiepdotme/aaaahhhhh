@@ -3,27 +3,30 @@
 section#products{
 	width:100vw;
 
-float:left;
+//float:left;
   box-sizing: border-box;
    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+
 
 
 .grid {
 
 
 float:left;
- 
   box-sizing: border-box;
    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
   width:100vw;
 
 
-.grid-item {
-position:relative;
-	box-sizing: border-box;
-	 -moz-box-sizing: border-box;
+ul{
+
+  li{
+
+    position:relative;
+  box-sizing: border-box;
+   -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 
 float:left;
@@ -32,26 +35,23 @@ float:left;
 background:$blue;
 
 
-border-top:2.5px solid $yellow;
-border-left:2.5px solid $yellow;
-border-right:2.5px solid $yellow;
+border-top:0px solid $yellow;
+border-left:1.75px solid $yellow;
+border-right:1.75px solid $yellow;
 border-bottom:2.5px solid $yellow;
-display:inline-block;  background-repeat: no-repeat;
+display:inline-block;  
+background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 60%;
   -moz-background-size: 60%;
   -o-background-size: 60%;
   background-size: 60%;
+&.sold-out:hover{
 
+    background:$black;
+    display:inline-block;  background-repeat: no-repeat;
 
-  
-
-	&.sold-out:hover{
-
-		background:$black;
-		display:inline-block;  background-repeat: no-repeat;
-
-		background-position: center;
+    background-position: center;
   -webkit-background-size: 60%;
   -moz-background-size: 60%;
   -o-background-size: 60%;
@@ -60,10 +60,9 @@ display:inline-block;  background-repeat: no-repeat;
 
 
 
-	}
+  }
 
-       
-.sold-out{
+  .sold-out{
 
 
   background:$red;
@@ -111,13 +110,30 @@ h4{
     color: $white;
 
      &:hover{
-     	    font-size: 101%;
+          font-size: 101%;
 
 
      }
 
 }
 }
+
+  }
+  }
+
+
+.grid-item {
+
+
+
+
+
+  
+
+	
+
+       
+
 
 
   	 
@@ -273,12 +289,12 @@ padding:2vw ;
 
 
 
-
 }
 
 }
 
 }
+
 
 }
 

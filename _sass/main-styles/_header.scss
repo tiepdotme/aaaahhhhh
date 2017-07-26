@@ -1,5 +1,5 @@
 #modal {
-//  display: none;
+  display: none;
     position: fixed;
 font-size:35px;
     top: 0;
@@ -83,17 +83,32 @@ header{
 font-size:80%;
 
 
+
+
+
 section{
      box-sizing: border-box;
-  padding:10px 30px;
+    padding:10px 30px;
     height:60px;
 
         width: 50vw;
         text-align: left;
         float:left;
         border: 2.5px solid $yellow;
+       
+       
         border-bottom: 2.5px solid $yellow;
         border-top: 0;
+&:nth-child(1){
+  
+   border-right: 1.5px solid $yellow;
+}
+
+&:nth-child(2){
+ 
+   border-left: 1.5px solid $yellow;
+}
+
 }
 
 

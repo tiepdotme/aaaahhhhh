@@ -1,0 +1,125 @@
+
+
+.page-full-error{
+ 	float:left;
+	width: 100vw;
+	border: 1vw solid $blue;
+	
+	
+	padding: 35px;
+    	
+color:$white;
+	
+	background-color:$blue;
+	
+	box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position:relative;
+
+     @media only screen and (max-width: $tablet) {
+
+     }
+
+
+     @media only screen and (max-width: $mobile) {
+	border: 0;
+		padding: 15px;
+
+
+     }
+
+
+
+}
+
+.message{
+	width:80%;
+	margin: 0 auto;
+  font-size:200%;
+
+	 @media only screen and (max-width: $mobile) {
+	font-size:200%;
+
+     }
+
+  
+
+
+  small{
+  	text-align:right;
+  	float: right;
+  	line-height: 2;
+  }
+}
+
+@media (max-width: 414px) {
+  .message{
+	width:90%;
+	margin: 0 auto;
+}
+
+}
+
+
+
+#sorry{
+	text-align:left;
+    text-decoration: underline;
+      color: $white;
+
+
+}
+
+
+
+
+.page-full-error small {
+	font-size:80%;
+	text-align:left;
+	  color: $white;
+	      text-decoration: underline;
+
+
+
+
+}
+
+
+
+ span#error{
+  padding: 1% 10%;
+  margin:35px;
+  border: 15px solid $yellow;
+  color: $yellow;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background:$blue;
+  font-size:400%;
+
+
+  @media only screen and (max-width: $mobile) {
+	font-size:200%;
+
+     }
+
+
+}
+
+
+ul#a-h{
+			position:fixed;
+			top:10vw;
+
+
+	li{
+				position:absolute;
+
+	}
+	li:first-child{
+		top:30px;
+	}
+}

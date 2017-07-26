@@ -64,7 +64,61 @@ margin-top:5px;
 
 	}
 
+.sold-out{
 
+
+  background:$red;
+  position:absolute;
+  top:50px;
+  left:25px;
+  height:8vw;
+  width: 8vw;
+border-radius:100px;
+z-index:1;
+//box-shadow:$shadow;
+opacity:.9;
+-ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg);
+    text-align: center;
+vertical-align: middle;
+line-height: 8vw;
+
+
+@media only screen and (max-width: $tablet) {
+      height:12vw;
+  width: 12vw;
+   line-height: 12vw;
+
+
+
+    }
+
+
+    @media only screen and (max-width: $mobile) {
+      height:20vw;
+  width: 20vw;
+   line-height: 20vw;
+     top:10px;
+     left:10px;
+
+
+
+    }
+
+
+
+h4{
+    color: $white;
+
+     &:hover{
+     	    font-size: 101%;
+
+
+     }
+
+}
+}
 
 
 
@@ -76,7 +130,7 @@ margin-top:5px;
    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 
- 	width: 47vw;
+ 	width: 46.8vw;
 	padding:5px 0px 0 25px ;
 	float:right;
 
@@ -150,7 +204,7 @@ margin-top:5px;
 
  .description{
 
- 	width: 47vw;
+ 	width: 46.8vw;
 	padding:15px 0px 35px 25px ;
 	float:right;
 	

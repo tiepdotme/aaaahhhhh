@@ -44,6 +44,23 @@ display:inline-block;  background-repeat: no-repeat;
   background-size: 60%;
 
 
+  
+
+	&.sold-out:hover{
+
+		background:$black;
+		display:inline-block;  background-repeat: no-repeat;
+
+		background-position: center;
+  -webkit-background-size: 60%;
+  -moz-background-size: 60%;
+  -o-background-size: 60%;
+  background-size: 60%;
+  cursor: not-allowed;
+
+
+
+	}
 
        
 .sold-out{
@@ -65,6 +82,28 @@ opacity:.9;
     text-align: center;
 vertical-align: middle;
 line-height: 8vw;
+
+
+@media only screen and (max-width: $tablet) {
+      height:12vw;
+  width: 12vw;
+   line-height: 12vw;
+
+
+
+    }
+
+
+    @media only screen and (max-width: $mobile) {
+      height:20vw;
+  width: 20vw;
+   line-height: 20vw;
+     top:10px;
+     left:10px;
+
+
+
+    }
 
 
 

@@ -1,5 +1,5 @@
 #modal {
-  //display: none;
+  display: none;
     position: fixed;
 font-size:35px;
     top: 0;
@@ -144,7 +144,7 @@ font-size:70%;
   border-bottom:1px solid $white;
 @media only screen and (max-width: $tablet) {
       
-width:60vw;
+width:100%;
 
 
 

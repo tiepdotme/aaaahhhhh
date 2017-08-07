@@ -1,7 +1,45 @@
 
+
+#thumbnail-gallery {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width:  auto;
+     float: left;
+     padding:15px 0;
+
+    ul {
+        li {
+           // position: relative;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            display: inline-block;
+            width: 24%;
+            height: 24%;
+            background: $grey;
+            //padding:5px 5px 5px 5px;
+
+           
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
 section#products{
 
 	background-color:$yellow;
+	width:100vw;
+	box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 
 
  #product-page {

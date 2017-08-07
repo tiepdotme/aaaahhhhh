@@ -3,7 +3,7 @@ footer *{
 	box-sizing: border-box;
 	 -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    padding:1px 0;
+    padding:5px 0;
 }
 
 footer{
@@ -24,10 +24,7 @@ footer{
 	    	width: 33.33333vw;
 	    	text-align: left;
 	    	float:right;
-	    	border: 1.75px solid $yellow;
-	    	border-top: 0px solid $yellow;
-	    	border-bottom: 2.5px solid $yellow;
-	    	border-top: 0;
+	    	
 
 
 	    	@media only screen and (max-width: $mobile) {

@@ -10,6 +10,22 @@ binding_condition: near fine
 dust_jacket_condition: near fine
 featured_image: Design-Form-and-Chaos
 thumbnail_images:
+  - image_path: front
+    title: Front Cover
+  - image_path: interior_1
+    title: Inside
+  - image_path: interior_2
+    title: Inside
+  - image_path: interior_1
+    title: Inside
+  - image_path: interior_2
+    title: Inside
+  - image_path: interior_1
+    title: Inside
+  - image_path: interior_2
+    title: Inside
+  - image_path: back
+    title: Back Cover
 
 ISBN: 978-0300055535
 price: 150

@@ -1,4 +1,6 @@
-<section id="products">
+
+
+  <section id="products">
 
 	<div id="product-page">
 
@@ -61,8 +63,45 @@
 
 				
 			</ul>
-	</div>
+
+		
+{% if page.thumbnail_images %}
+
+
+
+				<div id="thumbnail-gallery">	
+				<p>Detail Images</p>
+
+<ul>	
+ 		
+  {% for thumbnail_image in page.thumbnail_images %}
+
+
+                                  
+  <li>
+
+<a data-fancybox="gallery"
+ href="/assets/thumbnails/{{page.slug}}/{{ thumbnail_image.image_path }}.jpg" alt="{{ thumbnail_image.title }} of {{page.title}}">
+<img src="/assets/thumbnails/{{page.slug}}/{{ thumbnail_image.image_path }}.jpg" alt="{{ thumbnail_image.title }} of {{page.title}}">
+</a>
+</li>
+
+
+
+  {% endfor %}
+  </ul>
+
+  </div>  <!-- end thumbnail-gallery -->
+				{% endif %}
+
+
+
+	</div>  <!-- end aside -->
+
 
 </section>
+
+
+
 
 

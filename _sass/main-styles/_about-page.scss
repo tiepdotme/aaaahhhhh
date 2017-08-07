@@ -1,18 +1,34 @@
-#about{
+
+
+ .page-about-info {
+    float: left;
+    width: 100vw;
+    border: 1vw solid $blue;
+    border-left: 2.5px solid $yellow;
+    border-right: 2.5px solid $yellow;
+    border-bottom: 2.5px solid $yellow;
+    border-top: 0px solid $yellow;
+    padding: 35px;
+    color: $yellow;
+    background-color: $blue;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+
+
+
+  }
+
+
+
+  #about{
 	float:left;
-	width: 100vw;
-	border-right: 2.5px solid $yellow;
-	border-left: 2.5px solid $yellow;
-	padding: 35px 0 ;
-	
-	background-color:$grey;
-	
 	box-sizing: border-box;
    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     position:relative;
 
-    	@include linear-gradient-home;
 
 
     @media only screen and (max-width: $mobile) {
@@ -25,59 +41,9 @@
 }
 
 
-    .logo-container{
-
-    	box-sizing: border-box;
-   -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-
-text-align:center;
-			float:left;
-			width: 24vw;
-			padding:10px 0 0 25px;
-
-
-			@media only screen and (max-width: $tablet) {
-
-			width: 20vw;
-			float:left;
-
-}
-
-@media only screen and (max-width: $mobile) {
-
-			width: 100vw;
-			float:left;
-			padding: 0;
-
-}
-
-.featured_image{
-
-
-	
-	box-sizing: border-box;
-   -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-				
-
-	@media only screen and (max-width: $mobile) {
-
-			display: none;
-
-}
-	
-
-}
-
-}
-
+  
 #about-content{
 
-padding-top:5px;
-margin-right:25px;
-	width: 72vw;
-		float:right;
 
 
 			@media only screen and (max-width: $tablet) {
@@ -100,5 +66,29 @@ margin-bottom:35px;
 
 
     }
+
+}
+
+
+ #about-content h3{
+ 	box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+   
+    padding: 10px;
+    margin: 5px;
+    width: 50vw;
+   // border: 1px solid $yellow;
+    color: $yellow;
+    box-shadow: -10px 10px 0px $yellow;
+ 
+    
+    background: $blue;
+    font-size: 200%;
+@media only screen and (max-width: $tablet) {
+	    font-size: 100%;
+
+
+}
 
 }

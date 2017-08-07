@@ -10,7 +10,22 @@ binding_condition: near fine
 dust_jacket_condition: very good
 featured_image: German-Architecture-1960–1970
 thumbnail_images:
-
+  - image_path: front
+    title: Front Cover
+  - image_path: interior_1
+    title: Inside
+  - image_path: interior_2
+    title: Inside
+  - image_path: interior_1
+    title: Inside
+  - image_path: interior_2
+    title: Inside
+  - image_path: interior_1
+    title: Inside
+  - image_path: interior_2
+    title: Inside
+  - image_path: back
+    title: Back Cover
 
 ISBN:
 price: 25

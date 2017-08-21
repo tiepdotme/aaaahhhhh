@@ -16,8 +16,8 @@ price: 25
 weight: 250
 quantity: 3
 slug: Nigel-Peake-There
-category: design new
-tags: Nigel Peake illustration
+category: design
+tags: [Nigel Peake, illustration]
 published: true
 
 ---

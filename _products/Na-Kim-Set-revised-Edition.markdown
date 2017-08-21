@@ -16,8 +16,8 @@ price: 38
 weight: 500
 quantity: 3
 slug: Na-Kim-Set
-category: design new
-tags: Na Kim Set design art
+category: design
+tags: [Na Kim, Set design, art]
 published: true
 
 ---

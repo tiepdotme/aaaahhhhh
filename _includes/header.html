@@ -1,49 +1,24 @@
 <div id="header-wrapper">
-<header>
-
-<section>
-<ul>
-		<li><a href="/"><h1>FOUR A'<sup><sub>S</sub></sup> FIVE H'<sup><sub>S</sub></sup></h1>
+    <header>
+        <section>
+            <ul>
+                <li><a href="/"><h1>FOUR A'<sup><sub>S</sub></sup> FIVE H'<sup><sub>S</sub></sup></h1>
 					<h6>{{site.subtitle}}</h6>
 				</a></li>
-
-
-
-			{% if page.layout == 'home' %}
-		
-				
-
-			{% endif %}
-
-
-
-
-</ul>
-
-
-	{% include navigation.html %}
-
-</section>
-
-<section>
-				{% include snip-cart-cart.html %}
-
-
-</section>
-
-
-
-</header>
-
-
+                {% if page.layout == 'home' %} {% endif %}
+            </ul>
+            {% include navigation.html %}
+        </section>
+        <section>
+            {% include snip-cart-cart.html %}
+        </section>
+    </header>
 </div>
 <div id="modal">
     <div class="modalconent">
-
         <h4>THIS SHOP IS IN DEVELOPMENT</h4>
         <h2>ORDERS WILL NOT BE PROCESSED</h2>
         <h4>INQUIRIES TO HELLO@DISCOFORM.COM</h4>
     </div>
 </div>
-
 <main>

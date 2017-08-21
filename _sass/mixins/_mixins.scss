@@ -12,5 +12,15 @@
 }
 
 
+@mixin background-product-image{
 
+	     background:$blue;
+        background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 60%;
+  -moz-background-size: 60%;
+  -o-background-size: 60%;
+  background-size: 60%;
+
+}
 

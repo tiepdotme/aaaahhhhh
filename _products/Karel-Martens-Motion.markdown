@@ -17,7 +17,7 @@ weight: 250
 quantity: 3
 slug: Karel-Martens-Motion
 category: design
-tags: Karel Martens new
+tags: [Karel Martens]
 published: true
 
 ---

@@ -16,8 +16,8 @@ price: 36
 weight: 500
 quantity: 1
 slug: Studio-Fm-Milano-Bodies
-category: design new
-tags: Studio Fm
+category: design
+tags: [Studio Fm]
 published: true
 ---
 

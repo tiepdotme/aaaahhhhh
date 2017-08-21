@@ -16,8 +16,8 @@ price: 500
 weight: 1500
 quantity: 1
 slug: Idea-Vs-The-Designers-Republic-Special-Feature
-category: design
-tags: tDR The Designers Republic
+category: design typograhy
+tags: [tDR, The Designers Republic]
 published: true
 
 ---

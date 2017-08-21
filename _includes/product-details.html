@@ -1,107 +1,49 @@
+<section id="product">
+
+    <div id="product-page-main">
+         <div class="button-container">
+ <img class="featured_image" src="/assets/product-images/{{page.featured_image}}.jpg" alt="image of {{page.title}}"> {% include snip-cart-button.html %}
+        </div> <!-- end button container -->
+      <div id="product-details">   
+        <h2 class="title">{{page.title}}</h2>
+            <h3 class="author">{{page.author}}</h3>
+            <h5 class="publisher">{{page.publisher}} ({{page.publicationDate}})</h5> {% if page.ISBN %}
+            <h5 class="isbn">ISBN: {{page.ISBN}}</h5> {% endif %} 
+                        <div class="description">
+  {{content}}
+
+       {% include social-share.html %}
+        </div>  <!--  end description -->
+          </div>  <!-- end product details -->
 
 
-  <section id="products">
-
-	<div id="product-page">
-
-		<div class="button-container">
-
-		<img class="featured_image" src="/assets/product-images/{{page.featured_image}}.jpg" alt="image of {{page.title}}">
+    </div> <!--  end product-page -->
 
 
-		{% include snip-cart-button.html %}
+    <div id="product-page-aside">
+        <h2>Condition Notes:</h2>
+        <ul class="condition">
+            <li>
+                <h4>{{page.condition}} {{page.binding}} : <span>{{page.binding_condition}}</span></h4></li>
+            {% if page.dust_jacket_condition %}
+            <li>
+                <h4>dust jacket condition: <span>{{page.dust_jacket_condition}}</span> </h4></li>
+            {% endif %}
+        </ul>
+    </div>  <!-- end aside -->
 
-
-		</div>   <!-- end button container -->
-
-
-		<div id="product-details">
-
-
-
-
-			<h2 class="title">{{page.title}}</h2>
-
-			<h3 class="author">{{page.author}}</h3>
-
-			<h5 class="publisher">{{page.publisher}} ({{page.publicationDate}})</h5>
-
-			{% if page.ISBN %}
-			<h5 class="isbn">ISBN: {{page.ISBN}}</h5>
-			{% endif %}
-
-			{% include social-share.html %}
-			
-		</div>  <!-- end product details -->
-
-	<div class="description">
-
-	{{content}}
-
-
-
-
-
-
-
-
-	</div>  <!--  end description -->
-
-
-	</div> <!--  end product-page -->
-
-	<div id="product-page-aside">
-		
-			<h2>Condition Notes:</h2>
-
-			<ul class="condition">
-				<li><h5>{{page.condition}} {{page.binding}} : {{page.binding_condition}}</h5></li>
-			
-				{% if page.dust_jacket_condition %}
-				<li><h5>dust jacket condition: {{page.dust_jacket_condition}} </h5></li>
-				{% endif %}
-
-				
-			</ul>
-
-		
-{% if page.thumbnail_images %}
-
-
-
-				<div id="thumbnail-gallery">	
-				<p>Detail Images</p>
-
-<ul>	
- 		
-  {% for thumbnail_image in page.thumbnail_images %}
-
-
-                                  
-  <li>
-
-<a data-fancybox="gallery"
- href="/assets/thumbnails/{{page.slug}}/{{ thumbnail_image.image_path }}.jpg" alt="{{ thumbnail_image.title }} of {{page.title}}" data-caption="{{ thumbnail_image.title }} of {{page.title}} from {{site.title}}">
-<img src="/assets/thumbnails/{{page.slug}}/{{ thumbnail_image.image_path }}.jpg" alt="{{ thumbnail_image.title }} of {{page.title}}">
-</a>
-</li>
-
-
-
-  {% endfor %}
-  </ul>
-
-  </div>  <!-- end thumbnail-gallery -->
-				{% endif %}
-
-
-
-	</div>  <!-- end aside -->
-
-
+          {% if page.thumbnail_images %}
+        <div id="thumbnail-gallery">
+            <h5>Detail Images:</h5>
+            <ul>
+                {% for thumbnail_image in page.thumbnail_images %}
+                <li>
+                    <a data-fancybox="gallery" href="/assets/thumbnails/{{page.slug}}/{{ thumbnail_image.image_path }}.jpg" data-caption="{{ thumbnail_image.title }} of {{page.title}} from {{site.title}}">
+                        <img src="/assets/thumbnails/{{page.slug}}/{{ thumbnail_image.image_path }}.jpg" alt="{{ thumbnail_image.title }} of {{page.title}}">
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div> <!-- end thumbnail-gallery -->
+        {% endif %}
 </section>
-
-
-
-
-

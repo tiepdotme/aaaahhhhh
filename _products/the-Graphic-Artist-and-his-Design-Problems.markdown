@@ -17,7 +17,7 @@ weight: 500
 quantity: 1
 slug: the-Graphic-Artist-and-His-Design-Problems
 category: design
-tags: Josef Müller-Brockmann 
+tags: [Josef Müller-Brockmann] 
 published: true
 ---
 

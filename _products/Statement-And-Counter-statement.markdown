@@ -16,8 +16,8 @@ price: 40
 weight: 500
 quantity: 3
 slug: Statement-And-Counter-statement
-category: design new
-tags: Experimental Jetset
+category: design typography
+tags: [Experimental Jetset]
 published: true
 ---
 

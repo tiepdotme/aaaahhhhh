@@ -17,7 +17,7 @@ weight: 250
 quantity: 0
 slug: Karel-Martens-Prints
 category: design
-tags: Karel Martens
+tags: [Karel Martens]
 published: true
 
 ---

@@ -17,7 +17,7 @@ weight: 250
 quantity: 1
 slug: Octavo-86-2
 category: typography
-tags: 8v0 Octavo
+tags: [8v0, Octavo, typography]
 published: true
 
 ---

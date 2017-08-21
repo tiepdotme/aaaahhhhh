@@ -1,9 +1,10 @@
 <section id="products">
-	<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 1 }'>
-	  {% for product in site.products %}
-	<ul>
-	  	<li  class="grid-item element-item {{ product.category }}"  style="background-image:  url(../assets/product-images/{{ product.featured_image}}.jpg);">
-			<a  href="{{ product.url }}">	
+
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 1 }'>
+        {% for product in site.products %}
+        <ul>
+            <li class="grid-item element-item {{ product.category }}" style="background-image:  url(../assets/product-images/{{ product.featured_image}}.jpg);">
+                <a href="{{ product.url }}">	
 				
 				{% if product.quantity < 1 %}<div class="sold-out"><h4>sold</h4></div>{% else %}
 							<div class="grid-item-text">
@@ -13,8 +14,9 @@
 							</div>{% endif %}
 				
 			</a>
-		</li>
-	</ul>
-		 {% endfor %}
-</div>  <!-- end grid -->
+            </li>
+        </ul>
+        {% endfor %}
+    </div>
+    <!-- end grid -->
 </section>

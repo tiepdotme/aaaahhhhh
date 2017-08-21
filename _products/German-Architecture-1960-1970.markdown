@@ -33,7 +33,7 @@ weight: 500
 quantity: 1
 slug: German-Architecture-1960–1970
 category: architecture
-tags: Architecture
+tags: [Architecture]
 published: true
 ---
 

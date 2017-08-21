@@ -1,55 +1,34 @@
-
 </main>
+<footer>
+    <section>
+        {% include social-media.html %} 3
+        <a href="http://www.discoform.com">
+            <h6>built &amp; maintained by discoform {{ 'now' | date: "%Y" }}</h6>
+            <h6>Minneapolis Minnesota USA</h6>
+        </a>
+    </section>
+    <section>
+        {% include social-media.html %} 2
+        <a href="http://www.discoform.com">
+            <h6>built &amp; maintained by discoform {{ 'now' | date: "%Y" }}</h6>
+            <h6>Minneapolis Minnesota USA</h6>
+        </a>
+    </section>
+    <section>
+        {% include social-media.html %} 1
+        <a href="http://www.discoform.com">
+            <h6>built &amp; maintained by discoform {{ 'now' | date: "%Y" }}</h6>
+            <h6>Minneapolis Minnesota USA</h6>
+        </a>
+    </section>
+</footer>
 
-      <footer>
-
-     <section>
-
-      {% include social-media.html %}
-3
-              <a href="http://www.discoform.com">     
-                     <h6>built &amp; maintained by discoform {{ 'now' | date: "%Y" }}</h6>
-                     <h6>Minneapolis Minnesota USA</h6>          
-              </a>  
-
-       </section>
-
-
-     <section>
-     
-      {% include social-media.html %}
-2
-              <a href="http://www.discoform.com">     
-                     <h6>built &amp; maintained by discoform {{ 'now' | date: "%Y" }}</h6>
-                     <h6>Minneapolis Minnesota USA</h6>          
-              </a>  
-
-       </section>
-
-
-     <section>
-     
-      {% include social-media.html %}
-1
-              <a href="http://www.discoform.com">     
-                     <h6>built &amp; maintained by discoform {{ 'now' | date: "%Y" }}</h6>
-                     <h6>Minneapolis Minnesota USA</h6>          
-              </a>  
-
-       </section>
-
-      </footer>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-98058167-1', 'auto');
-  ga('send', 'pageview');
-</script>
+<!-- fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+{% include fonts-footer.html %}
+<!-- JAVASCRIPT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 {% include javascript.html %}
-
 <!-- 
 <script>
   window.onload = function () {
@@ -58,3 +37,18 @@
     };
 };
 </script> -->
+<script>
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-98058167-1', 'auto');
+ga('send', 'pageview');
+</script>

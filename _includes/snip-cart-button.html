@@ -1,24 +1,9 @@
-
-
-{% if page.quantity < 1 %}
-
-<div class="sold-out"><h4>sold</h4></div>
-
-
-			{% else %}
-
-<button class="snipcart-add-item button"
-    data-item-name="{{ page.title }}"
-    data-item-id="{{ page.slug }}"
-    data-item-image="{{ site.url }}/assets/product-images/{{page.featured_image}}.jpg"
-    data-item-url="{{ site.url }}{{ page.url }}"
-    data-item-price="{{ page.price }}"
-    data-item-weight="{{ page.weight }}"
-    data-item-max-quantity="{{ page.quantity }}">
-    <p class="type">ADD TO CART<br>${{ page.price }}</p>
-  </button>
-
-
-
-
-  	  {% endif %}
+ {% if page.quantity
+< 1 %} <div class="sold-out">
+    <h4>sold</h4></div>
+    {% else %}
+    <button class="snipcart-add-item button" data-item-name="{{ page.title }}" data-item-id="{{ page.slug }}" data-item-image="{{ site.url }}/assets/product-images/{{page.featured_image}}.jpg" data-item-url="{{ site.url }}{{ page.url }}" data-item-price="{{ page.price }}" data-item-weight="{{ page.weight }}" data-item-max-quantity="{{ page.quantity }}">
+        <p class="type">ADD TO CART
+            <br>${{ page.price }}</p>
+    </button>
+    {% endif %}

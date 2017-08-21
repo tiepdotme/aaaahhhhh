@@ -16,8 +16,8 @@ price: 30
 weight: 500
 quantity: 0
 slug: Images-And-Words-From-they-Live-By-John-Carpenter
-category: design new
-tags: John Carpenter design film Everyedition Fold Piero Glina
+category: design
+tags: [John Carpenter, film, Everyedition, Fold Piero Glina]
 published: true
 
 ---

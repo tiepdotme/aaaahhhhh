@@ -16,8 +16,8 @@ price: 31
 weight: 250
 quantity: 3
 slug: I-Am-A-Lone-Monk-Walking
-category: design new
-tags: Shuyu Chen art puppetry
+category: design
+tags: [Shuyu Chen, art, puppetry]
 published: true
 
 ---

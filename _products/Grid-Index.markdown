@@ -17,8 +17,7 @@ weight: 500
 quantity: 1
 slug: Carsten-Nicolai-Grid-Index
 category: design
-tags: Grid Carsten Nicolai
-
+tags: [Grid, Carsten Nicolai]
 published: true
 
 ---

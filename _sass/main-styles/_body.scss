@@ -1,39 +1,37 @@
-*, *:before, *:after {
-	margin: 0;
-	padding: 0;
-
-	-webkit-box-sizing: border-box !important;
-	-moz-box-sizing: border-box !important;
-	-ms-box-sizing: border-box !important;
-	box-sizing: border-box !important;
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    box-sizing: border-box !important;
 }
 
-
-
-
-html, body{
-
-	
-	margin:0;
-	padding:0;
-
-	cursor:default;
-	background:$blue;
-	overflow-x:hidden;
-
-
-
-
+html,
+body {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    background: $black;
+    overflow-x: hidden;
+    height: 100%;
+    html * {
+        -webkit-box-sizing: border-box !important;
+        -moz-box-sizing: border-box !important;
+        -ms-box-sizing: border-box !important;
+        box-sizing: border-box !important;
+    }
 }
-
 
 body * {
-
-		  -webkit-transition:  .1s ease;
-    transition:  .1s ease;
-
-
+    -webkit-transition: .1s ease;
+    transition: .1s ease;
+    a img {
+        &:hover {
+            opacity: .7;
+             
+        }
+    }
 }
-
-
-

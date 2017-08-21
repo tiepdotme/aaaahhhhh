@@ -17,7 +17,7 @@ weight: 500
 quantity: 1
 slug: Typographie-a-Manual-of-Design
 category: typography
-tags: Emil Ruder
+tags: [Emil Ruder]
 published: true
 ---
 

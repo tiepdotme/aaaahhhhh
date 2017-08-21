@@ -1,0 +1,76 @@
+
+<section id="products" class="related-products">
+ <h1>You May Also Enjoy</h1> 
+
+     <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 1 }'>
+
+    <ul>
+
+{% assign maxRelated = 5 %}
+{% assign minCommonTags =  2 %}
+{% assign maxRelatedCounter = 0 %}
+
+
+
+     {% for product in site.products %}
+
+    {% assign sameTagCount = 0 %}
+    {% assign commonTags = '' %}
+
+    {% for tag in product.tags %}
+      {% if product.url != page.url %}
+      {% if product.quantity > 0 %}
+        {% if product.tags contains tag %}
+          {% assign sameTagCount = sameTagCount | plus: 1 %}
+          {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+          {% assign commonTags = commonTags | append: tagmarkup %}
+        {% endif %}
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if sameTagCount >= minCommonTags %}
+
+
+    <li class="grid-item element-item {{ product.category }}" style="background-image:  url(../../assets/product-images/{{ product.featured_image}}.jpg);">
+          <a href="{{ product.url }}">  
+        
+        
+              <div >
+                <h2>{{ product.title }}</h2>
+                <h3>{{ product.author }}</h3>
+             
+              </div>
+        
+      </a>
+            </li>
+
+
+      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+      {% if maxRelatedCounter >= maxRelated %}
+        {% break %}
+      {% endif %}
+
+    {% endif %}
+
+  {% endfor %}
+
+      </ul>
+      </div> <!--  end .grid -->
+</section>
+
+<!-- <div class="post-categories">
+  {% if post %}
+    {% assign tags = post.tags %}
+  {% else %}
+    {% assign tags = page.tags %}
+  {% endif %}
+  {% for tag in tags %}
+
+  <a href="{{site.baseurl}}/product/{{page.slug}}"><img src="/assets/product-images/{{page.featured_image}}.jpg" alt=""> </a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+</div> -->
+
+
+

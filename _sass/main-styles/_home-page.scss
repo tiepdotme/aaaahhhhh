@@ -1,28 +1,70 @@
-    #page-header, #page-footer{
-                padding:$base-padding ;
+    section#featured-content{
 
-         
-          float: left;
-         h5, a{        
-
-         
-           
-                      color: $white;
-                      font-size: 90%;
-                      font-weight: 100;
-                      text-transform: lowercase;
-                  
-                   
-                   
+        min-height:30vw;
+       position:relative;
+          padding: $base-padding $base-padding;
+         background-image: url(/assets/images/test.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+        
 
 
 
-         }
+    }
 
-          a{
 
-          }
+div#heros{
 
+    position:absolute;
+    top:30;
+    width: auto;
+    h1#hero{
+      color:$white;
+   width: 100%;
+            text-align:left;
+border-bottom:2px solid $white;
+font-weight:700;
+  
+}
+
+h2#hero-small{
+      color:$white;
+      font-weight:100;
+
+ width: 100%;
+            text-align:right;
+margin-top:.5vw;
+
+
+}
+}
+
+
+
+    #page-header,
+    #page-footer {
+
+        padding: $base-padding/4 $base-padding;
+        background: $white;
+
+
+        float: left;
+        h5,
+        a {
+
+
+
+            //color: $white;
+            font-size: 90%;
+            font-weight: 100;
+            text-transform: lowercase;
+        }
+
+        a {}
     }
 
 
@@ -30,159 +72,158 @@
 
 
     section#products {
-    width: 100vw;
-
-  
-    .grid {
-        float: left;
         width: 100vw;
-        
-
-        ul { 
-            li {
-                position: relative;
-              float: left;
-                width: 20vw;
-                height: 20vw;
-                background: $blue;
-                border-top: 1px solid $black;
-                border-left: 1px solid $black;
-                border-right: 1px solid $black;
-                border-bottom: 1px solid $black;
-                display:inline-block;
-    
 
 
+        .grid {
+            float: left;
+            width: 100vw;
 
-                @include background-product-image;
-                &.sold-out:hover {
-                    background: $black;
+
+            ul {
+                li {
+                    position: relative;
+                    float: left;
+                    width: 20vw;
+                    height: 20vw;
+                    background: $white;
+                    border-top: 1px solid $grey;
+                    border-left: 1px solid $grey;
+                    border-right: 1px solid $grey;
+                    border-bottom: 1px solid $grey;
                     display: inline-block;
-                    background-repeat: no-repeat;
+
+
+
+
                     @include background-product-image;
-                    cursor: not-allowed;
-                }
-                .sold-out {
-                    background: $red;
-                    position: absolute;
-                    top: 50px;
-                    left: 30px;
-                    height: 8vw;
-                    width: 8vw;
-                    border-radius: 100px;
-                    z-index: 1;
-                     opacity: .9;
-                    -ms-transform: rotate(-30deg);
-                    /* IE 9 */
-                    -webkit-transform: rotate(-30deg);
-                    /* Chrome, Safari, Opera */
-                    transform: rotate(-30deg);
-                    text-align: center;
-                    vertical-align: middle;
-                    line-height: 8vw;
-                    @media only screen and (max-width: $tablet) {
-                        height: 12vw;
-                        width: 12vw;
-                        line-height: 12vw;
+                    &.sold-out:hover {
+                        background: $black;
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        @include background-product-image;
+                        cursor: not-allowed;
                     }
-                    @media only screen and (max-width: $mobile) {
-                        height: 20vw;
-                        width: 20vw;
-                        line-height: 20vw;
-                        top: 10px;
-                        left: 10px;
-                    }
-                    h4 {
-                        color: $white;
-                        &:hover {
-                            font-size: 101%;
+                    .sold-out {
+                        background: $red;
+                        position: absolute;
+                        top: 50px;
+                        left: 30px;
+                        height: 8vw;
+                        width: 8vw;
+                        border-radius: 100px;
+                        z-index: 1;
+                        opacity: .9;
+                        -ms-transform: rotate(-30deg);
+                        /* IE 9 */
+                        -webkit-transform: rotate(-30deg);
+                        /* Chrome, Safari, Opera */
+                        transform: rotate(-30deg);
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 8vw;
+                        @media only screen and (max-width: $tablet) {
+                            height: 12vw;
+                            width: 12vw;
+                            line-height: 12vw;
+                        }
+                        @media only screen and (max-width: $mobile) {
+                            height: 20vw;
+                            width: 20vw;
+                            line-height: 20vw;
+                            top: 10px;
+                            left: 10px;
+                        }
+                        h4 {
+                            color: $white;
+                            &:hover {
+                                font-size: 101%;
+                            }
                         }
                     }
                 }
             }
-        }
-        .grid-item {
-            @media only screen and (max-width: $tablet) {
-               width: 33.33333vw;
-                height: 33.33333vw;
-
-
-
-            }
-            @media only screen and (max-width: $mobile) {
-                width: 50vw;
-                height: 50vw;
-            }
-            .grid-item-text {
-                font-size: 130%;
-                opacity: 0;
-                font-style: italic;
-                padding: 2vw;
-                width: 20vw;
-                height: 20vw;
-                filter: drop-shadow($box-shadow);
-                background: $white;
-                color: $white;
+            .grid-item {
                 @media only screen and (max-width: $tablet) {
                     width: 33.33333vw;
                     height: 33.33333vw;
-                    font-size: 150%;
                 }
                 @media only screen and (max-width: $mobile) {
                     width: 50vw;
                     height: 50vw;
-                    padding: 2vw 3vw 2vw 2vw;
-                    font-size: 100%;
                 }
-                h4 {
-                    font-weight: 700;
+                .grid-item-text {
+                    font-size: 130%;
+                    opacity: 0;
+                    font-style: italic;
+                    padding: 2vw;
+                    width: 20vw;
+                    height: 20vw;
+                    filter: drop-shadow($box-shadow);
+                    background: $white;
+                    color: $white;
+                    @media only screen and (max-width: $tablet) {
+                        width: 33.33333vw;
+                        height: 33.33333vw;
+                        font-size: 150%;
+                    }
+                    @media only screen and (max-width: $mobile) {
+                        width: 50vw;
+                        height: 50vw;
+                        padding: 2vw 3vw 2vw 2vw;
+                        font-size: 100%;
+                    }
+                    h4 {
+                        font-weight: 700;
+                        background: $black;
+                        padding: .5em;
+                        color: $white;
+                    }
+                }
+                h5 {
+                    font-size: 70%;
+                    margin-top: .5em;
+                    background: $black;
+                    padding: .5em;
+                    color: $white;
+                }
+                h6 {
+                    font-weight: 300;
+                    margin-top: .5em;
                     background: $black;
                     padding: .5em;
                     color: $white;
                 }
             }
-            h5 {
-                font-size: 70%;
-                margin-top: .5em;
-                background: $black;
-                padding: .5em;
-                color: $white;
-            }
-            h6 {
-                font-weight: 300;
-                margin-top: .5em;
-                background: $black;
-                padding: .5em;
-                color: $white;
-            }
         }
     }
-}
 
-///////////////////////////////////////////////////    
-// hover states 
-//////////////////////////////////////////////////  
-#products {
-    .grid {
-        .grid-item:hover {
-            @include background-product-image;
-            -webkit-filter: saturate(1);
-            /* Safari 6.0 - 9.0 */
-            filter: saturate(1);
-            @media only screen and (max-width: $mobile) {
+    ///////////////////////////////////////////////////    
+    // hover states 
+    //////////////////////////////////////////////////  
+    #products {
+        .grid {
+            .grid-item:hover {
                 @include background-product-image;
-            }
-            .grid-item-text:hover {
-                opacity: 1;
-                @include linear-gradient-home;
-                -webkit-transition: .1s ease;
-                transition: .1s ease;
+                -webkit-filter: saturate(1);
+                /* Safari 6.0 - 9.0 */
+                filter: saturate(1);
+                @media only screen and (max-width: $mobile) {
+                    @include background-product-image;
+                }
+                .grid-item-text:hover {
+                    opacity: 1;
+                    @include linear-gradient-home;
+                    -webkit-transition: .1s ease;
+                    transition: .1s ease;
+                }
             }
         }
     }
-}
 
 
 
 
-.animation{opacity:0;}
+    .animation {
+        opacity: 0;
+    }

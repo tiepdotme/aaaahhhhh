@@ -13,15 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Four A's Five H's
+title: FOUR A<sup><sub>'S</sub></sup> FIVE H<sup><sub>'S</sub></sup>
 subtitle: books on design, new &amp; used
 email: hello@aaaahhhhh.com
 description: > # this means to ignore newlines until "baseurl:"
   Four A's Five H's is an online shop for books and periodicals on graphic design and architecture
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aaaahhhhh.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: discoform
-instagram_username:  discoform
+twitter_username: FourAsFiveHs
+instagram_username:  FourAsFiveHs
 author: Matthew howe
 Snipcart_API: MGU4ZGQ1YjItZWU3Ni00OTkwLWE0NzMtMmZhYWVjZjIxODc5NjM2MjgzOTM4OTY3MjkwNjE3
 # Build settings

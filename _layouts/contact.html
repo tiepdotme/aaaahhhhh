@@ -21,7 +21,7 @@ frmvalidator.addValidation("email","email",
 <br>
 
 <form method="post" name="contact_form"
-action="https://formspree.io/hello@discoform.com">
+action="https://formspree.io/{{ site.email }}">
 <input type="hidden" name="_format" value="plain" />
 <ul>
 <li >
@@ -44,4 +44,3 @@ action="https://formspree.io/hello@discoform.com">
 </div>  <!-- end #contact -->
 
 {% include footer.html %}
-{% include page-footer.html %}

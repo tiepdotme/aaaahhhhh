@@ -1,0 +1,21 @@
+ {% include product-page-header.html %}
+<div class="product">
+<div class="image-and-button">
+    <img src="{{ site.url }}/assets/images/product-thumbnails/{{page.featured_image}}" alt="Product Image"> 
+</div>
+
+<div class="title-and-description">
+    <h2>{{ page.author }}</h2>
+    <h1>{{ page.title }} {% if page.subTitle %} : {{ page.subTitle }} {% endif %} </h1>
+    {{page.content}} 
+        <ul>
+            <li>{{ page.condition }} {{ page.binding }}</li>
+            <li>{{ page.ISBN }}</li>
+            <li>{{ page.otherDetails }}</li>
+        </ul>
+        {% include snipcart-button.html %}
+        {% include share.html %}
+</div>
+
+<!-- end .product -->
+</div>

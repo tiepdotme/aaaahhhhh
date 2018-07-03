@@ -1,0 +1,39 @@
+{% for product in site.products %}
+ {% if product.quantity
+> 0 %}
+<div class="product">
+  
+    <div class="product-description">
+        <figure>
+            <img src="{{ site.url }}/assets/images/product-thumbnails/{{product.featured_image}}" alt="image of {{ product.title }}">
+        </figure>
+    <a href="{{ site.url }}{{ product.url }}">
+        <h2>{{ product.title }}</h2>
+    </a>
+    {% if product.subTitle %}
+    <h3>{{ product.subTitle }}</h3>
+    {% endif %}
+    <h4>{{ product.author }}</h4>
+    <p>{{product.summary}}</p>
+    </div>
+    <ul>
+         {% if product.quantity
+        > 0 %}
+        <li>
+            <h3>${{ product.price }}</h3>
+        </li>
+           {% endif %}
+        <li>{{ product.binding }}</li>
+        <li>{{ product.ISBN }}</li>
+        <li>{{ product.otherDetails }}</li>
+    </ul>
+    {% if product.quantity
+    < 1 %}<h3>Sorry, sold out</h3>
+        {% else %} {% include snipcart-button.html %}
+        <button onclick="window.location.href='{{ site.url }}{{ product.url }}'">Product Page</button>
+
+        {% endif %} {% include share.html %}
+        <!-- end .product -->
+</div>
+{% endif %}
+{% endfor %}

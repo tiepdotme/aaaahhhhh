@@ -1,0 +1,81 @@
+$headings: "Josefin Slab", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+
+$body: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+
+body {
+    font-family: $body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headings;
+    margin-bottom: .5em;
+}
+
+h1 {
+    font-size: 2.242rem;
+    line-height: 2.5rem;
+}
+
+h2 {
+    font-size: 1.428rem;
+    line-height: 2.0rem;
+}
+
+h3 {
+    font-size: 1.114rem;
+}
+
+h4 {
+    font-size: 0.907rem;
+    text-decoration: underline;
+}
+
+h5 {
+    font-size: 0.4713333333333333rem;
+}
+
+h6 {
+    font-size: 0.3535rem;
+}
+
+/* Paragraphs and Links */
+p, a {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/*  Links Within Paragraphs*/
+
+p a {
+    color: inherit;
+    box-shadow: inset 0px -7px 0px $highlight;
+
+    &:hover {
+        box-shadow: inset 0px -100px 10px $highlight;
+        transition: all ease 0.3s;
+    }
+}
+
+figcaption {
+    text-align: left;
+    font-size: .9em;
+    opacity: .5;
+    padding: $base-spacing 0;
+    float: left;
+    width: 100%;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: $white;
+    background: $black;
+}
+
+::selection {
+    color: $white;
+    background: $black;
+}

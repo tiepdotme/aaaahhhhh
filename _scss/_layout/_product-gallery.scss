@@ -1,0 +1,40 @@
+section.gallery {
+    .product {
+        @include flex-content-2;
+
+        &:nth-child(2n-1) {
+            margin-top: $base-spacing * 5;
+            margin-bottom: 0;
+            border-right: 1px solid $grey;
+
+            @media (max-width: $medium) {
+                margin-top: 0;
+            }
+        }
+
+        a h2 {
+            text-decoration: underline;
+        }
+
+        .product-description {
+            width: 100%;
+            float: left;
+        }
+
+        figure {
+            width: 200px;
+            float: left;
+
+            //padding: ($base-spacing / 2)  $base-spacing $base-spacing ;
+            margin: 0 auto $base-spacing/2;
+
+            img {
+                margin: 0 $base-spacing ($base-spacing / 2) 0;
+                max-width: 175px;
+                float: left;
+                box-shadow: $shadow;
+            }
+        }
+    }
+
+}

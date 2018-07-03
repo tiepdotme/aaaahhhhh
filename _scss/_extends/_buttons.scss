@@ -1,0 +1,17 @@
+%button-1 {
+ 
+
+    @include transition-all;
+
+    &:hover {
+        box-shadow: $shadow;
+
+        @include transition-all;
+    }
+
+    &:active {
+        box-shadow: inset $shadow;
+
+        @include transition-all;
+    }
+}

@@ -1,0 +1,30 @@
+        {% if page.quantity
+        < 1 %} 
+        <div class="sold-out">
+        <h3>Sorry, Sold Out</h3>
+        </div>
+        {% else %}
+        {% if page.url == "/" or page.url == "/products.html" %}
+        <button class="buy snipcart-add-item" 
+        data-item-id="{{ product.slug }}" 
+        data-item-name="{{ product.title }}" 
+        data-item-price="{{ product.price }}" 
+        data-item-weight="{{ product.weight }}"
+        data-item-url="{{ site.url }}{{ product.url }}" 
+        data-item-image="{{ site.url }}/assets/images/product-thumbnails/{{product.featured_image}}"
+        data-item-description="{{product.author}}">
+        Add to Cart
+        </button>
+        {% else %}
+        <button class="buy snipcart-add-item" 
+        data-item-id="{{ page.slug }}" 
+        data-item-name="{{ page.title }}"
+        data-item-price="{{ page.price }}"
+        data-item-weight="{{ page.weight }}"
+        data-item-url="{{ site.url }}{{ page.url }}" 
+        data-item-image="{{ site.url }}/assets/images/product-thumbnails/{{page.featured_image}}"
+        data-item-description="{{page.author}}">
+        Add to Cart
+        </button>
+
+        {% endif %}{% endif %}

@@ -1,24 +1,29 @@
-<div id="header-wrapper">
-    <header>
-        <section>
-            <ul>
-                <li>
-                <a href="/"><h1>{{site.title}}</h1></a>
-                <h6>{{site.subtitle}}</h6></li>
-                {% if page.layout == 'home' %} {% endif %}
-            </ul>
-            {% include navigation.html %}
-        </section>
-        <section>
-            {% include snip-cart-cart.html %}
-        </section>
-    </header>
+<div class="logo">
+   <img src="assets/logos/logo.svg" alt="logo for {{site.title}}}">
 </div>
-<div id="modal">
-    <div class="modalconent">
-        <h4>THIS SHOP IS IN DEVELOPMENT</h4>
-        <h2>ORDERS WILL NOT BE PROCESSED</h2>
-        <h4>INQUIRIES TO HELLO@DISCOFORM.COM</h4>
-    </div>
-</div>
-<main>
+<header{% if site.headerImage %} class="hero" style="background: url(assets/images/background-images/{{site.headerImage}}) no-repeat center center fixed;" {% endif %}>
+    <span>
+        <h1>{{site.title}}</h1>
+        <h2>{{site.subtitle}}</h2>
+            {% include credits.html %}
+        <ul>
+            <li style="font-size: 14px;">
+                &copy; 2018++
+            </li>
+        </ul>
+    </span>
+    {% include navPayments.html %}
+</header>
+
+<!-- {% if page.url == "/" %}
+<header>
+    <span>
+        <h1>Buy {{site.title}}</h1>
+        <h2>Why not?</h2>
+
+    </span>
+
+</header>
+{% include navPayments.html %}
+
+{% endif %} -->

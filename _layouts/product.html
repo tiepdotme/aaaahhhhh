@@ -1,7 +1,9 @@
-{% include head.html %}
-{% include header.html %}
-{% include product-details.html %}
+{% include head.html %} 
+<button class="back-button" onclick="goBack()"></button>
 
+<main role="main">
+
+    <section class="the-content single-product">
+        {% include product.html %}
+    </section>
 {% include footer.html %}
-
-

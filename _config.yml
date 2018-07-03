@@ -13,28 +13,32 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: FOUR A<sup><sub>'S</sub></sup> FIVE H<sup><sub>'S</sub></sup>
-subtitle: books on design, new &amp; used
-email: hello@aaaahhhhh.com
-description: > # this means to ignore newlines until "baseurl:"
-  Four A's Five H's is an online shop for books and periodicals on graphic design and architecture
+title: Four A's Five H's
+subtitle: Books on Art, Design, Architecture, et al.
+email: hello@discoform.com
+description: Books on Art, Design, Architecture, et al.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://aaaahhhhh.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: FourAsFiveHs
-instagram_username:  FourAsFiveHs
-author: Matthew howe
+url: "https://www.aaaahhhhh.com/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: discoform
+github_username: discoform
+linkedIn_username: matthew-h-49303a139/
+instagram_username:
+author: discoform
+authorURL: https://discoform.com
+headerImage: mohr001.png
+excerpt_separator: <!--more-->
 Snipcart_API: MGU4ZGQ1YjItZWU3Ni00OTkwLWE0NzMtMmZhYWVjZjIxODc5NjM2MjgzOTM4OTY3MjkwNjE3
 # Build settings
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
+# theme: minima
+plugins:
+ # - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
   
 sass:
-    sass_dir: _sass
+    sass_dir: _scss
 
     sass:
     style: compressed
@@ -52,4 +56,6 @@ defaults:
     values:
       layout: "product"
       
-
+# strict_front_matter: true
+# liquid:
+#   error_mode: strict

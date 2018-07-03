@@ -1,0 +1,14 @@
+.snipcart-summary {
+    position: fixed;
+    right: $base-spacing / 2;
+    top: $base-spacing / 2;
+    z-index: 9999;
+    padding: $base-spacing / 2;
+    background: $whitea;
+}
+
+.snip-layout .snip-product__thumbnail img {
+    max-height: 100%;
+    width: auto;
+}
+

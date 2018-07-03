@@ -1,7 +1,0 @@
-html5
-CSS3
-sublime
-markdown
-jekyll
-github_badge
-sass

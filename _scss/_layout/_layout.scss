@@ -1,0 +1,14 @@
+main {
+    max-width: $max-width;
+    margin: auto;
+    section {
+        margin: $base-spacing auto;
+    }
+
+    .the-content {
+       @include flex-container;
+
+     
+    }
+}
+

@@ -3,16 +3,24 @@ section.single-product {
     min-height: 50vh;
     position: relative;
     max-width: 1200px;
+    padding: $base-spacing;
 
     .product {
         width: 100%;
         position: relative;
         border-bottom: 1px solid $grey;
         padding: $base-spacing;
-        margin: $base-spacing auto;
+        margin: auto;
 
         @media (max-width: $small) {
             padding: 0;
+        }
+
+        h2 {
+            margin-bottom: $base-spacing;
+           
+         
+           
         }
 
         .image-and-button {
@@ -21,7 +29,9 @@ section.single-product {
             float: left;
 
             img {
+                max-width: 200px;
                 margin: 0;
+                box-shadow: $shadow;
             }
 
             margin: ($base-spacing / 2) auto ($base-spacing / 2);
@@ -30,19 +40,19 @@ section.single-product {
             @media (max-width: $small) {
                 box-shadow: none;
             }
-
-            figcaption {
-                text-align: left;
-                font-size: .8em;
-                opacity: .3;
-                margin: 0;
-            }
         }
 
-        .title-and-description {
+        .title {
             @include flex-content-2;
+        }
 
+        .description {
             float: left;
+            padding: $base-spacing 0;
+
+            ul {
+                margin: $base-spacing 0;
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-        {% if page.quantity
+        {%- if page.quantity
         < 1 %} 
         <div class="sold-out">
         <h3>Sorry, Sold Out</h3>
@@ -15,7 +15,7 @@
         data-item-description="{{product.author}}">
         Add to Cart
         </button>
-        {% else %}
+        {%- else -%}
         <button class="buy snipcart-add-item" 
         data-item-id="{{ page.slug }}" 
         data-item-name="{{ page.title }}"
@@ -26,4 +26,4 @@
         data-item-description="{{page.author}}">
         Add to Cart
         </button>
-        {% endif %}{% endif %}
+        {%- endif -%}{% endif %}

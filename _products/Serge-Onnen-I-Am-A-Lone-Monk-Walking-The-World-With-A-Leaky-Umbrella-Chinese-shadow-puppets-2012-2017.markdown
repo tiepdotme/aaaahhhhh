@@ -2,7 +2,7 @@
 # //basic information
 title: I Am A Lone Monk Walking The World With A Leaky Umbrella
 subTitle: Chinese shadow puppets 2012-2017
-author: Shuyu Chen
+author: Serge Onnen
 publisher: Serge Onnen (Amsterdam)
 publicationDate: 2017
 condition: New
@@ -17,9 +17,10 @@ summary: In an age when moving images are nothing special and everyone has at le
 binding_condition: fine
 dust_jacket_condition:
 
-# //images
+# //images and media
 featured_image: I-Am-A-Lone-Monk-Walking.jpg
 thumbnail_images:
+vimeo: 210589150
 
 # //taxonomies etc.
 slug: I-Am-A-Lone-Monk-Walking

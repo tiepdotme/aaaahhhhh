@@ -54,11 +54,11 @@ background: $whitea;
 
 @mixin flex-content-4 {
     //padding: $base-spacing;
-    width: calc(100%/4); /* Or whatever */
+    //width: calc(100%/4); /* Or whatever */
     margin: 0  auto; /* Magic! */
 
     @media (max-width: $large) {
-        width: calc(100%/3); /* Or whatever */
+       // width: calc(100%/3); /* Or whatever */
     }
 
     @media (max-width: $medium) {
@@ -68,7 +68,9 @@ background: $whitea;
     @media (max-width: $small) {
         display: block;
         float: left;
-        width: 100%;
+        max-width: 200px;
+            margin: 0  $base-spacing 0; /* Magic! */
+
     }
 }
 

@@ -1,6 +1,7 @@
 main {
     max-width: $max-width;
     margin: auto;
+    padding-top:$base-spacing*2;
     section {
         margin: $base-spacing auto;
     }

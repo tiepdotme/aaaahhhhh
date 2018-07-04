@@ -19,7 +19,7 @@
          {% if product.quantity
         > 0 %}
         <li>
-            <h3>${{ product.price }}</h3>
+            <h3 class="price">${{ product.price }}</h3>
         </li>
            {% endif %}
         <li>{{ product.binding }}</li>
@@ -30,7 +30,6 @@
     < 1 %}<h3>Sorry, sold out</h3>
         {% else %} {% include snipcart-button.html %}
         <button onclick="window.location.href='{{ site.url }}{{ product.url }}'">Product Page</button>
-
         {% endif %} {% include share.html %}
         <!-- end .product -->
 </div>

@@ -18,7 +18,7 @@ subtitle: Books on Art, Design, Architecture, et al.
 email: hello@discoform.com
 description: Books on Art, Design, Architecture, et al.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.aaaahhhhh.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: discoform
 github_username: discoform
 linkedIn_username: matthew-h-49303a139/

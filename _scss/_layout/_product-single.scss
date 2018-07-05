@@ -1,50 +1,61 @@
 section.single-product {
+    max-width: $max-width;
     display: flex;
-    min-height: 50vh;
-    position: relative;
-    max-width: 1200px;
 
     .product {
-        padding: $base-spacing;
         margin: auto;
-        border-bottom: 1px solid $grey;
-background:white;
-        h1, h2, h3 {
-            font-size: 1.25em;
-        }
-
-       
+        padding: $base-spacing;
+        position: relative;
 
         .image-and-button {
-            @include flex-content-4;
-
+            width: calc(100%/5);
             float: left;
 
             img {
-                max-width: 200px;
-                margin: 0;
                 box-shadow: $shadow;
             }
 
-            margin: ($base-spacing / 2) auto ($base-spacing / 2);
+            @media (max-width: $medium) {
+                width: calc(100%/3);
+            }
 
             @media (max-width: $small) {
-                box-shadow: none;
-                padding: 0;
+                width: calc(100%);
+
+                img {
+                    max-width: 150px;
+                }
             }
         }
 
         .title {
-            @include flex-content-2;
+            width: calc(100%/2);
+            float: left;
+            padding: $base-spacing $base-spacing $base-spacing ($base-spacing * 4);
+
+            @media (max-width: $medium) {
+                width: calc(100%/2);
+                padding: $base-spacing/2 0 $base-spacing ($base-spacing*2 );
+            }
+
+            @media (max-width: $small) {
+                width: calc(100%);
+                padding: $base-spacing 0;
+
+               
+            }
         }
 
         .description {
+            width: 100%;
             float: left;
             padding: $base-spacing 0;
+        }
 
-            ul {
-                margin: $base-spacing 0;
-            }
+        #share-buttons {
+            width: 100%;
+            float: left;
+            padding: $base-spacing / 4;
         }
     }
 }

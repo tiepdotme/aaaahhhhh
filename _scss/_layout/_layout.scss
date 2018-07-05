@@ -1,5 +1,5 @@
 main {
-    max-width: $max-width;
+    max-width: $max-width-main;
     margin: auto;
 
     section {
@@ -9,6 +9,10 @@ main {
             width: 100%;
             float: left;
             padding: $base-spacing;
+
+            @media (max-width: $small) {
+                padding: $base-spacing $base-spacing/2 0;
+            }
         }
     }
 

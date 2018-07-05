@@ -3,24 +3,14 @@ section.single-product {
     min-height: 50vh;
     position: relative;
     max-width: 1200px;
-    padding: $base-spacing;
 
     .product {
-        width: 100%;
-        position: relative;
-        border-bottom: 1px solid $grey;
         padding: $base-spacing;
         margin: auto;
-
-        @media (max-width: $small) {
-            padding: 0;
-        }
+        border-bottom: 1px solid $grey;
 
         h2 {
             margin-bottom: $base-spacing;
-           
-         
-           
         }
 
         .image-and-button {
@@ -35,11 +25,12 @@ section.single-product {
             }
 
             margin: ($base-spacing / 2) auto ($base-spacing / 2);
-            background: white;
 
             @media (max-width: $small) {
                 box-shadow: none;
+                padding: 0;
             }
+
         }
 
         .title {

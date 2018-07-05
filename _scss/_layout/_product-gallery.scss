@@ -1,7 +1,7 @@
 section.gallery {
     .product {
         @include flex-content-2;
-
+        margin-bottom:$base-spacing;
         &:nth-child(2n-1) {
             margin-top: $base-spacing * 5;
             margin-bottom: 0;

@@ -5,7 +5,7 @@
         </div>
         {% else %}
         {% if page.url == "/" or page.url == "/products.html" %}
-        <button class="buy snipcart-add-item" 
+        <button class="pure-button snipcart-add-item" 
         data-item-id="{{ product.slug }}" 
         data-item-name="{{ product.title }}" 
         data-item-price="{{ product.price }}" 
@@ -13,10 +13,10 @@
         data-item-url="{{ site.url }}{{ product.url }}" 
         data-item-image="{{ site.url }}/assets/images/product-thumbnails/{{product.featured_image}}"
         data-item-description="{{product.author}}">
-        Add to Cart
+        <i class="fa fa-shopping-cart fa-lg"><span>Add to Cart</span></i> 
         </button>
         {%- else -%}
-        <button class="buy snipcart-add-item" 
+        <button class="pure-button snipcart-add-item" 
         data-item-id="{{ page.slug }}" 
         data-item-name="{{ page.title }}"
         data-item-price="{{ page.price }}"
@@ -24,6 +24,6 @@
         data-item-url="{{ site.url }}{{ page.url }}" 
         data-item-image="{{ site.url }}/assets/images/product-thumbnails/{{page.featured_image}}"
         data-item-description="{{page.author}}">
-        Add to Cart
+        <i class="fa fa-shopping-cart fa-lg"><span>Add to Cart</span></i>
         </button>
         {%- endif -%}{% endif %}

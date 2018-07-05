@@ -1,15 +1,18 @@
 main {
     max-width: $max-width;
     margin: auto;
-    padding-top:$base-spacing*2;
+
     section {
         margin: $base-spacing auto;
+
+        h1 {
+            width: 100%;
+            float: left;
+            padding: $base-spacing;
+        }
     }
 
     .the-content {
-       @include flex-container;
-
-     
+        @include flex-container;
     }
 }
-

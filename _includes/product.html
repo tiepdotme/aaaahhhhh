@@ -4,10 +4,16 @@
         <img src="{{ site.url }}/assets/images/product-thumbnails/{{page.featured_image}}" alt="image of {{ page.title }} by {{ page.author }}  ">
     </div>
     <div class="title">
-        <h1>
-            <small>{{ page.author }}</small>
-            <br>'{{ page.title }}'</h1>
-        <h2> {% if page.subTitle %}{{ page.subTitle }} {% endif %}</h2>
+            <ul>
+                <h3><li>{{ page.title }} {% if page.subTitle %}: {{ page.subTitle }} {% endif %}</li></h3>
+                <h3><li>{{ page.author }}</li></h3>
+                <h3><li>{{ page.publisher }}, {{ page.publicationDate }}</li></h3>
+                <li>{{ page.binding }}</li>
+                <li>ISBN: {{ page.ISBN }}</li>
+                {%- if page.otherDetails -%}
+                <li>{{ page.otherDetails }}</li>
+                {%- endif %}
+            </ul>
 
         <ul>
             {% if page.quantity > 0 -%}
@@ -20,13 +26,7 @@
     </div>
     <div class="description">
         {{page.content}}
-        <ul>
-            <li>Binding: {{ page.condition }}, {{ page.binding }}</li>
-            <li>ISBN: {{ page.ISBN }}</li>
-            {%- if page.otherDetails -%}
-            <li>{{ page.otherDetails }}</li>
-            {%- endif %}
-        </ul>
+       
         {% if page.vimeo -%}
         <!-- start vimeo -->
         <div style="padding:56.25% 0 0 0;position:relative;">

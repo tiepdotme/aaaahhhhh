@@ -16,5 +16,13 @@ footer {
       }
        
     }
+
+    ul{
+        width: 100%;font-size:1.3em;
+        margin-top:$base-spacing/2;
+        li{display: inline;
+padding:$base-spacing/6;
+        text-align: left;}
+    }
 }
 

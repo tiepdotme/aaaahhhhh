@@ -8,10 +8,12 @@ section.single-product {
         padding: $base-spacing;
         margin: auto;
         border-bottom: 1px solid $grey;
-
-        h2 {
-            margin-bottom: $base-spacing;
+background:white;
+        h1, h2, h3 {
+            font-size: 1.25em;
         }
+
+       
 
         .image-and-button {
             @include flex-content-4;
@@ -30,7 +32,6 @@ section.single-product {
                 box-shadow: none;
                 padding: 0;
             }
-
         }
 
         .title {

@@ -47,7 +47,8 @@
     <link rel="alternate" type="application/rss+xml" title="http://localhost:4000" href="/feed.xml">
     <!-- fonts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!-- Remote Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:700|Open+Sans+Condensed:300,300i" rel="stylesheet">    <link rel='stylesheet' id='fontawesome-css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=4.9.6' type='text/css' media='all' />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans" rel="stylesheet">
+    <link rel='stylesheet' id='fontawesome-css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=4.9.6' type='text/css' media='all' />
     <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="http://localhost:4000/css/style.css">
     <!-- Social Media –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -102,17 +103,20 @@
         <img src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There.jpg" alt="image of There by Nigel Peake  ">
     </div>
     <div class="title">
-        <h1>
-            <small>Nigel Peake</small>
-            <br>'There'</h1>
-        <h2> </h2>
+            <ul>
+                <h3><li>There </li></h3>
+                <h3><li>Nigel Peake</li></h3>
+                <h3><li>Nigel Peake, 2017</li></h3>
+                <li>50 p, illus colour, 17 x 24 cm, pb, English</li>
+                <li>ISBN: 9780957213784</li>
+            </ul>
 
         <ul>
             <li>
                 <h3 class="price">$35</h3>
             </li>
         </ul>
-        <button class="buy snipcart-add-item" 
+        <button class="pure-button snipcart-add-item" 
         data-item-id="Nigel-Peake-There" 
         data-item-name="There"
         data-item-price="35"
@@ -120,16 +124,13 @@
         data-item-url="http://localhost:4000/product/Nigel-Peake-There/" 
         data-item-image="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There.jpg"
         data-item-description="Nigel Peake">
-        Add to Cart
+        <i class="fa fa-shopping-cart fa-lg"><span>Add to Cart</span></i>
         </button>
     </div>
     <div class="description">
         <p>Nigel Peake produces meticulous hand-drawn maps and obsessively detailed pencil illustrations. Architecture plays a prominent role in his work, as is also the case with ‘There’, the result of his spending a month in an apartment in Paris while working on a series of drawings. There he soon found another drawing project when looking outside the apartment’s windows, a yard that was in fact inaccessible to him. The yard was always devoid of people, so he began to draw it using blue pencil. Each picture is a fragment of the whole, interpretations and perspectives that can be pieced together, interchanged, or float freely without context. The book includes a twelve-page insert with texts.<br /></p>
 
-        <ul>
-            <li>Binding: New, 50 p, illus colour, 17 x 24 cm, pb, English</li>
-            <li>ISBN: 9780957213784</li>
-        </ul>
+       
         
     </div> 
 <div id="share-buttons">
@@ -179,43 +180,7 @@
 <!-- end .product -->
 </div>
     </section>
-    <aside id="left">
-        <h3>Site Map</h3>
-            <ul>
-                          
-                <li>
-                    <a href="http://localhost:4000/ " >Home</a>
-                </li>
-                 
-            </ul>
-    </aside>
-
-    <aside id="right">
-        <h3>Follow us on Social Media</h3>
-            <ul>
-                
-                <li>
-                    <a href="https://twitter.com/discoform">
-                        <i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter
-                    </a>
-                </li>
-                 
-            
-                <li>
-                    <a href="https://github.com/discoform">
-                        <i class="fa fa-github-square" aria-hidden="true"></i> Github
-                    </a>
-                </li>
-                 
-                <li>
-                    <a href="https://www.linkedin.com/in/matthew-h-49303a139/">
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
-                    </a>
-                </li>
-                 
-            </ul>
-    </aside>
-
+  
 </main>
 
 <footer>
@@ -229,6 +194,16 @@
 </p>
        &copy; 2018++
     </div>
+             <ul>
+        <li>
+            <i class="fa fa-cc-stripe" aria-hidden="true"></i>
+        </li>
+        <li>
+            <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+        </li>
+    </ul>
+
+
 </footer>
 <!-- Resource Snipcart -->
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MGU4ZGQ1YjItZWU3Ni00OTkwLWE0NzMtMmZhYWVjZjIxODc5NjM2MjgzOTM4OTY3MjkwNjE3" id="snipcart" data-autopop="true"></script>

@@ -1,0 +1,23 @@
+button.pure-button {
+    width: auto;
+    padding: 0 $base-spacing;
+    border: 2px solid $black;
+    margin-right: 5px;
+
+    i.fa {
+        padding: 3px;
+        font-size: 15px;
+
+        span {
+            font-family: $body;
+            background: transparent;
+            padding: $base-spacing/2;
+        }
+    }
+
+    span {
+        font-family: $body;
+        background: transparent;
+        padding: $base-spacing/2;
+    }
+}

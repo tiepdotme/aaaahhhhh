@@ -1,14 +1,32 @@
 section.gallery {
+    display: flex; /* or inline-flex */
+
     .product {
-        @include flex-content-2;
-        margin-bottom:$base-spacing;
-        &:nth-child(2n-1) {
-            margin-top: $base-spacing * 5;
-            margin-bottom: 0;
-            border-right: 1px solid $grey;
+        position: relative;
+        width: calc(100%/3);
+        padding: $base-spacing * 2;
+
+        @media (max-width: $medium) {
+            width: calc(100%/2); /* Or whatever */
+        }
+
+        @media (max-width: $small) {
+            width: calc(100%); /* Or whatever */
+            padding: $base-spacing;
+        }
+
+        background: white;
+        border: 3px solid $white;
+        padding-bottom: 200px;
+
+        .buy-and-share {
+            position: absolute;
+            bottom: $base-spacing;
 
             @media (max-width: $medium) {
-                margin-top: 0;
+                position: inherit;
+                margin: 0 $base-spacing 0 0;
+                padding-bottom: $base-spacing;
             }
         }
 
@@ -22,11 +40,16 @@ section.gallery {
         }
 
         figure {
-            width: 200px;
+            max-width: 200px;
             float: left;
 
             //padding: ($base-spacing / 2)  $base-spacing $base-spacing ;
-            margin: 0 auto $base-spacing/2;
+            margin: 0 auto ($base-spacing / 2);
+
+            @media (max-width: $small) {
+                max-width: 100px;
+                margin: 0 $base-spacing 0 0;
+            }
 
             img {
                 margin: 0 $base-spacing ($base-spacing / 2) 0;
@@ -36,5 +59,4 @@ section.gallery {
             }
         }
     }
-
 }

@@ -9,7 +9,7 @@
 $brand: rgb(180, 239, 241);
 $highlight: rgb(255, 255, 0);
 $black: rgb(10, 10, 10);
-$grey: rgb(204, 204, 204);
+$grey: rgb(231, 221, 221);
 $white: rgb(250, 250, 250);
 $whitea: rgba(250, 250, 250,.8);
 $action: rgb(6, 1, 7);
@@ -33,93 +33,17 @@ $large: 1000px;
 @mixin flex-container {
     display: flex;
     flex-flow: row wrap;
+    flex-direction: row; 
+    justify-content: space-between;
 
-    span {
-        margin: auto;
-        padding:$base-spacing $base-spacing*2;
-background: $whitea;
-    }
-
-    @media (max-width: 400px) {
-        
-        width: 100%;
-       
-
-        span {
-            padding: ($base-spacing * 2) $base-spacing;
-            width: 100%;
-            float: left;
-        }
-    }
-}
-
-@mixin flex-content-4 {
-    //padding: $base-spacing;
-    //width: calc(100%/4); /* Or whatever */
-    margin: 0  auto; /* Magic! */
-
-    @media (max-width: $large) {
-       // width: calc(100%/3); /* Or whatever */
-    }
-
-    @media (max-width: $medium) {
-        width: calc(100%/2); /* Or whatever */
-    }
-
-    @media (max-width: $small) {
-        display: block;
-        float: left;
-        max-width: 200px;
-            margin: 0  $base-spacing 0; /* Magic! */
-
-    }
-}
-
-@mixin flex-content-3 {
-    padding: $base-spacing;
-    width: calc(100%/3); /* Or whatever */
-    margin: 0  auto; /* Magic! */
-
-    @media (max-width: $large) {
-        width: calc(100%/2); /* Or whatever */
-    }
-
-    @media (max-width: $medium) {
-        width: calc(100%/2); /* Or whatever */
-    }
-
-    @media (max-width: $small) {
-        display: block;
-        float: left;
-        width: 100%;
-    }
-}
-
-@mixin flex-content-2 {
-    padding:$base-spacing/2 $base-spacing*2;
-    width: calc(100%/2); /* Or whatever */
-    margin: 0  auto; /* Magic! */
-
-    @media (max-width: $medium) {
-        width: calc(100%/2); /* Or whatever */
-    }
-
-    @media (max-width: $large) {
-        width: calc(100%/2); /* Or whatever */        
-
-    }
-
-    @media (max-width: $small) {
-        
+    @media (max-width: $small) { 
+      width: 100%;
       
-        width: 100%;
-        padding:$base-spacing;
-                   
-
     }
 }
 
-///////////////////////////
+
+///////////////
 
 //Imports
 
@@ -129,6 +53,7 @@ background: $whitea;
 @import "_layout/product-gallery";
 @import "_layout/product-single";
 @import "_layout/404";
+@import "_layout/fancybox";
 @import "_components/header";
 @import "_components/asides";
 @import "_components/navigation";
@@ -142,3 +67,14 @@ background: $whitea;
 
 
 //@import "_components-mdc/node_modules/@material/button/mdc-button";
+
+.snip-layout {
+    z-index: 99999;
+}
+
+
+.fancybox-container {
+    z-index: 9998;
+}
+
+@import "product-test";

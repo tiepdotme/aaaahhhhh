@@ -1,62 +1,89 @@
+@mixin flex-content-3 {
+    position: relative;
+    width: calc(98%/3);
+    padding: $base-spacing * 2;
+    background-color: white;
+    padding-bottom: 350px;
+
+    @media (max-width: $large) {
+        width: calc(100%/2); /* Or whatever */
+        padding: $base-spacing;
+    }
+
+    @media (max-width: $medium) {
+        padding-bottom: 350px;
+        width: calc(100%); /* Or whatever */
+        margin: $base-spacing ($base-spacing * 4);
+    }
+
+    @media (max-width: $small) {
+        width: calc(100%); /* Or whatever */
+        padding-bottom: 0;
+        margin: $base-spacing / 2;
+    }
+
+    .buy-and-share {
+        @include flex-container;
+
+        button {
+            width: 48%;
+            margin: 0;
+            margin-bottom: $base-spacing;
+
+            @media (max-width: $medium) {
+                width: 100%;
+                margin: ($base-spacing / 2) 0;
+            }
+        }
+
+        @media (max-width: $small) {
+            position: inherit;
+            padding-bottom: 0;
+        }
+    }
+}
+
+//////////////////////////////////////////////////////////////
+///////////////////////////////
+///////////////////////////////
+///////////////////////////////
+
 section.gallery {
     display: flex; /* or inline-flex */
 
     .product {
-        position: relative;
-        width: calc(100%/3);
-        padding: $base-spacing * 2;
+        @include flex-content-3;
 
-        @media (max-width: $medium) {
-            width: calc(100%/2); /* Or whatever */
+        h1 {
+            font-size: 2em;
         }
 
-        @media (max-width: $small) {
-            width: calc(100%); /* Or whatever */
-            padding: $base-spacing;
-        }
+        h2 {
+            font-size: 2em;
 
-        background: white;
-        border: 3px solid $white;
-        padding-bottom: 200px;
-
-        .buy-and-share {
-            position: absolute;
-            bottom: $base-spacing;
-
-            @media (max-width: $medium) {
-                position: inherit;
-                margin: 0 $base-spacing 0 0;
-                padding-bottom: $base-spacing;
+            &.product-subtitle {
+                margin-top: $base-spacing;
+                font-size: 1em;
+                line-height: 1;
             }
         }
 
-        a h2 {
-            text-decoration: underline;
-        }
-
-        .product-description {
+        .product-description, .product-subtitle, .product-author {
+            margin: 0 0 ($base-spacing / 2);
             width: 100%;
             float: left;
         }
 
-        figure {
-            max-width: 200px;
-            float: left;
-
-            //padding: ($base-spacing / 2)  $base-spacing $base-spacing ;
-            margin: 0 auto ($base-spacing / 2);
-
-            @media (max-width: $small) {
-                max-width: 100px;
-                margin: 0 $base-spacing 0 0;
-            }
-
-            img {
-                margin: 0 $base-spacing ($base-spacing / 2) 0;
-                max-width: 175px;
-                float: left;
-                box-shadow: $shadow;
-            }
+        .bottom {
+            background: white;
+            color: $black;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding-left: $base-spacing * 2;
+            padding-right: $base-spacing * 2;
+            padding-bottom: -$base-spacing;
+            padding-top: $base-spacing;
         }
     }
 }

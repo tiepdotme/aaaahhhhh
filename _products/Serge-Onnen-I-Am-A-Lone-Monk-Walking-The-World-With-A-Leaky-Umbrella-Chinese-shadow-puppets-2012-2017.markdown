@@ -11,7 +11,7 @@ ISBN: 9789198393415
 price: 36
 weight: 250
 quantity: 3
-summary: In an age when moving images are nothing special and everyone has at least one screen permanently within reach, artist Serge Onnen travelled to China to research the art form and produce a series of shadow puppets with Chinese craftsmen, inspired by current global events.
+summary: In an age when moving images are nothing special and everyone has at least one screen permanently within reach, artist Serge Onnen travelled to China to research the art form and produce a series of shadow puppets with Chinese craftsmen.
 
 # //book condition
 binding_condition: fine
@@ -20,6 +20,17 @@ dust_jacket_condition:
 # //images and media
 featured_image: I-Am-A-Lone-Monk-Walking.jpg
 thumbnail_images:
+        - 1.gif
+        - 3.gif
+        - 4.gif
+        - 5.gif       
+        - 6.gif
+        - 7.gif
+        - 8.gif
+        - 9.gif
+        - 10.gif
+        - 11.gif
+        
 vimeo: 210589150
 
 # //taxonomies etc.

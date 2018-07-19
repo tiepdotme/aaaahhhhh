@@ -50,8 +50,12 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans" rel="stylesheet">
     <link rel='stylesheet' id='fontawesome-css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=4.9.6' type='text/css' media='all' />
     <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
     <link rel="stylesheet" href="http://localhost:4000/css/style.css">
-    <!-- Social Media –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Social Media –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="discoform">
     <meta name="twitter:creator" content="discoform">
@@ -76,7 +80,6 @@
     <script src="http://localhost:4000/js/min/modernizr-min.js"></script>
     <!-- main.js -->
 </head>
-
 <body>
     <script src="" async defer></script>
     <div class="snipcart-summary">
@@ -97,12 +100,10 @@
 <div class="page-full-error ">
     <div class="billboard">
         <a href="/">
-
             <span id="error">
                 <h1 id="sorry"><header class="product-page-header">
   <a href="http://localhost:4000#main"><h2>Four A's Five H's</h2></a> 
 </header></h1>
-
             </span>
             <h2 style="text-decoration:underline">this page doesn't exist
                 <br>※※※※※※※※※※※※※※※※※※※※※※※※
@@ -130,7 +131,7 @@
 </p>
        &copy; 2018++
     </div>
-             <ul>
+        <ul>
         <li>
             <i class="fa fa-cc-stripe" aria-hidden="true"></i>
         </li>
@@ -144,7 +145,9 @@
 <!-- Resource Snipcart -->
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MGU4ZGQ1YjItZWU3Ni00OTkwLWE0NzMtMmZhYWVjZjIxODc5NjM2MjgzOTM4OTY3MjkwNjE3" id="snipcart" data-autopop="true"></script>
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
-<link type="text/css" href="http://localhost:4000 /css/snipcart-custom.css " rel="stylesheet /">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 <script>
     Snipcart.execute('config', 'show_continue_shopping', true);
 </script>
@@ -154,5 +157,20 @@
         window.history.back();
     }
 </script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+     var instance = M.Carousel.init({
+            fullWidth: true,
+            indicators: true
+        });
+
+        // Or with jQuery
+
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+        });
+</script>
+
 </body>
 </html>

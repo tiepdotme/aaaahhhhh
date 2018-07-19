@@ -443,7 +443,7 @@ button {
       
       
         width: $base-spacing;
-        left: $base-spacing;
+        left: $base-spacing/2;
         top: $base-spacing / 2;
         color: $black;
         z-index: 9999;
@@ -451,6 +451,9 @@ button {
         margin: 0;
         border: 0;
         position: fixed;
+        border:2px solid $black;
+        padding:$base-spacing;
+        
 
         // @include background-color-1;
 

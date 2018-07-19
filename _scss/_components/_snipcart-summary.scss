@@ -4,11 +4,10 @@
     top: $base-spacing / 2;
     z-index: 99;
     padding: $base-spacing / 2;
-    background: $whitea;
+    border: 2px solid $black;
 }
 
 .snip-layout .snip-product__thumbnail img {
     max-height: 100%;
     width: auto;
 }
-

@@ -1,4 +1,4 @@
-{% include head.html %}
+{% include components-base/head.html %}
 <div class="logo">
     <a href="{{site.url}}">
         <img src="{{"/assets/logos/logo.svg" | prepend: site.url }}" alt="logo for {{site.title}}">
@@ -7,10 +7,8 @@
 <div class="page-full-error ">
     <div class="billboard">
         <a href="/">
-
             <span id="error">
-                <h1 id="sorry">{% include product-page-header.html %}</h1>
-
+                <h1 id="sorry">{% include components-product/product-page-header.html %}</h1>
             </span>
             <h2 style="text-decoration:underline">this page doesn't exist
                 <br>※※※※※※※※※※※※※※※※※※※※※※※※
@@ -24,4 +22,4 @@
         </a>
     </div>
 </div>
-{% include footer.html %}
+{% include components-base/footer.html %}

@@ -20,6 +20,16 @@ dust_jacket_condition:
 # //images
 featured_image: Na-Kim-Set.jpg
 thumbnail_images:
+        - 6.png
+        - 1.jpg
+        - 2.jpg
+        - 3.jpg
+        - 4.jpg
+        - 5.jpg
+        
+vimeo: 68537091
+videoCaption: Na Kim talks about her process of creating a large advertising billboard.
+
 
 # //taxonomies etc.
 slug: Na-Kim-Set

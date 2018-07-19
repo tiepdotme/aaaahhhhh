@@ -50,8 +50,12 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans" rel="stylesheet">
     <link rel='stylesheet' id='fontawesome-css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=4.9.6' type='text/css' media='all' />
     <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
     <link rel="stylesheet" href="http://localhost:4000/css/style.css">
-    <!-- Social Media –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Social Media –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="discoform">
     <meta name="twitter:creator" content="discoform">
@@ -78,7 +82,6 @@
     <script src="http://localhost:4000/js/min/modernizr-min.js"></script>
     <!-- main.js -->
 </head>
-
 <body>
     <script src="" async defer></script>
     <div class="snipcart-summary">
@@ -94,45 +97,71 @@
 <button class="back-button" onclick="goBack()"></button>
 <main role="main">
     <section class="the-content single-product">
-         <header class="product-page-header">
+        <header class="product-page-header">
   <a href="http://localhost:4000#main"><h2>Four A's Five H's</h2></a> 
 </header>
 <div class="product">
     <div class="image-and-button">
-        <img src="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies.jpg" alt="image of Studio Fm Milano by Studio Fm  ">
+        <img src="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies/Studio-Fm-Milano-Bodies.jpg" alt="image of Studio Fm Milano by Studio Fm ">
     </div>
     <div class="title">
-            <ul>
-                <h3><li>Studio Fm Milano : Bodies </li></h3>
-                <h3><li>Studio Fm</li></h3>
-                <h3><li>Corraini Edizioni Mantova, 2017</li></h3>
-                <li>288 p, ills colour, 21 x 26 cm, pb, Italian/English</li>
-                <li>ISBN: 9788875706128</li>
-            </ul>
-
+        <ul>
+            <h3>
+                <li>Studio Fm Milano : Bodies </li>
+            </h3>
+            <h3>
+                <li>Studio Fm</li>
+            </h3>
+            <h3>
+                <li>Corraini Edizioni Mantova, 2017</li>
+            </h3>
+            <li>288 p, ills colour, 21 x 26 cm, pb, Italian/English</li>
+            <li>ISBN: 9788875706128</li>
+        </ul>
         <ul>
             <li>
                 <h3 class="price">$36</h3>
             </li>
         </ul>
-        <button class="pure-button snipcart-add-item" 
+        <div class="buy-and-share">
+     <button class="pure-button snipcart-add-item" 
         data-item-id="Studio-Fm-Milano-Bodies" 
         data-item-name="Studio Fm Milano"
         data-item-price="36"
         data-item-weight="500"
         data-item-url="http://localhost:4000/product/Studio-Fm-Milano-Bodies/" 
-        data-item-image="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies.jpg"
+        data-item-image="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies/Studio-Fm-Milano-Bodies.jpg"
         data-item-description="Studio Fm">
-        <i class="fa fa-shopping-cart fa-lg"><span>Add to Cart</span></i>
-        </button>
-
+        <i class="fa fa-shopping-cart fa-lg"></i><span>Add to Cart</span>
+        </button> 
+</div>
     </div>
     <div class="description">
         <p>In this book is a collection of pictographs made by studio FM milano, a graphic design studio founded in 1996 by Barbara Forni, Cristiano Bottino, and Sergio Menichelli. Each one is essentially a fragment of more complex and articulated projects. Presented in this way, they take on a life of their own, becoming characters independent of the design contexts in which they were created. The subjects are ordered randomly, or in relation to simple visual similarities or pictorial graphic systems, and only two colours (purple and green) are used. It is simultaneously a monograph and a manifesto that expresses the essence of the studio’s output over its two decades of work.</p>
+  
 
-       
-        
-    </div> 
+
+
+
+
+        <div class="product-gallery">
+            
+            <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies/1.png" alt="image of Studio Fm Milano by Studio Fm"> 
+            
+            <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies/2.jpg" alt="image of Studio Fm Milano by Studio Fm"> 
+            
+            <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies/3.jpg" alt="image of Studio Fm Milano by Studio Fm"> 
+            
+            <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies/4.jpg" alt="image of Studio Fm Milano by Studio Fm"> 
+            
+        </div>
+   
+
+
+    </div>
+    <!-- end .product -->
+    
+     
 <div id="share-buttons">
     <h4>Share this:</h4>
     <a href="http://www.digg.com/submit?url=http://localhost:4000/product/Studio-Fm-Milano-Bodies/" target="_blank" title="Digg share Four A's Five H's / Studio Fm Milano">
@@ -177,7 +206,7 @@
     </a>
     <!-- end #share-buttons -->
 </div>
-<!-- end .product -->
+
 </div>
     </section>
   
@@ -194,7 +223,7 @@
 </p>
        &copy; 2018++
     </div>
-             <ul>
+        <ul>
         <li>
             <i class="fa fa-cc-stripe" aria-hidden="true"></i>
         </li>
@@ -208,7 +237,9 @@
 <!-- Resource Snipcart -->
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MGU4ZGQ1YjItZWU3Ni00OTkwLWE0NzMtMmZhYWVjZjIxODc5NjM2MjgzOTM4OTY3MjkwNjE3" id="snipcart" data-autopop="true"></script>
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
-<link type="text/css" href="http://localhost:4000 /css/snipcart-custom.css " rel="stylesheet /">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 <script>
     Snipcart.execute('config', 'show_continue_shopping', true);
 </script>
@@ -218,5 +249,20 @@
         window.history.back();
     }
 </script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+     var instance = M.Carousel.init({
+            fullWidth: true,
+            indicators: true
+        });
+
+        // Or with jQuery
+
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+        });
+</script>
+
 </body>
 </html>

@@ -1,0 +1,58 @@
+ {% if page.title == "Home" %}
+<ul class="icons">
+    {% if product.vimeo or product.youtube -%}
+    <li>
+        <a data-fancybox  data-src="#hidden-content-{{product.slug}}" href="javascript:;">
+            <i class="fa fa-file-video-o" aria-hidden="true"></i>
+        </a>
+    </li>
+    {% endif %}
+     {% if product.thumbnail_images %}
+    <li>
+        <a data-fancybox="images-{{product.slug}}" href="javascript:;">
+            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+        </a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
+
+{% if page.title == "Home" %}
+
+{% if product.vimeo or product.youtube -%}
+<div style="display: none;" id="hidden-content-{{product.slug}}">
+    <h2>{{product.title}}</h2>
+    <p>{{product.author}}</p>
+
+
+    {% if product.vimeo -%}
+    <!-- start vimeo -->
+    <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/{{product.vimeo}}?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+        
+    <!-- end vimeo -->
+    {% endif %} {% if product.youtube -%}
+    <!-- start youtube -->
+    <iframe width="100%" height="450" src="https://www.youtube.com/embed/{{product.youtube}}?rel=0&amp;showinfo=0" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <!-- end youtube -->
+    {% endif %}
+     {% if product.videoCaption -%}
+    <figcaption>{{product.videoCaption}}</figcaption>
+    {% endif %}
+{% include buy-and-share.html %}
+</div>
+{% endif %} 
+
+
+
+{% for thumbnail_image in product.thumbnail_images %}
+<div style="display: none;" data-fancybox="images-{{product.slug}}" id="#hidden-content-{{product.slug}}" data-caption="{{product.author}} | {{product.title}}">
+    <h2>{{product.title}}</h2>
+    <p>{{product.author}}</p>
+    <img src="{{ site.url }}/assets/images/product-thumbnails/{{product.slug}}/{{thumbnail_image}}" alt="image of {{ product.title }} by {{ product.author }}"> {% include buy-and-share.html %}
+</div>
+{% endfor %} {%else%} images go here {% endif %}

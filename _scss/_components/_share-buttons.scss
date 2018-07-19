@@ -1,12 +1,12 @@
 #share-buttons {
-    margin: ($base-spacing * 2) 0;
+    padding: ($base-spacing) 0;
     width: 100%;
     float: left;
     font-size: 12px;
 
     .fa {
         font-size: 1.5em;
-        margin: $base-spacing / 5;
+        margin: $base-spacing/2  ;
 
         &:first-of-type {
             margin-left: 0;

@@ -1,14 +1,19 @@
+body{
+    background:$grey;
+}
+
 main {
     max-width: $max-width-main;
     margin: auto;
 
+
     section {
-        margin: $base-spacing auto;
+        //margin: $base-spacing auto;
 
         h1 {
             width: 100%;
             float: left;
-            padding: $base-spacing;
+            padding: $base-spacing 0;
 
             @media (max-width: $small) {
                 padding: $base-spacing $base-spacing/2 0;

@@ -12,3 +12,18 @@ footer {
     }
 }
 
+ul.icons {
+    font-size: 2em;
+    color: inherit;
+    margin: $base-spacing 0;
+
+    li {
+        margin-right: $base-spacing / 2;
+        display: inline;
+        color: $grey;
+
+        &:hover {
+            color: $brand;
+        }
+    }
+}

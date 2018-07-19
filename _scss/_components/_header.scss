@@ -3,7 +3,6 @@ header {
 
     min-height: 300px;
     min-height: 50vh;
-    background: $brand;
     text-align: center;
     box-shadow: $shadow;
     margin-bottom: 1em;
@@ -19,37 +18,79 @@ header {
     }
 
     &.product-page-header {
-        background: transparent;
-        box-shadow: none;
         min-height: auto;
         margin-top: 100px;
-        border: 2px solid $black;
-        width: 100vw;
-
-        @media (max-width: $small) {
-            padding: 0;
-          
-            border: 0;
-          
-            margin-bottom: 0;
-        }
 
         a {
-            margin: 0;
-        }
+            display: block;
 
-        h2 {
-            padding: $base-spacing;
-            line-height: 1;
+            h2 {
+                padding: 0 ($base-spacing / 2);
+              
+            }
         }
     }
 }
 
 .logo {
     width: $base-spacing * 2;
-    height: auto;
+   
     position: fixed;
     z-index: 1000;
     top: 0;
     left: $base-spacing / 2;
 }
+
+// header {
+//     @include flex-container;
+
+//     min-height: 300px;
+//     min-height: 50vh;
+//     background: $brand;
+//     text-align: center;
+//     box-shadow: $shadow;
+//     margin-bottom: 1em;
+
+//     .hero {
+//         @include flex-container;
+
+//         flex-direction: column;
+//         margin: auto;
+//         background: $whitea;
+//         padding: $base-spacing;
+//         border: 2px solid $black;
+//     }
+
+//     &.product-page-header {
+//         background: transparent;
+//         box-shadow: none;
+//         min-height: auto;
+//         margin-top: 100px;
+//         border: 2px solid $black;
+//         width: 100vw;
+
+//         @media (max-width: $small) {
+//             padding: 0;
+//             border: 0;
+//             margin-bottom: 0;
+//         }
+
+//         a {
+//             margin: 0;
+//         }
+
+//         h2 {
+//             padding: $base-spacing;
+//             line-height: 1;
+//         }
+//     }
+// }
+
+// .logo {
+//     width: $base-spacing * 2;
+//     height: auto;
+//     position: fixed;
+//     z-index: 1000;
+//     top: 0;
+//     left: $base-spacing / 2;
+// }

@@ -1,60 +1,61 @@
 section.single-product {
     max-width: $max-width;
     display: flex;
-    margin: auto;
+
+    @media (min-width: $desktop) {
+        margin: auto;
+    }
 
     .product {
-        padding: $base-spacing * 2;
+        padding: ($base-spacing / 2) $base-spacing;
         position: relative;
-        border: 2px solid $black;
 
-        @media (max-width: $small) {
-            padding: 0;
-            border: 0;
+        @media (min-width: $desktop) {
+            border: 2px solid $black;
         }
 
         .image-and-button {
-            width: calc(100%/5);
+            width: calc(100%);
             float: left;
 
-            @media (max-width: $small) {
-                padding: $base-spacing;
+            @media (min-width: $medium) {
+                width: calc(25%);
+                margin-left: $base-spacing / 1.75;
+                transform: rotate(0deg);
+                float: left;
             }
 
             img {
                 box-shadow: (-$base-spacing / 2) ($base-spacing / 2) 0px $black;
-            }
+                width: calc(50%);
+                margin: ($base-spacing * 2) 0 ($base-spacing * 2) 25vw;
+                transform: rotate(30deg);
 
-            @media (max-width: $medium) {
-                width: calc(100%/3);
-            }
-
-            @media (max-width: $small) {
-                width: calc(100%);
-
-                img {
-                    max-width: 150px;
+                @media (min-width: $medium) {
+                    width: calc(100%);
+                    margin: $base-spacing 0;
+                    transform: rotate(0deg);
                 }
             }
         }
 
         .title {
-            width: calc(100%/2);
+            width: calc(100%);
             float: left;
-            padding: $base-spacing $base-spacing $base-spacing ($base-spacing * 4);
+            padding: ($base-spacing * 2) 0 0;
 
-            @media (max-width: $medium) {
-                width: calc(100%/2);
-                padding: ($base-spacing / 2) 0 $base-spacing ($base-spacing * 2);
+            @media (min-width: $medium) {
+                width: calc(70%);
+                padding: $base-spacing;
+                float: right;
             }
+        }
 
-            @media (max-width: $small) {
-                width: calc(100%);
-                padding: $base-spacing / 2;
-            }
+        button.pure-button {
+            width: 100%;
 
-            .buy-and-share button {
-                width: 100%;
+            @media (min-width: $medium) {
+                width: calc(50%);
             }
         }
 
@@ -62,55 +63,43 @@ section.single-product {
             width: 100%;
             float: left;
             padding: $base-spacing 0;
-
-            @media (max-width: $small) {
-                width: calc(100%);
-                padding: $base-spacing / 2;
-            }
         }
 
         #share-buttons {
             width: 100%;
             float: left;
-            padding: $base-spacing / 4;
-
-            @media (max-width: $small) {
-                width: calc(100%);
-                padding: $base-spacing / 2;
-            }
+            padding: $base-spacing 0;
         }
 
         iframe {
-            background: $white;
-            box-shadow: (-$base-spacing / 2) ($base-spacing / 2) 0px $black;
-
-            @media (max-width: $small) {
-                width: calc(100%);
-                box-shadow: 0 0 0 0;
-            }
+            background: $brand;
         }
 
         .product-gallery {
-            margin: ($base-spacing * 2) auto;
-            box-shadow: (-$base-spacing / 2) ($base-spacing / 2) 0px $black;
-            border: 2px solid $black;
-            float: left;
+            margin: ($base-spacing / 2) auto;
+            background: $brand;
 
-            @media (max-width: $small) {
-                margin:$base-spacing/2 0  ;
-                width: calc(100%);
-                box-shadow: 0 0 0 0;
-                border: none;
+            @media (min-width: $large) {
+                margin-top: $base-spacing;
             }
 
             img {
-                width: 50%;
-                margin: $base-spacing/2 0;
+                width: 100%;
+                margin: ($base-spacing / 2) 0;
                 float: left;
+                box-shadow:0 0  10px $black;
 
-                @media (max-width: $small) {
-                    width: calc(100%);
-                    box-shadow: 0 0 0 0;
+                @media (min-width: $large) {
+                    width: calc(52% - #{$base-spacing * 2});
+                    margin: $base-spacing;
+
+                    &:nth-child(odd) {
+                        margin-left: 0;
+                    }
+
+                    &:nth-child(even) {
+                        margin-right: 0;
+                    }
                 }
             }
         }

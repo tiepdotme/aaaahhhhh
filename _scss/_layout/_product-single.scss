@@ -19,7 +19,7 @@ section.single-product {
             float: left;
 
             @media (min-width: $medium) {
-                width: calc(25%);
+                width: calc(30%);
                 margin-left: $base-spacing / 1.75;
                 transform: rotate(0deg);
                 float: left;
@@ -45,7 +45,7 @@ section.single-product {
             padding: ($base-spacing * 2) 0 0;
 
             @media (min-width: $medium) {
-                width: calc(70%);
+                width: calc(68%);
                 padding: $base-spacing;
                 float: right;
             }
@@ -87,9 +87,9 @@ section.single-product {
                 width: 100%;
                 margin: ($base-spacing / 2) 0;
                 float: left;
-                box-shadow:0 0  10px $black;
+               // box-shadow:0 0  10px $black;
 
-                @media (min-width: $large) {
+                @media (min-width: $medium) {
                     width: calc(52% - #{$base-spacing * 2});
                     margin: $base-spacing;
 

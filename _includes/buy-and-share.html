@@ -1,12 +1,9 @@
 <div class="buy-and-share">
     {% if product.quantity
     < 1 %}<h3>Sorry, sold out</h3>
-        {% else %} {% include snipcart-button.html %}
-{%- if page.layout == "home" -%}
-<button class="pure-button" onclick="window.location.href='{{ site.url }}{{ product.url }}'">
-    <span>Product Page</span>
-</button>
-{% endif %} 
-{% include components-menus/share.html %}
-{% endif %}
+        {% else %} {% include snipcart-button.html %} {%- if page.layout == "home" -%}
+        <button class="pure-button" onclick="window.location.href='{{ site.url }}{{ product.url }}'">
+            <span>Product Page</span>
+        </button>
+        {% endif %} {% include components-menus/share.html %} {% endif %}
 </div>

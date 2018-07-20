@@ -1,0 +1,28 @@
+{% for product in site.products %} {% if product.quantity > 0 %}
+<div class=" product card-panel grey lighten-5 z-depth-1">
+    <div class="top">
+        <div class="black-text">
+            <h2 class="product-title">{{ product.title }}</h2>
+            <h3 class="product-author">{{ product.author }}</h3>
+
+             {% if product.subTitle %}
+            <h2 class="product-subtitle">{{ product.subTitle }}</h2>
+            {% endif %}
+            <p class="product-description">{{product.summary}}</p>
+            <ul>
+                <li><h3>${{ product.price }}</h3></li>
+                <li>{{ product.binding }}</li>
+                <li>{{ product.ISBN }}</li>
+                <li>{{ product.otherDetails }}</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div  class="bottom"> 
+     {% include components-menus/navMedia.html %}
+     {% include buy-and-share.html %}
+    </div>
+</div>
+<!-- end .product -->
+{% endif %} {% endfor %}

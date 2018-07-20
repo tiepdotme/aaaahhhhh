@@ -17,10 +17,15 @@ ul.icons {
     color: inherit;
     margin: $base-spacing 0;
 
-    li {
+    li  {
         margin-right: $base-spacing / 2;
         display: inline;
-        color: $grey;
+
+        a{ color: $grey;
+    
+    }
+       
+
 
         &:hover {
             color: $brand;

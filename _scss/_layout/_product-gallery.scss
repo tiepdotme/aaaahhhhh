@@ -7,19 +7,18 @@
 
     @media (min-width: $medium) {
         padding: ($base-spacing * 2) ($base-spacing * 2) 350px;
-        width: calc(95%/2); /* Or whatever */
-
-        margin: ($base-spacing / 2) auto;
+        width: calc(100%); /* Or whatever */
+        margin: $base-spacing;
     }
 
     @media (min-width: $large) {
         width: calc(95%/2); /* Or whatever */
+
+        margin: $base-spacing/2 auto;
     }
 
     @media (min-width: $desktop) {
         width: calc(95%/3); /* Or whatever */
-
-        margin: ($base-spacing / 2) auto;
     }
 
     .buy-and-share {
@@ -45,9 +44,12 @@
 
 section.gallery {
     display: flex; /* or inline-flex */
+    justify-content: space-around;
 
     .product {
         @include flex-content-3;
+
+        justify-content: space-around;
 
         h1 {
             font-size: 2em;

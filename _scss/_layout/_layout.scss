@@ -15,13 +15,14 @@ main {
             float: left;
             padding: $base-spacing 0;
 
-            @media (max-width: $small) {
-                padding: $base-spacing $base-spacing/2 0;
+            @media (min-width: $small) {
+                padding: $base-spacing $base-spacing/6 0;
             }
         }
     }
 
     .the-content {
         @include flex-container;
+        padding: $base-spacing/2;
     }
 }

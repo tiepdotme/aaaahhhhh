@@ -7,11 +7,12 @@ section.single-product {
     }
 
     .product {
-        padding: ($base-spacing / 2) $base-spacing;
+       // padding: ($base-spacing / 2) $base-spacing;
         position: relative;
 
         @media (min-width: $desktop) {
-            border: 2px solid $black;
+            //border: 2px solid $black;
+            margin-top:150px;
         }
 
         .image-and-button {

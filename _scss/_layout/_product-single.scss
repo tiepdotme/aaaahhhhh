@@ -7,12 +7,14 @@ section.single-product {
     }
 
     .product {
-       // padding: ($base-spacing / 2) $base-spacing;
+        // padding: ($base-spacing / 2) $base-spacing;
         position: relative;
+        padding: 0 ($base-spacing / 2);
 
         @media (min-width: $desktop) {
             //border: 2px solid $black;
-            margin-top:150px;
+            margin-top: 150px;
+            padding: 0;
         }
 
         .image-and-button {
@@ -52,55 +54,35 @@ section.single-product {
             }
         }
 
-        button.pure-button {
-            width: 100%;
-
-            @media (min-width: $medium) {
-                width: calc(50%);
-            }
-        }
+       
 
         .description {
             width: 100%;
             float: left;
-            padding: $base-spacing 0;
+          
         }
 
-        #share-buttons {
-            width: 100%;
-            float: left;
-            padding: $base-spacing 0;
-        }
+      
 
         iframe {
-            background: $brand;
+            background: $white;
+
+            @media (min-width: $large) {}
         }
 
         .product-gallery {
-            margin: ($base-spacing / 2) auto;
-            background: $brand;
+            background: $white;
 
             @media (min-width: $large) {
-                margin-top: $base-spacing;
+                margin: 0 auto;
             }
 
             img {
-                width: 100%;
-                margin: ($base-spacing / 2) 0;
-                float: left;
-               // box-shadow:0 0  10px $black;
+                margin: 0 auto;
+                padding: $base-spacing / 2;
 
                 @media (min-width: $medium) {
-                    width: calc(52% - #{$base-spacing * 2});
-                    margin: $base-spacing;
-
-                    &:nth-child(odd) {
-                        margin-left: 0;
-                    }
-
-                    &:nth-child(even) {
-                        margin-right: 0;
-                    }
+                    width: calc(100%/3);
                 }
             }
         }

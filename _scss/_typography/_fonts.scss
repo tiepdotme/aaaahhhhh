@@ -49,10 +49,12 @@ h6 {
 }
 
 /* Paragraphs and Links */
-p, a {
-    font-size: 1em;
-    line-height: 1.5;
-    margin: 0 auto $base-spacing;
+p {
+    text-align: left;
+    font-size: .9em;
+    opacity: .5;
+    padding: ($base-spacing / 2) 0 ;
+    line-height: 1.25;
 }
 
 /*  Links Within Paragraphs*/

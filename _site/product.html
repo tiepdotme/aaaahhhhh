@@ -85,7 +85,7 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <main role="main">
-    <section class="the-content gallery">
+    <section class="the-content ">
         <header class="product-page-header">
   <div class="logo">
     <a href="http://localhost:4000">
@@ -169,7 +169,7 @@
 <table style="width:100%">
     <tr>
         <td>
-            <a href="http://localhost:4000/product/Statement-And-Counter-statement/">Statement And Counter-statement Notes On Experimental Jetset New edition includes Automatically Arranged Alphabets zine </a>
+            <a href="http://localhost:4000/product/Statement-And-Counter-statement/">Statement And Counter-statement; Notes On Experimental Jetset New edition includes Automatically Arranged Alphabets zine </a>
         </td>
         <td>Experimental Jetset </td>
          
@@ -210,13 +210,9 @@
     <div class="footer-content">
         <h2>Four A's Five H's</h2>
         <h3>Books on Art, Design, Architecture, et al.</h3>
+             <p>&copy; 2018++</p>
     </div>
-    <div class="footer-content">
-    <p style="font-size: 14px;">
-    designed and developed by  <a href="https://discoform.com">discoform</a>
-</p>
-       &copy; 2018++
-    </div>
+
         <ul>
         <li>
             <i class="fa fa-cc-stripe" aria-hidden="true"></i>
@@ -247,20 +243,16 @@
     Snipcart.execute('config', 'show_continue_shopping', true);
 </script>
 <!-- Other Scripts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
-     var instance = M.Carousel.init({
-            fullWidth: true,
-            indicators: true
-        });
-
-        // Or with jQuery
-
-        $('.carousel.carousel-slider').carousel({
-            fullWidth: true,
-            indicators: true
+    $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 200
         });
 </script>
+
+
 
 </body>
 </html>

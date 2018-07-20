@@ -5,15 +5,21 @@
     </div>
     <div class="title">
         <ul>
-            <h3>
-                <li>{{ page.title }} {% if page.subTitle %}: {{ page.subTitle }} {% endif %}</li>
-            </h3>
-            <h3>
-                <li>{{ page.author }}</li>
-            </h3>
-            <h3>
-                <li>{{ page.publisher }}, {{ page.publicationDate }}</li>
-            </h3>
+
+            <li>
+                <h3>{{ page.title }} {% if page.subTitle %}: {{ page.subTitle }} {% endif %}</h3>
+            </li>
+
+
+            <li>
+                <h3>{{ page.author }}</h3>
+            </li>
+
+
+            <li>
+                <h3>{{ page.publisher }}, {{ page.publicationDate }}</h3>
+            </li>
+
             <li>{{ page.binding }}</li>
             <li>ISBN: {{ page.ISBN }}</li>
             {%- if page.otherDetails -%}
@@ -23,14 +29,16 @@
         <ul>
             {% if page.quantity > 0 -%}
             <li>
-                <h3 class="price">${{ page.price }}</h3>
+                <h3>${{ page.price }}</h3>
             </li>
             {%- endif %}
         </ul>
         {% include buy-and-share.html %}
     </div>
     <div class="description">
-        {{page.content}} {% if page.vimeo -%}
+        {{page.content}} 
+        
+        {% if page.vimeo -%}
         <!-- start vimeo -->
         <div style="padding:56.25% 0 0 0;position:relative;">
             <iframe src="https://player.vimeo.com/video/{{page.vimeo}}?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;"
@@ -40,7 +48,7 @@
         <!-- end vimeo -->
         {% endif %} {% if page.youtube -%}
         <!-- start youtube -->
-        <iframe width="100%" height="450" src="https://www.youtube.com/embed/{{page.youtube}}?rel=0&amp;showinfo=0" frameborder="0"
+        <iframe width="100%" height="550" src="https://www.youtube.com/embed/{{page.youtube}}?rel=0&amp;showinfo=0" frameborder="0"
             allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <!-- end youtube -->{% endif %}
 
@@ -48,16 +56,15 @@
 
 
 
-        <div class="product-gallery">
+        <div class="product-gallery grid">
             {% for thumbnail_image in page.thumbnail_images %}
-            <img class="grid-item" src="{{ site.url }}/assets/images/product-thumbnails/{{page.slug}}/{{thumbnail_image}}" alt="image of {{ page.title }} by {{ page.author }}"> 
-            {% endfor %}
+            <img class="grid-item" src="{{ site.url }}/assets/images/product-thumbnails/{{page.slug}}/{{thumbnail_image}}" alt="image of {{ page.title }} by {{ page.author }}"> {% endfor %}
         </div>
-   
+
 
 
     </div>
     <!-- end .product -->
-    
+
     {% include components-menus/share.html %}
 </div>

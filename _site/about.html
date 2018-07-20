@@ -122,13 +122,9 @@
     <div class="footer-content">
         <h2>Four A's Five H's</h2>
         <h3>Books on Art, Design, Architecture, et al.</h3>
+             <p>&copy; 2018++</p>
     </div>
-    <div class="footer-content">
-    <p style="font-size: 14px;">
-    designed and developed by  <a href="https://discoform.com">discoform</a>
-</p>
-       &copy; 2018++
-    </div>
+
         <ul>
         <li>
             <i class="fa fa-cc-stripe" aria-hidden="true"></i>
@@ -159,20 +155,16 @@
     Snipcart.execute('config', 'show_continue_shopping', true);
 </script>
 <!-- Other Scripts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
-     var instance = M.Carousel.init({
-            fullWidth: true,
-            indicators: true
-        });
-
-        // Or with jQuery
-
-        $('.carousel.carousel-slider').carousel({
-            fullWidth: true,
-            indicators: true
+    $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 200
         });
 </script>
+
+
 
 </body>
 </html>

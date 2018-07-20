@@ -17,17 +17,12 @@
     Snipcart.execute('config', 'show_continue_shopping', true);
 </script>
 <!-- Other Scripts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
-     var instance = M.Carousel.init({
-            fullWidth: true,
-            indicators: true
-        });
-
-        // Or with jQuery
-
-        $('.carousel.carousel-slider').carousel({
-            fullWidth: true,
-            indicators: true
+    $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 200
         });
 </script>
+

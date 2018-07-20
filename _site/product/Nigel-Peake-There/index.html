@@ -103,21 +103,27 @@
     </div>
     <div class="title">
         <ul>
-            <h3>
-                <li>There </li>
-            </h3>
-            <h3>
-                <li>Nigel Peake</li>
-            </h3>
-            <h3>
-                <li>Nigel Peake, 2017</li>
-            </h3>
+
+            <li>
+                <h3>There </h3>
+            </li>
+
+
+            <li>
+                <h3>Nigel Peake</h3>
+            </li>
+
+
+            <li>
+                <h3>Nigel Peake, 2017</h3>
+            </li>
+
             <li>50 p, illus colour, 17 x 24 cm, pb, English</li>
             <li>ISBN: 9780957213784</li>
         </ul>
         <ul>
             <li>
-                <h3 class="price">$35</h3>
+                <h3>$35</h3>
             </li>
         </ul>
         <div class="buy-and-share">
@@ -183,43 +189,34 @@
     </div>
     <div class="description">
         <p>Nigel Peake produces meticulous hand-drawn maps and obsessively detailed pencil illustrations. Architecture plays a prominent role in his work, as is also the case with ‘There’, the result of his spending a month in an apartment in Paris while working on a series of drawings. There he soon found another drawing project when looking outside the apartment’s windows, a yard that was in fact inaccessible to him. The yard was always devoid of people, so he began to draw it using blue pencil. Each picture is a fragment of the whole, interpretations and perspectives that can be pieced together, interchanged, or float freely without context. The book includes a twelve-page insert with texts.<br /></p>
-  
+ 
+        
+         
 
 
 
 
 
-        <div class="product-gallery">
+        <div class="product-gallery grid">
             
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There/1.jpg" alt="image of There by Nigel Peake"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There/2.jpg" alt="image of There by Nigel Peake"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There/4.jpg" alt="image of There by Nigel Peake"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There/5.jpg" alt="image of There by Nigel Peake"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There/6.jpg" alt="image of There by Nigel Peake"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There/7.jpg" alt="image of There by Nigel Peake"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There/8.jpg" alt="image of There by Nigel Peake"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There/9.jpg" alt="image of There by Nigel Peake"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There/10.jpg" alt="image of There by Nigel Peake"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There/11.jpg" alt="image of There by Nigel Peake"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Nigel-Peake-There/12.jpg" alt="image of There by Nigel Peake"> 
-            
         </div>
-   
+
 
 
     </div>
     <!-- end .product -->
-    
+
      
 <div id="share-buttons">
     <h4>Share this:</h4>
@@ -275,13 +272,9 @@
     <div class="footer-content">
         <h2>Four A's Five H's</h2>
         <h3>Books on Art, Design, Architecture, et al.</h3>
+             <p>&copy; 2018++</p>
     </div>
-    <div class="footer-content">
-    <p style="font-size: 14px;">
-    designed and developed by  <a href="https://discoform.com">discoform</a>
-</p>
-       &copy; 2018++
-    </div>
+
         <ul>
         <li>
             <i class="fa fa-cc-stripe" aria-hidden="true"></i>
@@ -312,20 +305,16 @@
     Snipcart.execute('config', 'show_continue_shopping', true);
 </script>
 <!-- Other Scripts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
-     var instance = M.Carousel.init({
-            fullWidth: true,
-            indicators: true
-        });
-
-        // Or with jQuery
-
-        $('.carousel.carousel-slider').carousel({
-            fullWidth: true,
-            indicators: true
+    $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 200
         });
 </script>
+
+
 
 </body>
 </html>

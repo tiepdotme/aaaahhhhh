@@ -102,21 +102,27 @@
     </div>
     <div class="title">
         <ul>
-            <h3>
-                <li>Studio Fm Milano : Bodies </li>
-            </h3>
-            <h3>
-                <li>Studio Fm</li>
-            </h3>
-            <h3>
-                <li>Corraini Edizioni Mantova, 2017</li>
-            </h3>
+
+            <li>
+                <h3>Studio Fm Milano : Bodies </h3>
+            </li>
+
+
+            <li>
+                <h3>Studio Fm</h3>
+            </li>
+
+
+            <li>
+                <h3>Corraini Edizioni Mantova, 2017</h3>
+            </li>
+
             <li>288 p, ills colour, 21 x 26 cm, pb, Italian/English</li>
             <li>ISBN: 9788875706128</li>
         </ul>
         <ul>
             <li>
-                <h3 class="price">$36</h3>
+                <h3>$36</h3>
             </li>
         </ul>
         <div class="buy-and-share">
@@ -182,29 +188,27 @@
     </div>
     <div class="description">
         <p>In this book is a collection of pictographs made by studio FM milano, a graphic design studio founded in 1996 by Barbara Forni, Cristiano Bottino, and Sergio Menichelli. Each one is essentially a fragment of more complex and articulated projects. Presented in this way, they take on a life of their own, becoming characters independent of the design contexts in which they were created. The subjects are ordered randomly, or in relation to simple visual similarities or pictorial graphic systems, and only two colours (purple and green) are used. It is simultaneously a monograph and a manifesto that expresses the essence of the studio’s output over its two decades of work.</p>
-  
+ 
+        
+         
 
 
 
 
 
-        <div class="product-gallery">
+        <div class="product-gallery grid">
             
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies/1.png" alt="image of Studio Fm Milano by Studio Fm"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies/2.jpg" alt="image of Studio Fm Milano by Studio Fm"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies/3.jpg" alt="image of Studio Fm Milano by Studio Fm"> 
-            
             <img class="grid-item" src="http://localhost:4000/assets/images/product-thumbnails/Studio-Fm-Milano-Bodies/4.jpg" alt="image of Studio Fm Milano by Studio Fm"> 
-            
         </div>
-   
+
 
 
     </div>
     <!-- end .product -->
-    
+
      
 <div id="share-buttons">
     <h4>Share this:</h4>
@@ -260,13 +264,9 @@
     <div class="footer-content">
         <h2>Four A's Five H's</h2>
         <h3>Books on Art, Design, Architecture, et al.</h3>
+             <p>&copy; 2018++</p>
     </div>
-    <div class="footer-content">
-    <p style="font-size: 14px;">
-    designed and developed by  <a href="https://discoform.com">discoform</a>
-</p>
-       &copy; 2018++
-    </div>
+
         <ul>
         <li>
             <i class="fa fa-cc-stripe" aria-hidden="true"></i>
@@ -297,20 +297,16 @@
     Snipcart.execute('config', 'show_continue_shopping', true);
 </script>
 <!-- Other Scripts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
-     var instance = M.Carousel.init({
-            fullWidth: true,
-            indicators: true
-        });
-
-        // Or with jQuery
-
-        $('.carousel.carousel-slider').carousel({
-            fullWidth: true,
-            indicators: true
+    $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 200
         });
 </script>
+
+
 
 </body>
 </html>

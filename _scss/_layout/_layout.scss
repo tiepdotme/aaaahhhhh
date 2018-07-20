@@ -1,11 +1,10 @@
-body{
-    background:$grey;
+body {
+    background: $grey;
 }
 
 main {
     max-width: $max-width-main;
     margin: auto;
-
 
     section {
         //margin: $base-spacing auto;
@@ -13,16 +12,22 @@ main {
         h1 {
             width: 100%;
             float: left;
-            padding: $base-spacing 0;
+            padding: $base-spacing ($base-spacing / 6);
+            font-size: 30px;
+            text-align: center;
 
             @media (min-width: $small) {
-                padding: $base-spacing $base-spacing/6 0;
+                padding: $base-spacing ($base-spacing / 6) ($base-spacing / 2);
+                font-size: 30px;
+            }
+
+            @media (min-width: $max-width) {
+                text-align: left;
             }
         }
     }
 
     .the-content {
         @include flex-container;
-        padding: $base-spacing/2;
     }
 }

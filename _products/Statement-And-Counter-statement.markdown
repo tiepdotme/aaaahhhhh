@@ -1,6 +1,6 @@
 ---
 # //basic information
-title: Statement And Counter-statement Notes On Experimental Jetset
+title: Statement And Counter-statement; Notes On Experimental Jetset
 subTitle: New edition includes Automatically Arranged Alphabets zine
 author: Experimental Jetset
 publisher: Roma

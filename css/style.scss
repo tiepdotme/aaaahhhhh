@@ -34,14 +34,13 @@ $desktop: $max-width;
 
 @mixin flex-container {
     display: flex;
-    flex-flow: row wrap;
-    flex-direction: row; 
+    flex-flow: row  wrap;
     justify-content: space-between;
 
-    @media (max-width: $small) { 
-      width: 100%;
-      
-    }
+
+
+
+    
 }
 
 
@@ -79,4 +78,4 @@ $desktop: $max-width;
     z-index: 9998;
 }
 
-@import "product-test";
+

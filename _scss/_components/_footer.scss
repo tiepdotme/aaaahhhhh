@@ -6,23 +6,31 @@ footer {
     margin: ($base-spacing * 2) auto 0;
     background: $black;
     color: $white;
-    padding: $base-spacing*2;
-   
+    padding: $base-spacing * 2;
+
     .footer-content {
-      @extend %centered-content;
-      padding:0;
-      a{
-          box-shadow: none;
-      }
-       
+        @extend %centered-content;
+
+        p {
+            text-align: center;
+        }
+
+        padding: 0;
+
+        a {
+            box-shadow: none;
+        }
     }
 
-    ul{
-        width: 100%;font-size:1.3em;
-        margin-top:$base-spacing/2;
-        li{display: inline;
-padding:$base-spacing/6;
-        text-align: left;}
+    ul {
+        width: 100%;
+        font-size: 1.3em;
+        margin-top: $base-spacing / 2;
+
+        li {
+            display: inline;
+            padding: $base-spacing / 6;
+            text-align: left;
+        }
     }
 }
-

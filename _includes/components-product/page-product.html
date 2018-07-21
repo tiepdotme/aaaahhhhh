@@ -1,6 +1,6 @@
 {% include components-product/product-page-header.html %}
 <div class="product">
-   
+
     <div class="title">
         <ul>
 
@@ -24,7 +24,8 @@
             <li>{{ page.otherDetails }}</li>
             {%- endif %}
         </ul>
-        
+                 {{page.content}}
+
         <ul>
             {% if page.quantity > 0 -%}
             <li>
@@ -35,7 +36,6 @@
         {% include buy-and-share.html %}
     </div>
     <div class="description">
-        {{page.content}} 
         
         {% if page.vimeo -%}
         <!-- start vimeo -->

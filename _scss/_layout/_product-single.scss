@@ -66,9 +66,7 @@ section.single-product {
         iframe {
             background: $white;
             margin-top: $base-spacing / 2;
-            float: left;
-
-            @media (min-width: $large) {}
+            
         }
 
         .product-gallery {

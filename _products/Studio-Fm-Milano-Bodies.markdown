@@ -20,7 +20,7 @@ dust_jacket_condition:
 # //images
 featured_image: Studio-Fm-Milano-Bodies.jpg
 thumbnail_images:
-        - 1.png
+        
         - 2.jpg
         - 3.jpg
         - 4.jpg

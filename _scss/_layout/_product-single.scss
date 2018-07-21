@@ -17,31 +17,6 @@ section.single-product {
             padding: 0;
         }
 
-        .image-and-button {
-            width: calc(100%);
-            float: left;
-
-            @media (min-width: $medium) {
-                width: calc(25%);
-                margin-left: $base-spacing / 1.75;
-                transform: rotate(0deg);
-                float: left;
-            }
-
-            img {
-                box-shadow: (-$base-spacing / 2) ($base-spacing / 2) 0px $black;
-                width: calc(50%);
-                margin: ($base-spacing * 2) 0 ($base-spacing * 2) 25vw;
-                transform: rotate(30deg);
-
-                @media (min-width: $medium) {
-                    width: calc(100%);
-                    margin: $base-spacing 0;
-                    transform: rotate(0deg);
-                }
-            }
-        }
-
         .title {
             width: calc(100%);
             float: left;
@@ -49,8 +24,8 @@ section.single-product {
 
             @media (min-width: $medium) {
                 width: calc(68%);
-                padding: $base-spacing;
-                float: right;
+                padding: $base-spacing 0;
+                float: left;
             }
         }
 
@@ -66,23 +41,14 @@ section.single-product {
         iframe {
             background: $white;
             margin-top: $base-spacing / 2;
-            
         }
 
         .product-gallery {
-            background: $white;
-            margin: ($base-spacing * 2) auto;
-
-            @media (min-width: $large) {
-                margin: $base-spacing auto;
-            }
+            margin: $base-spacing 0;
 
             img {
-                margin: 0 auto;
-                padding: $base-spacing / 2;
-
                 @media (min-width: $medium) {
-                    width: calc(100%/3);
+                    padding: ($base-spacing / 4) 0;
                 }
             }
         }

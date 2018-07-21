@@ -20,7 +20,6 @@ dust_jacket_condition:
 # //images
 featured_image: Statement-And-Counter-statement.jpg
 thumbnail_images:
-        - 1.jpg
         - 2.jpg
         - 3.jpg
         - 4.jpg

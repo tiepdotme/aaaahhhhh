@@ -1,13 +1,11 @@
 {% include components-product/product-page-header.html %}
 <div class="product">
-    <div class="image-and-button">
-        <img src="{{ site.url }}/assets/images/product-thumbnails/{{page.slug}}/{{page.featured_image}}" alt="image of {{ page.title }} by {{ page.author }} ">
-    </div>
+   
     <div class="title">
         <ul>
 
             <li>
-                <h3>{{ page.title }} {% if page.subTitle %}: {{ page.subTitle }} {% endif %}</h3>
+                <h2>{{ page.title }} {% if page.subTitle %}: {{ page.subTitle }} {% endif %}</h2>
             </li>
 
 
@@ -26,6 +24,7 @@
             <li>{{ page.otherDetails }}</li>
             {%- endif %}
         </ul>
+        
         <ul>
             {% if page.quantity > 0 -%}
             <li>
@@ -56,9 +55,9 @@
 
 
 
-        <div class="product-gallery grid">
+        <div class="product-gallery ">
             {% for thumbnail_image in page.thumbnail_images %}
-            <img class="grid-item" src="{{ site.url }}/assets/images/product-thumbnails/{{page.slug}}/{{thumbnail_image}}" alt="image of {{ page.title }} by {{ page.author }}"> {% endfor %}
+            <img  src="{{ site.url }}/assets/images/product-thumbnails/{{page.slug}}/{{thumbnail_image}}" alt="image of {{ page.title }} by {{ page.author }}"> {% endfor %}
         </div>
 
 

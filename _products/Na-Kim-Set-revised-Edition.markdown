@@ -20,7 +20,6 @@ dust_jacket_condition:
 # //images
 featured_image: Na-Kim-Set.png
 thumbnail_images:
-        - 6.png
         - 1.jpg
         - 2.jpg
         - 3.jpg

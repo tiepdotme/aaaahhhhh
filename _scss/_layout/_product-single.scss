@@ -54,27 +54,29 @@ section.single-product {
             }
         }
 
-       
-
         .description {
             width: 100%;
             float: left;
-          
-        }
 
-      
+            P {
+                margin: 0 0 $base-spacing 0;
+            }
+        }
 
         iframe {
             background: $white;
+            margin-top: $base-spacing / 2;
+            float: left;
 
             @media (min-width: $large) {}
         }
 
         .product-gallery {
             background: $white;
+            margin: ($base-spacing * 2) auto;
 
             @media (min-width: $large) {
-                margin: 0 auto;
+                margin: $base-spacing auto;
             }
 
             img {

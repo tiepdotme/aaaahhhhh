@@ -2,6 +2,9 @@ header {
     @include flex-container;
 
     min-height: auto;
+    min-height: 70vh;
+    background: $brand;
+    
 
     @media (min-width: $medium) {
         min-height: 50vh;
@@ -10,7 +13,7 @@ header {
     .hero {
         padding: $base-spacing / 2;
         background: $brand;
-        padding-top: 100px;
+        margin: auto;
         text-align: center;
         width: 100%;
 

@@ -34,3 +34,15 @@ footer {
         }
     }
 }
+
+.contact {
+    position: fixed;
+    bottom: $base-spacing/2.5;
+    left: $base-spacing/2.5;
+font-size: 20px;
+color:$black;
+    a i {
+        padding: $base-spacing/4;
+        background:$brand;
+   }
+}

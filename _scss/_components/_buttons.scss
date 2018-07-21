@@ -11,6 +11,15 @@ button.pure-button {
     margin: 0;
     position: relative;
 
+    &:first-child {
+        span {
+            padding-left: $base-spacing;
+
+            @media (max-width: $medium) {
+                padding-left: 0;
+            }
+        }
+    }
 
     @media (max-width: $medium) {
         width: 100%;
@@ -23,9 +32,9 @@ button.pure-button {
         position: absolute;
         left: 2px;
         top: 2px;
-        color:white;
+        color: white;
         padding: ($base-spacing / 1.5) ($base-spacing / 1.5);
         background: $brand;
-        color:$black;
+        color: $black;
     }
 }

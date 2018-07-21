@@ -1,10 +1,8 @@
 header {
     @include flex-container;
 
-    min-height: auto;
     min-height: 70vh;
     background: $brand;
-    
 
     @media (min-width: $medium) {
         min-height: 50vh;
@@ -27,24 +25,32 @@ header {
 
     &.product-page-header {
         margin-top: 100px;
-        text-align: center;
+        background: transparent;
+        min-height: 0vh;
 
         @media (min-width: $small) {
-            margin: 50px auto;
+            height: auto;
+            height: auto;
+        }
+
+        @media (min-width: $medium) {
             min-height: auto;
+            max-height: auto;
         }
 
         h1 {
             display: none;
 
-            @media (min-width: $small) {
-                display: inline;
-                font-size: 150%;
+            @media (min-width: $medium) {
+                display: block;
+                padding: $base-spacing ($base-spacing / 4);
+                text-align: left;
             }
 
-            @media (min-width: $medium) {
-                border: 2px solid $black;
-                padding: $base-spacing;
+            @media (min-width: $desktop) {
+               
+                padding: $base-spacing 0;
+               
             }
         }
     }

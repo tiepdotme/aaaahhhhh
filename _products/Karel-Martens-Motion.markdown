@@ -8,7 +8,7 @@ publicationDate: 2017
 condition: new
 binding: 304 p, ills colour & bw, 21 x 29 cm, pb, English
 ISBN: 9789491843853
-price: 40
+price: 50
 weight: 250
 quantity: 3
 summary: Published as part of ‘Motion’, an exhibition by Dutch artist and graphic designer Karel Martens at Kunstverein München, this book is the seventh instalment of the ‘Companion’ series produced by the Kunstverein and Roma Publications.

@@ -20,11 +20,11 @@
 
     <!-- Basic Page Needs
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8"> {% if page.url == "/" %}
+    <meta charset="utf-8"> {% if page.url == "/" or "/product"  %}
     <title>{{ site.title }} | {{ site.subtitle }}</title>
-    <meta name="description" content="{{ site.title }} | {{ site.description }} New Arrivals from {% for product in site.products %}{{product.author}}, {% endfor %}and more.">{% else %}
+    <meta name="description" content="{{ site.title }} | {{ site.description }} New arrivals in the shop by {% for product in site.products %}{{product.author}}, {% endfor %}and more.">{% else %}
     <title>{{ page.title }}' by {{page.author}} | {{ site.title }} - {{site.description}}</title>
-    <meta name="description" content="Purchase '{{ page.title }}' by {{page.author}} at {{ site.title }} | {{ site.subtitle }}"> {% endif %}
+    <meta name="description" content="Purchase '{{ page.title }}' by {{page.author}}, or see more at {{ site.title }}, {{ site.subtitle }}"> {% endif %}
     <meta name="author" content="{{site.author}}">
     <!-- Mobile Specific Metas
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->

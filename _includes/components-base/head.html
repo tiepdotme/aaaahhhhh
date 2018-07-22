@@ -22,9 +22,9 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8"> {% if page.url == "/" %}
     <title>{{ site.title }} | {{ site.subtitle }}</title>
-    <meta name="description" content="{{ site.description }}"> {% else %}
-    <title>'{{ page.title }}' by {{page.author}} | {{ site.title }} - {{site.description}}</title>
-    <meta name="description" content="{{ page.title }} | {{ site.title }} | {{ site.subtitle }}"> {% endif %}
+    <meta name="description" content="{{ site.title }} | {{ site.description }} New Arrivals from {% for product in site.products %}{{product.author}}, {% endfor %}and more.">{% else %}
+    <title>{{ page.title }}' by {{page.author}} | {{ site.title }} - {{site.description}}</title>
+    <meta name="description" content="Purchase '{{ page.title }}' by {{page.author}} at {{ site.title }} | {{ site.subtitle }}"> {% endif %}
     <meta name="author" content="{{site.author}}">
     <!-- Mobile Specific Metas
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->

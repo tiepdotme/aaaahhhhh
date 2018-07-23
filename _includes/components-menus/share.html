@@ -1,7 +1,7 @@
  {% if page.url == "/" %}
- <div id="share-buttons">
+ <div class="share-buttons">
         <h4>Share this:</h4>
-        <a href="http://www.digg.com/submit?url={{ site.url }}{{ product.url }}" target="_blank" title="Digg share {{ site.title }} / {{ product.title }}"><i class="fa fa-digg" aria-hidden="true" style="color:#2269a8" style="color:#2269a8"></i></a>
+        <a href="http://www.digg.com/submit?url={{ site.url }}{{ product.url }}" target="_blank" title="Digg share {{ site.title }} / {{ product.title }}"><i class="fa fa-digg" aria-hidden="true" style="color:#2269a8"></i></a>
         <!-- Email -->
         <a href="mailto:?Subject={{ site.title }} / {{ product.title }}&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 {{ site.url }}{{ product.url }}"
             title="e-mail {{ site.title }} / {{ product.title }}"><i class="fa fa-envelope" aria-hidden="true" style="color:#00110C"></i></a>
@@ -26,10 +26,10 @@
         <!-- end #share-buttons -->
 </div>
  {% else %}
-<div id="share-buttons">
+<div class="share-buttons">
     <h4>Share this:</h4>
     <a href="http://www.digg.com/submit?url={{ site.url }}{{ page.url }}" target="_blank" title="Digg share {{ site.title }} / {{ page.title }}">
-        <i class="fa fa-digg" aria-hidden="true" style="color:#2269a8" style="color:#2269a8"></i>
+        <i class="fa fa-digg" aria-hidden="true" style="color:#2269a8"></i>
     </a>
     <!-- Email -->
     <a href="mailto:?Subject={{ site.title }} / {{ page.title }}&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 {{ site.url }}{{ page.url }}"

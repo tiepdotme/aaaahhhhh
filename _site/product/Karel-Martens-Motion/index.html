@@ -101,29 +101,21 @@
   <h1><a href="http://localhost:4000">Four A's Five H's<br><small>Books on Art, Design, Architecture, et al.</small></a></h1>
 </header>
 <div class="product">
-
     <div class="title">
         <ul>
-
             <li>
                 <h2>Motion </h2>
             </li>
-
-
             <li>
                 <h3>Karel Martens</h3>
             </li>
-
-
             <li>
                 <h3>Roma, 2017</h3>
             </li>
-
             <li>304 p, ills colour & bw, 21 x 29 cm, pb, English</li>
             <li>ISBN: 9789491843853</li>
         </ul>
-                 <p>Published as part of ‘Motion’, an exhibition by Dutch artist and graphic designer Karel Martens at Kunstverein München, this book is the seventh instalment of the ‘Companion’ series produced by the Kunstverein and Roma Publications. With concept and design by Julie Peeters, the greater part of the book’s content is derived from the video ‘Not for Resale’, a sequence of photographs of the array of images and objects found on the artist’s studio wall, taken in 2000. Material from two other videos, ‘Lost &amp; Found’ (2004) and ‘Tol’ (2008), is also included, along with a transcription of a conversation between Martens and Chris Fitzpatrick, director of the Kunstverein.</p>
-
+        <p>Published as part of ‘Motion’, an exhibition by Dutch artist and graphic designer Karel Martens at Kunstverein München, this book is the seventh instalment of the ‘Companion’ series produced by the Kunstverein and Roma Publications. With concept and design by Julie Peeters, the greater part of the book’s content is derived from the video ‘Not for Resale’, a sequence of photographs of the array of images and objects found on the artist’s studio wall, taken in 2000. Material from two other videos, ‘Lost &amp; Found’ (2004) and ‘Tol’ (2008), is also included, along with a transcription of a conversation between Martens and Chris Fitzpatrick, director of the Kunstverein.</p>
 
         <ul>
             <li>
@@ -190,9 +182,7 @@
  
  
 </div>
-
     </div>
-
     <div class="description">
         <!-- start vimeo -->
         <div style="padding:56.25% 0 0 0;position:relative;">
@@ -202,30 +192,21 @@
         <script src="https://player.vimeo.com/api/player.js"></script>
         <!-- end vimeo -->
          
-
-
-
-
-
         <div class="product-gallery ">
             
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/1.jpg" alt="image of Motion by Karel Martens"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/2.jpg" alt="image of Motion by Karel Martens"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/3.jpg" alt="image of Motion by Karel Martens"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/4.jpg" alt="image of Motion by Karel Martens"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/5.jpg" alt="image of Motion by Karel Martens"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/6.jpg" alt="image of Motion by Karel Martens"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/7.jpg" alt="image of Motion by Karel Martens"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/8.jpg" alt="image of Motion by Karel Martens"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/9.jpg" alt="image of Motion by Karel Martens"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/10.jpg" alt="image of Motion by Karel Martens"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/1.jpg" alt="image of Motion by Karel Martens"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/2.jpg" alt="image of Motion by Karel Martens"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/3.jpg" alt="image of Motion by Karel Martens"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/4.jpg" alt="image of Motion by Karel Martens"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/5.jpg" alt="image of Motion by Karel Martens"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/6.jpg" alt="image of Motion by Karel Martens"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/7.jpg" alt="image of Motion by Karel Martens"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/8.jpg" alt="image of Motion by Karel Martens"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/9.jpg" alt="image of Motion by Karel Martens"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Karel-Martens-Motion/10.jpg" alt="image of Motion by Karel Martens"> 
         </div>
-
-
-
     </div>
     <!-- end .product -->
-
      
 <div class="share-buttons">
     <h4>Share this:</h4>
@@ -318,6 +299,17 @@
     Snipcart.execute('config', 'show_continue_shopping', true);
 </script>
 
+
+<script>
+    window.addEventListener('load', function () {
+        var allimages = document.getElementsByTagName('img');
+        for (var i = 0; i < allimages.length; i++) {
+            if (allimages[i].getAttribute('data-src')) {
+                allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+            }
+        }
+    }, false)
+</script>
 
 </body>
 </html>

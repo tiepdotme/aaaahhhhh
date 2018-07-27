@@ -103,29 +103,21 @@
   <h1><a href="http://localhost:4000">Four A's Five H's<br><small>Books on Art, Design, Architecture, et al.</small></a></h1>
 </header>
 <div class="product">
-
     <div class="title">
         <ul>
-
             <li>
                 <h2>Na Kim - Set : (Revised Edition) </h2>
             </li>
-
-
             <li>
                 <h3>Na Kim</h3>
             </li>
-
-
             <li>
                 <h3>Roma, 2017</h3>
             </li>
-
             <li>136 p, ills colour & bw, 23 x 30 cm, pb, Korean/English</li>
             <li>ISBN: 9789491843914</li>
         </ul>
-                 <p>Updated reprint in black of a book featuring a collection of Na Kim’s work from 2006 to 2015 published on the occasion of DOOSAN Gallery New York, works are set in more or less contrast with the first edition, of the actual exhibition and her fourth solo exhibition, SET (named after this publication) from October 8 to November 5, 2015. For this book, fragments of her personal categories, taking on a form reminiscent of a sample book. In published before the show’s opening, this book also contains images text by Jae Seok Kim.</p>
-
+        <p>Updated reprint in black of a book featuring a collection of Na Kim’s work from 2006 to 2015 published on the occasion of DOOSAN Gallery New York, works are set in more or less contrast with the first edition, of the actual exhibition and her fourth solo exhibition, SET (named after this publication) from October 8 to November 5, 2015. For this book, fragments of her personal categories, taking on a form reminiscent of a sample book. In published before the show’s opening, this book also contains images text by Jae Seok Kim.</p>
 
         <ul>
             <li>
@@ -192,9 +184,7 @@
  
  
 </div>
-
     </div>
-
     <div class="description">
         <!-- start vimeo -->
         <div style="padding:56.25% 0 0 0;position:relative;">
@@ -204,25 +194,16 @@
         <script src="https://player.vimeo.com/api/player.js"></script>
         <!-- end vimeo -->
          
-
-
-
-
-
         <div class="product-gallery ">
             
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/1.jpg" alt="image of Na Kim - Set by Na Kim"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/2.jpg" alt="image of Na Kim - Set by Na Kim"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/3.jpg" alt="image of Na Kim - Set by Na Kim"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/4.jpg" alt="image of Na Kim - Set by Na Kim"> 
-            <img  src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/5.jpg" alt="image of Na Kim - Set by Na Kim"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/1.jpg" alt="image of Na Kim - Set by Na Kim"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/2.jpg" alt="image of Na Kim - Set by Na Kim"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/3.jpg" alt="image of Na Kim - Set by Na Kim"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/4.jpg" alt="image of Na Kim - Set by Na Kim"> 
+            <img src="http://localhost:4000/spinner.gif" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/5.jpg" alt="image of Na Kim - Set by Na Kim"> 
         </div>
-
-
-
     </div>
     <!-- end .product -->
-
      
 <div class="share-buttons">
     <h4>Share this:</h4>
@@ -315,6 +296,17 @@
     Snipcart.execute('config', 'show_continue_shopping', true);
 </script>
 
+
+<script>
+    window.addEventListener('load', function () {
+        var allimages = document.getElementsByTagName('img');
+        for (var i = 0; i < allimages.length; i++) {
+            if (allimages[i].getAttribute('data-src')) {
+                allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+            }
+        }
+    }, false)
+</script>
 
 </body>
 </html>

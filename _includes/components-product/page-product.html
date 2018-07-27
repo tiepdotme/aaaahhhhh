@@ -43,7 +43,7 @@
         <!-- end youtube -->{% endif %}
         <div class="product-gallery ">
             {% for thumbnail_image in page.thumbnail_images %}
-            <img src="{{site.url}}/spinner.gif" data-src="{{ site.url }}/assets/images/product-thumbnails/{{page.slug}}/{{thumbnail_image}}" alt="image of {{ page.title }} by {{ page.author }}"> {% endfor %}
+            <img src="{{site.url}}/spinner.svg" data-src="{{ site.url }}/assets/images/product-thumbnails/{{page.slug}}/{{thumbnail_image}}" alt="image of {{ page.title }} by {{ page.author }}"> {% endfor %}
         </div>
     </div>
     <!-- end .product -->

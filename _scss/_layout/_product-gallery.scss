@@ -30,7 +30,7 @@
             margin: ($base-spacing / 4) 0;
 
             @media (min-width: $small) {
-                width: 49%;
+                width: 100%;
                 margin: ($base-spacing / 2) 0;
             }
         }
@@ -54,8 +54,4 @@ section.gallery {
 
         background: white;
     }
-
-   
 }
-
-

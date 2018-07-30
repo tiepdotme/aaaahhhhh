@@ -1,5 +1,7 @@
 ---
-# //basic information
+###############################################################
+## Product Variables
+###############################################################
 title: Na Kim - Set
 subTitle: (Revised Edition)
 author: Na Kim
@@ -12,12 +14,11 @@ price: 40
 weight: 500
 quantity: 3
 summary: Updated reprint in black, featuring a collection of Na Kim’s work from 2006 to 2015, published on the occasion of DOOSAN Gallery New York.
-
-# //book condition
 binding_condition: fine
 dust_jacket_condition:
-
-# //images
+###############################################################
+## Product Images and Videos
+###############################################################
 featured_image: Na-Kim-Set.png
 thumbnail_images:
         - 1.jpg
@@ -25,17 +26,15 @@ thumbnail_images:
         - 3.jpg
         - 4.jpg
         - 5.jpg
-        
 vimeo: 68537091
 videoCaption: Na Kim talks about her process of creating a large advertising billboard.
-
-
-# //taxonomies etc.
+###############################################################
+## Taxonimies
+###############################################################
 slug: Na-Kim-Set
 category: design
 tags: [Na Kim, Set design, art]
 published: true
-
 ---
 
 

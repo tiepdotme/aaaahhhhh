@@ -1,6 +1,4 @@
 %button-1 {
- 
-
     @include transition-all;
 
     &:hover {
@@ -13,5 +11,22 @@
         box-shadow: inset $shadow;
 
         @include transition-all;
+    }
+}
+
+.sold-out {
+    position: relative;
+    height: 50px;
+    margin:  auto;
+
+    h3 {
+        border: 1px solid $black;
+        padding: $base-spacing / 2;
+        width: auto;
+        font-weight: lighter;
+        height: 50px;
+        line-height: 25px;
+        background: $brand;
+        position: absolute;
     }
 }

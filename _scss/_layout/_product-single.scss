@@ -38,19 +38,46 @@ section.single-product {
             }
         }
 
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            float: left;
+        }
+
         iframe {
             background: $white;
             margin-top: $base-spacing / 2;
+            float: left;
         }
+    }
+}
 
-        .product-gallery {
-            margin: $base-spacing 0;
+.product-gallery {
+    position: relative;
 
-            img {
-                @media (min-width: $medium) {
-                    padding: ($base-spacing / 4) 0;
-                }
-            }
-        }
+    h3 {
+        background: $white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: ($base-spacing / 2) ($base-spacing / 1.5) ($base-spacing / 3);
+        box-shadow: $shadow;
+        opacity: .5;
+    }
+
+    margin: 0;
+    background: $whitea;
+    padding: ($base-spacing * 2) ($base-spacing / 2) ($base-spacing / 2);
+    width: auto;
+    float: left;
+
+    img {
+        height: 100px;
+        width: auto;
+
+        //margin: 0 ($base-spacing / 2) ($base-spacing / 2) 0;
+        margin: 5px;
+        box-shadow: $shadow;
     }
 }

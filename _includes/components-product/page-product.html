@@ -1,4 +1,5 @@
 {% include components-product/product-page-header.html %}
+
 <div class="product">
     <div class="title">
         <ul>
@@ -27,10 +28,19 @@
         </ul>
         {% include buy-and-share.html %}
     </div>
+    
     <div class="description">
+        {% if page.thumbnail_images %}
+        <div class="product-gallery ">
+            <h3>Thumbnail Images</h3>
+        {% for thumbnail_image in page.thumbnail_images %}
+        <img src="{{site.url}}/spinner.svg" data-src="{{ site.url }}/assets/images/product-thumbnails/{{page.slug}}/{{thumbnail_image}}"
+            alt="image of {{ page.title }} by {{ page.author }}"> {% endfor %}
+    </div>
+     {%- endif %}
         {% if page.vimeo -%}
         <!-- start vimeo -->
-        <div style="padding:56.25% 0 0 0;position:relative;">
+        <div class="iframe-container" style="padding:56.25% 0 0 0;position:relative;">
             <iframe src="https://player.vimeo.com/video/{{page.vimeo}}?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;"
                 frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
@@ -41,10 +51,7 @@
         <iframe width="100%" height="550" src="https://www.youtube.com/embed/{{page.youtube}}?rel=0&amp;showinfo=0" frameborder="0"
             allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <!-- end youtube -->{% endif %}
-        <div class="product-gallery ">
-            {% for thumbnail_image in page.thumbnail_images %}
-            <img src="{{site.url}}/spinner.svg" data-src="{{ site.url }}/assets/images/product-thumbnails/{{page.slug}}/{{thumbnail_image}}" alt="image of {{ page.title }} by {{ page.author }}"> {% endfor %}
-        </div>
+       
     </div>
     <!-- end .product -->
     {% include components-menus/share.html %}

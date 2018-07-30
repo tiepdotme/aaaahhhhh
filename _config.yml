@@ -13,54 +13,63 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+###############################################################
+## Site Variables
+###############################################################
 title: Four A's Five H's
 subtitle: Books on Art, Design, Architecture, et al.
 email: hello@aaaahhhhh.com
 description: Books on Art, Design, Architecture, et al.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.aaaahhhhh.com/" # the base hostname & protocol for your site, e.g. http://example.com
+###############################################################
+## Social Media Variables
+###############################################################
 twitter_username: discoform
 github_username: discoform
 linkedIn_username: matthew-h-49303a139/
 instagram_username:
+###############################################################
+## Author Variables
+###############################################################
 author: discoform
 authorURL: https://discoform.com
 headerImage: mohr001.png
-excerpt_separator: <!--more-->
+###############################################################
+## Snipcart 
+###############################################################
 Snipcart_API: MGU4ZGQ1YjItZWU3Ni00OTkwLWE0NzMtMmZhYWVjZjIxODc5NjM2MjgzOTM4OTY3MjkwNjE3
-# Build settings
+###############################################################
+## Build settings
+###############################################################
 markdown: kramdown
-# theme: minima
+###############################################################
+## Plugins etc
+###############################################################
 plugins:
- # - jekyll-feed
- # - jekyll-compress-images
-
 # compress_images:
   # images_path: "assets/images/product-thumbnails/**/*.{gif,png,jpg,jpeg,svg}"
 
 exclude:
   - Gemfile
   - Gemfile.lock
-  
+###############################################################
+## Sass Settings
+###############################################################
 sass:
     sass_dir: _scss
-
     sass:
     style: compressed
-
+###############################################################
+## Collections
+###############################################################
 collections:
       products:
         output: true
         permalink: /product/:path/
-
-
 defaults:
   - scope:
       path: ""
       type: "products"
     values:
       layout: "product"
-      
-# strict_front_matter: true
-# liquid:
-#   error_mode: strict

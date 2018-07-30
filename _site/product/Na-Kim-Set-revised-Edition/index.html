@@ -102,6 +102,7 @@
   </div>
   <h1><a href="http://localhost:4000">Four A's Five H's<br><small>Books on Art, Design, Architecture, et al.</small></a></h1>
 </header>
+
 <div class="product">
     <div class="title">
         <ul>
@@ -124,19 +125,12 @@
                 <h3>$40</h3>
             </li>
         </ul>
-        <div class="buy-and-share">
-     <button class="pure-button snipcart-add-item" 
-        data-item-id="Na-Kim-Set" 
-        data-item-name="Na Kim - Set"
-        data-item-price="40"
-        data-item-weight="500"
-        data-item-url="http://localhost:4000/product/Na-Kim-Set-revised-Edition/" 
-        data-item-image="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/Na-Kim-Set.png"
-        data-item-description="Na Kim">
-        <i class="fa fa-shopping-cart fa-lg"></i><span>Add to Cart</span>
-        </button>
-
-          
+        <div class="buy-and-share"><button class="pure-button snipcart-add-item" data-item-id="Na-Kim-Set" data-item-name="Na Kim - Set" data-item-price="40"
+                data-item-weight="500" data-item-url="http://localhost:4000/product/Na-Kim-Set-revised-Edition/" data-item-image="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/Na-Kim-Set.png"
+                data-item-description="Na Kim">
+                <i class="fa fa-shopping-cart fa-lg"></i>
+                <span>Add to Cart</span>
+        </button>  
 <div class="share-buttons">
     <h4>Share this:</h4>
     <a href="http://www.digg.com/submit?url=http://localhost:4000/product/Na-Kim-Set-revised-Edition/" target="_blank" title="Digg share Four A's Five H's / Na Kim - Set">
@@ -182,26 +176,34 @@
     <!-- end #share-buttons -->
 </div>
  
- 
 </div>
     </div>
+    
     <div class="description">
+        
+        <div class="product-gallery ">
+            <h3>Thumbnail Images</h3>
+        
+        <img src="http://localhost:4000/spinner.svg" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/1.jpg"
+            alt="image of Na Kim - Set by Na Kim"> 
+        <img src="http://localhost:4000/spinner.svg" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/2.jpg"
+            alt="image of Na Kim - Set by Na Kim"> 
+        <img src="http://localhost:4000/spinner.svg" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/3.jpg"
+            alt="image of Na Kim - Set by Na Kim"> 
+        <img src="http://localhost:4000/spinner.svg" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/4.jpg"
+            alt="image of Na Kim - Set by Na Kim"> 
+        <img src="http://localhost:4000/spinner.svg" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/5.jpg"
+            alt="image of Na Kim - Set by Na Kim"> 
+    </div>
         <!-- start vimeo -->
-        <div style="padding:56.25% 0 0 0;position:relative;">
+        <div class="iframe-container" style="padding:56.25% 0 0 0;position:relative;">
             <iframe src="https://player.vimeo.com/video/68537091?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;"
                 frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <script src="https://player.vimeo.com/api/player.js"></script>
         <!-- end vimeo -->
          
-        <div class="product-gallery ">
-            
-            <img src="http://localhost:4000/spinner.svg" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/1.jpg" alt="image of Na Kim - Set by Na Kim"> 
-            <img src="http://localhost:4000/spinner.svg" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/2.jpg" alt="image of Na Kim - Set by Na Kim"> 
-            <img src="http://localhost:4000/spinner.svg" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/3.jpg" alt="image of Na Kim - Set by Na Kim"> 
-            <img src="http://localhost:4000/spinner.svg" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/4.jpg" alt="image of Na Kim - Set by Na Kim"> 
-            <img src="http://localhost:4000/spinner.svg" data-src="http://localhost:4000/assets/images/product-thumbnails/Na-Kim-Set/5.jpg" alt="image of Na Kim - Set by Na Kim"> 
-        </div>
+       
     </div>
     <!-- end .product -->
      
@@ -291,12 +293,9 @@
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MGU4ZGQ1YjItZWU3Ni00OTkwLWE0NzMtMmZhYWVjZjIxODc5NjM2MjgzOTM4OTY3MjkwNjE3" id="snipcart" data-autopop="true"></script>
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
 <!-- Compiled and minified JavaScript -->
-
 <script>
     Snipcart.execute('config', 'show_continue_shopping', true);
 </script>
-
-
 <script>
     window.addEventListener('load', function () {
         var allimages = document.getElementsByTagName('img');

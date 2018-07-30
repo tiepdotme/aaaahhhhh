@@ -1,5 +1,5 @@
 ---
-layout:products
+layout: products
 title: Test Title
 subtitle: Test Subtitle
 price: '111'

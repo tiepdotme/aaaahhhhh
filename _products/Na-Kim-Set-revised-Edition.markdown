@@ -36,6 +36,4 @@ category: design
 tags: [Na Kim, Set design, art]
 published: true
 ---
-
-
 Updated reprint in black of a book featuring a collection of Na Kim’s work from 2006 to 2015 published on the occasion of DOOSAN Gallery New York, works are set in more or less contrast with the first edition, of the actual exhibition and her fourth solo exhibition, SET (named after this publication) from October 8 to November 5, 2015. For this book, fragments of her personal categories, taking on a form reminiscent of a sample book. In published before the show’s opening, this book also contains images text by Jae Seok Kim.

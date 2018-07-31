@@ -9,7 +9,7 @@ binding: fjfjf
 ISBN: hgfhgf
 price: hgfhgf
 weight: hgfhgf
-quantity: jhfjhf
+quantity: 1
 vimeo: hjfjf
 videoCaption: hfjhf
 published: true

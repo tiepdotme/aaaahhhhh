@@ -4,16 +4,16 @@ title: test
 subTitle: test
 author: test
 publisher: test
-publicationDate: '6555'
+publicationDate: '4'
 condition: test
 binding: test
-ISBN: '3333'
-price: '4'
+ISBN: '12'
+price: '3'
 weight: '250'
-quantity: 1
-summary: test
-vimeo: test
-videoCaption: test
+quantity: 2
+summary: gfdjdyd
+vimeo: jhgchgc
+videoCaption: khghgch
 published: 'true'
 ---
 

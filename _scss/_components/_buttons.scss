@@ -11,15 +11,7 @@ button.pure-button {
     margin: 0;
     position: relative;
 
-    &:first-child {
-        span {
-            padding-left: $base-spacing;
-
-            @media (max-width: $medium) {
-                padding-left: 0;
-            }
-        }
-    }
+    
 
     @media (max-width: $medium) {
         width: 100%;

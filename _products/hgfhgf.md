@@ -11,7 +11,6 @@ ISBN: '666'
 price: '6'
 weight: '250'
 quantity: jhfjhf
-summary: '# **fhjfjhfhf**'
 vimeo: hjfjf
 videoCaption: hfjhf
 published: 'true'

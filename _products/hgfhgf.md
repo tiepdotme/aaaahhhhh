@@ -3,16 +3,16 @@ title: hgfhgf
 subTitle: jgfghf
 author: jfjf
 publisher: jfjgf
-publicationDate: '666'
+publicationDate: hgfhgf
 condition: jhfjhf
 binding: fjfjf
-ISBN: '666'
-price: '6'
-weight: '250'
+ISBN: hgfhgf
+price: hgfhgf
+weight: hgfhgf
 quantity: jhfjhf
 vimeo: hjfjf
 videoCaption: hfjhf
-published: 'true'
+published: true
 
 ---
 

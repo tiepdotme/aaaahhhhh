@@ -1,5 +1,4 @@
 ---
-layout: product
 title: hgfhgf
 subTitle: jgfghf
 author: jfjf

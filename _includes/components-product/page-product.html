@@ -34,7 +34,7 @@
         <div class="product-gallery ">
             <h3>Thumbnail Images</h3>
         {% for thumbnail_image in page.thumbnail_images %}
-        <img src="{{site.url}}/spinner.svg" data-src="{{ site.url }}/assets/images/product-thumbnails/{{page.slug}}/{{thumbnail_image}}"
+        <img src="{{site.url}}/spinner.svg" data-src="{{ site.url }}/assets/images/product-images/{{page.slug}}/{{thumbnail_image}}"
             alt="image of {{ page.title }} by {{ page.author }}"> {% endfor %}
     </div>
      {%- endif %}

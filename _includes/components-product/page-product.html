@@ -19,11 +19,11 @@
         </ul>
         {{page.content}}
         <ul>
-            {% if page.quantity < 1 -%}
+            <!-- {% if page.quantity < 1 -%} -->
             <li>
                 <h3>${{ page.price }}</h3>
             </li>
-            {%- endif %}
+            <!-- {%- endif %} -->
         </ul>
         {% include buy-and-share.html %}
     </div>

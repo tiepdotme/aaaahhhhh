@@ -10,7 +10,7 @@ binding: test
 ISBN: '12'
 price: '3'
 weight: '250'
-quantity: '2'
+quantity: 2
 summary: gfdjdyd
 vimeo: jhgchgc
 videoCaption: khghgch

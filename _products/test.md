@@ -1,6 +1,6 @@
 ---
 layout: products
-title: test
+title: test matt product
 subtitle: test
 price: '23'
 quantity: '1'

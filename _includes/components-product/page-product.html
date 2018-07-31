@@ -1,5 +1,4 @@
 {% include components-product/product-page-header.html %}
-
 <div class="product">
     <div class="title">
         <ul>
@@ -20,7 +19,7 @@
         </ul>
         {{page.content}}
         <ul>
-            {% if page.quantity > 0 -%}
+            {% if page.quantity < 1 -%}
             <li>
                 <h3>${{ page.price }}</h3>
             </li>

@@ -27,15 +27,17 @@ header {
         margin-top: 100px;
         background: transparent;
         min-height: 0vh;
+        width: 100%;
 
         @media (min-width: $small) {
             height: auto;
-            height: auto;
+            width: 100%;
         }
 
         @media (min-width: $medium) {
             min-height: auto;
             max-height: auto;
+            
         }
 
         h1 {
@@ -48,9 +50,7 @@ header {
             }
 
             @media (min-width: $desktop) {
-               
                 padding: $base-spacing 0;
-               
             }
         }
     }

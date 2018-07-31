@@ -28,7 +28,6 @@ collections:
       - {label: "Price", name: "price", widget: "number"}
       - {label: "Weight", name: "weight", widget: "number", default: "250"}
       - {label: "Quantity", name: "quantity", widget: "string"}
-      - {label: "Main", name: "featured_image", widget: "image"}
       - {label: "Description", name: "summary", widget: "markdown"}
       - {label: "Vimeo ID", name: "vimeo", widget: "string"}
       - {label: "Vimeo Caption", name: "videoCaption", widget: "string"}

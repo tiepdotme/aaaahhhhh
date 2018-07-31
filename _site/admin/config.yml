@@ -18,7 +18,18 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "products"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Subtitle", name: "subTitle", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Publisher", name: "publisher", widget: "string"}
+      - {label: "Publication Date", name: "publicationDate", widget: "string"}
+      - {label: "Condition", name: "condition", widget: "string"}
+      - {label: "Binding", name: "binding", widget: "string"}
+      - {label: "ISBN", name: "ISBN", widget: "string"}
       - {label: "Price", name: "price", widget: "number"}
+      - {label: "Weight", name: "weight", widget: "number", default: "250"}
       - {label: "Quantity", name: "quantity", widget: "number"}
-      - {label: "Description", name: "body", widget: "markdown"}
+      - {label: "Description", name: "summary", widget: "markdown"}
+      - {label: "Featured Image", name: "featured_image", widget: "image"}
+      - {label: "Vimeo ID", name: "vimeo", widget: "string"}
+      - {label: "Vimeo Caption", name: "videoCaption", widget: "string"}
+      - {label: "Publish?", name: "published", widget: "string", default: "true"}

@@ -5,11 +5,11 @@
             <a href="{{ site.url }}{{ product.url }}">{{ product.title }}{% if product.subTitle %} {{ product.subTitle }} {% endif %}</a>
         </td>
         <td>{{ product.author }} </td>
-         <!-- {% if product.quantity
+         {% if product.quantity
         < 1 %} <td>Sorry, sold out</td>
-         {% else %} -->
+         {% else %}
         <td>${{ product.price }} </td>
-         <!-- {% endif %} -->
+        {% endif %}
         <td>{{ product.binding }}</td>
         <td>{{ product.ISBN }}</td>
             <td>

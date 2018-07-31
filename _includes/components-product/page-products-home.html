@@ -1,5 +1,5 @@
 {% for product in site.products %} 
-<!-- {% if product.quantity > 0 %} -->
+{% if product.quantity > 0 %}
 <div class="product">
     <div class="product-description">
         <a href="{{ site.url }}{{ product.url }}">
@@ -23,9 +23,9 @@
     <h3 class="price">${{ product.price }}</h3>
     {% endif %}
     <div class="buy-and-share">
-        <!-- {% if product.quantity
+         {% if product.quantity
         < 1 %}<h3>Sorry, sold out</h3>
-            {% else %} -->
+            {% else %}
              {% include snipcart-button.html %}
             <button class="pure-button" onclick="window.location.href='{{ site.url }}{{ product.url }}'">
                 <span>Product Page</span>
@@ -35,5 +35,5 @@
     <!-- end .buy-and-share -->
 </div>
 <!-- end .product -->
-<!-- {% endif %}  -->
+ {% endif %} 
 {% endfor %}

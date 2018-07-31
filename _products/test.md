@@ -1,5 +1,5 @@
 ---
-layout: products
+layout: product
 title: test
 subTitle: test
 author: test

@@ -25,7 +25,7 @@ videoCaption: Evoking meaning, rather than boldly presenting truth; this is the 
 ###############################################################
 ## Taxonimies
 ###############################################################
-slug: Karel-Martens-Motion
+
 category: design
 tags: [Karel Martens]
 

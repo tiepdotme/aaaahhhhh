@@ -7,21 +7,7 @@ title: Motion
 ###############################################################
 ## Product Images and Videos
 ###############################################################
-featured_image: Karel-Martens-Motion.jpg
-thumbnail_images:
-        - 1.jpg
-        - 2.jpg
-        - 3.jpg
-        - 4.jpg
-        - 5.jpg
-        - 6.jpg
-        - 7.jpg
-        - 8.jpg
-        - 9.jpg
-        - 10.jpg
 
-vimeo: 31486228
-videoCaption: Evoking meaning, rather than boldly presenting truth; this is the essence of typographer Karel Martens' work.
 ###############################################################
 ## Taxonimies
 ###############################################################

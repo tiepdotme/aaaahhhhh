@@ -13,5 +13,6 @@ weight: '250'
 vimeo: test product
 videoCaption: test product
 published: 'true'
+quantity: 1
 ---
 

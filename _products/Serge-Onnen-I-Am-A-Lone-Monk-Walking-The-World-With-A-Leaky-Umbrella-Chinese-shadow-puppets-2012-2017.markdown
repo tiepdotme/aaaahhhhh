@@ -18,7 +18,7 @@ binding_condition: fine
 dust_jacket_condition:
 
 # //images and media
-featured_image: I-Am-A-Lone-Monk-Walking.gif
+featured_image: I-Am-A-Lone-Monk-Walking.jpg
 thumbnail_images:
         - 1.gif
         - 3.gif

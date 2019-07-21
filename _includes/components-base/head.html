@@ -8,16 +8,6 @@
 <!--<![endif]-->
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98058167-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-98058167-1');
-    </script>
-
     <!-- Basic Page Needs
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8"> {% if page.url == "/" %}
@@ -55,11 +45,13 @@
     <meta name="msapplication-TileImage" content="{{"/assets/images/favicons/mstile-144x144.png" | prepend: site.url }}">
     <meta name="theme-color" content="#231f20">
     <!-- Base URL –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    {%- if page.layout == 'home' %}
     <link rel="canonical" href="{{ site.url }}">
+    {% else %}
+    <link rel="canonical" href="{{ site.url }}{{page.url}}">
+    {% endif -%}
     <!-- XML –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="alternate" type="application/rss+xml" title="{{ site.url }}" href="/feed.xml">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="{{"/css/style.css" | prepend: site.url }}">
     <!-- Social Media –––––––––––––––––––––––––––––––––––––––––––––––––– -->

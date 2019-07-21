@@ -53,10 +53,17 @@ h4 {
 
     &.page-header {
         margin-bottom: 2rem;
+        text-align: center;
+        
+        @media (min-width: $medium) {
+            text-align: unset;
+
+        }
 
     }
 
     &.product-title {
+      
         margin-bottom: 0;
     }
 }

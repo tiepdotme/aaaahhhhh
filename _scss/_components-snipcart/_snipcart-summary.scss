@@ -3,20 +3,14 @@
         position: fixed;
         right: $base-spacing / 2;
         top: $base-spacing / 2;
-        z-index: 99;
+        z-index: 9999;
         padding: $base-spacing / 2;
         background: $brand;
-
-
-
-
 
         @media (min-width: $large) {
             position: relative;
             top: 0;
             background: transparent;
-
-
 
         }
 
@@ -29,4 +23,8 @@
 .snip-layout .snip-product__thumbnail img {
     max-height: 100%;
     width: auto;
+}
+
+.snip-layout {
+    z-index: 99999;
 }

@@ -1,14 +1,11 @@
 button.pure-button {
     width: 100%;
-    padding: 0 1.5em;
     border: 2px solid $black;
-    margin-right: $base-spacing;
     text-transform: uppercase;
     text-align: center;
     font-family: $body;
-    padding: $base-spacing / 2;
-    margin: 0;
     position: relative;
+    transition: background-color 0.25s ease;
 
     .fa {
         position: absolute;
@@ -17,5 +14,10 @@ button.pure-button {
         padding: ($base-spacing / 1.15) ($base-spacing / 1.15);
         background: $brand;
         color: $black;
+    }
+
+    &:hover{
+        background: $brand;
+
     }
 }

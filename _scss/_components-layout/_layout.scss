@@ -8,10 +8,10 @@ body {
 main {
     max-width: $max-width-main;
     margin: auto;
-    padding: ($base-spacing * 2) ($base-spacing / 2);
+    padding: ($base-spacing * 2) ($base-spacing / 2) 0;
 
     @media (min-width: $small) {
-        padding: ($base-spacing * 2) ($base-spacing);
+        padding: ($base-spacing * 2) ($base-spacing) 0;
     }
 
     @media (min-width: $medium) {
@@ -22,15 +22,17 @@ main {
 
     .the-content {
 
-
         &.gallery {
             @include flex-container;
 
         }
+        margin-bottom: ($base-spacing );
+
 
         @media (min-width: $small) {
             width: auto;
             margin: auto;
+
 
         }
 

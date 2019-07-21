@@ -1,0 +1,48 @@
+aside {
+  
+    @media (min-width: $small) {  float: left;
+        margin-bottom: ($base-spacing * 2);
+        width: 100%;}
+
+    @media (min-width: $large) {
+        max-width: 300px;
+        float: right;
+
+    }
+
+    .widget {
+        
+    width: 100%;
+    padding: $base-spacing;
+    margin: 0 0 $base-spacing;
+    box-shadow: $shadow;
+
+    @media (min-width: $small) {
+        margin: auto 0 $base-spacing;
+        background: $white;
+    }
+
+        @media (min-width: $medium) {
+            width: calc(50% - .5rem);
+          
+
+
+            &:nth-of-type(1n) {
+                float: left;
+            }
+
+            &:nth-of-type(2n) {
+                float: right;
+            }
+
+        }
+
+
+        @media (min-width: $large) {
+            width: 100%;
+            float: unset;
+        }
+
+    }
+
+}

@@ -2,68 +2,37 @@
 # Front matter comment to ensure Jekyll properly reads file.
 --- 
 
-///////////////////////////
-//Variables
 
-$brand: rgb(180, 239, 241);
-$highlight: rgb(255, 255, 0);
-$black: rgb(10, 10, 10);
-$grey: rgb(231, 221, 221);
-$white: rgb(250, 250, 250);
-$whitea: rgba(250, 250, 250,.8);
-$action: rgb(6, 1, 7);
-
-$base-spacing: 1rem;
-$max-width: 1024px;
-$max-width-main: 1400px;
-$shadow: 0px 0px 5px $grey;
-
-$small: 414px;
-$medium: 768px;
-$large: 1024px;
-$kick: 1300px;
-$desktop: $max-width;
-
-///////////////////////////
-
-//Mixins
-
+//Variables, Mixins, Extends
+@import "_variables/variables";
 @import "_mixins/mixins";
 @import "_extends/extends";
 
-@mixin flex-container {
-    display: flex;
-    flex-flow: row  wrap;
-    justify-content: space-between;
-    
-}
-
-
-///////////////
 
 //Imports
 
-@import "_base/normalize";
+@import "_components-base/normalize";
 @import "_typography/fonts";
-@import "_layout/layout";
-@import "_layout/product-gallery";
-@import "_layout/product-single";
-@import "_layout/fancybox";
-@import "_components/header";
-@import "_components/asides";
-@import "_components/navigation";
-@import "_components/footer";
-@import "_components/snipcart-summary";
-@import "_components/share-buttons";
-@import "_components/buttons";
-@import "_components/videoWrapper";
+
+@import "_components-base/header";
+@import "_components-base/asides";
+@import "_components-base/footer";
+
+@import "_components-layout/layout";
+@import "_components-layout/product-gallery";
+@import "_components-layout/product-single";
+@import "_components-layout/fancybox";
+
+@import "_components-menus/navigation";
+
+@import "_components-snipcart/snipcart-summary";
+
+@import "_components-sort/share-buttons";
+@import "_components-sort/buttons";
+@import "_components-sort/videoWrapper";
+
 //@import "_snipcart-custom/themes/base/sass/snipcart";
 
-
-
-.snip-layout {
-    z-index: 99999;
-}
 
 
 .fancybox-container {

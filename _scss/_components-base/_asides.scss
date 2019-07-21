@@ -17,6 +17,10 @@ aside {
     margin: 0 0 $base-spacing;
     box-shadow: $shadow;
 
+    li{
+        margin: $base-spacing 0;
+    }
+
     @media (min-width: $small) {
         margin: auto 0 $base-spacing;
         background: $white;

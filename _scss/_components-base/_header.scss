@@ -1,8 +1,11 @@
 header {
     @include flex-container;
-    min-height: auto;
+    min-height: 10vh;
+    padding: $base-spacing*4 $base-spacing $base-spacing*2;
+    background: $brand;
+
     @media (min-width: $medium) {
-        min-height: 30vh;
+        min-height: 20vh;
         background: transparent;
 
     }
@@ -18,12 +21,10 @@ header {
             width: auto;
         }
     }
-
-
 }
 
 .logo {
-    width: $base-spacing * 1.5;
+    width: $base-spacing * 3;
     z-index: 1000;
     top: 0;
     left: $base-spacing / 2;
@@ -31,6 +32,6 @@ header {
 
     @media (min-width: $desktop) {
         position: fixed;
-        width: $base-spacing * 2;
+        width: $base-spacing * 3;
     }
 }

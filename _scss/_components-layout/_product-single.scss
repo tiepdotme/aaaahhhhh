@@ -18,8 +18,6 @@
 
         margin: 0 0 ($base-spacing*2) 0;
 
-
-
     }
 
     @media (min-width: $small) {
@@ -28,17 +26,12 @@
         background: $white;
 
         .product-info {
-
-      
             float: left;
-
-          
 
             ul {
                 margin: 0 0 ($base-spacing * 2) 0;
 
             }
-
         }
 
         .product-description {
@@ -49,25 +42,23 @@
 
     @media (min-width: $medium) {
 
-
-
         .product-info {
 
-         float: left;
-         width: 100%;
+            float: left;
+            width: 100%;
 
             .image-and-buy {
                 float: left;
                 max-width: 300px;
                 min-width: 300px;
-                margin: 0 ($base-spacing * 2) $base-spacing 0 ;
+                margin: 0 ($base-spacing * 2) $base-spacing 0;
 
             }
-
-           
-
         }
+    }
 
-       
+    .product-video {
+        padding: $base-spacing 0 0;
+
     }
 }

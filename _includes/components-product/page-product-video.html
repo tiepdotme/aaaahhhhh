@@ -1,18 +1,23 @@
-<section class="the-content">
 {% if page.vimeo -%}
-<!-- start vimeo -->
-<div class="iframe-container videoWrapper" style="padding-top:0;">
-    <iframe src="https://player.vimeo.com/video/{{page.vimeo}}?title=0&byline=0&portrait=0"
-        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen
-        mozallowfullscreen allowfullscreen></iframe>
+<div class="product-video">
+    <!-- start vimeo -->
+    <h3>Watch</h3>
+    <div class="iframe-container videoWrapper" style="padding-top:0;">
+        <iframe src="https://player.vimeo.com/video/{{page.vimeo}}?title=0&byline=0&portrait=0"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen
+            mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
 </div>
-<script src="https://player.vimeo.com/api/player.js"></script>
-<!-- end vimeo -->
-{% endif %} {% if page.youtube -%}
-<!-- start youtube -->
-<div class="videoWrapper">
-    <iframe src="https://www.youtube.com/embed/{{page.youtube}}?rel=0&amp;showinfo=0" frameborder="0"
-        allowfullscreen></iframe>
+    <!-- end vimeo -->
+    {% endif %} {% if page.youtube -%}
+<div class="product-video">
+    <!-- start youtube -->
+    <h3>Watch</h3>
+    <div class="iframe-container videoWrapper">
+        <iframe src="https://www.youtube.com/embed/{{page.youtube}}?rel=0&amp;showinfo=0" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
 </div>
-<!-- end youtube -->{% endif %}
-</section>
+<!-- end youtube -->
+{% endif %}

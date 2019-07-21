@@ -56,6 +56,8 @@
     <link rel="canonical" href="http://localhost:4000">
     <!-- XML –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="alternate" type="application/rss+xml" title="http://localhost:4000" href="/feed.xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="http://localhost:4000/css/style.css">
     <!-- Social Media –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -78,53 +80,42 @@
     <link rel="apple-touch-icon" href="http://localhost:4000/touch-icon-iphone.png">
 </head>
 <body>
-    <div class="snipcart-summary">
-        <a href="#" class="snipcart-checkout">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            (
-            <span class="snipcart-total-items">0</span>)
-        </a>
-    </div>
+  
     <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-<div class="page-full-error ">
-    <div class="billboard">
-        <a href="/">
-            <span id="error">
-                <h1 id="sorry"><header class="product-page-header">
-  <div class="logo">
-    <a href="http://localhost:4000">
-      <img src="http://localhost:4000/assets/logos/logo.svg" alt="logo for Four A's Five H's}">
-    </a>
-  </div>
-  <h1><a href="http://localhost:4000">Four A's Five H's<br><small>Books on Art, Design, Architecture, et al.</small></a></h1>
-</header></h1>
-            </span>
-            <h2 style="text-decoration:underline">this page doesn't exist
-                <br>※※※※※※※※※※※※※※※※※※※※※※※※
-                <h2 style="text-decoration:underline">you're not really here
-                    <br>※※※※※※※※※※※※※※※※※※※※※※※※
-                    <h2 style="text-decoration:underline">you didn't see this
-                        <h2 style="text-decoration:underline">※※※※※※※※※※※※※※※</h2>
-                    </h2>
-                </h2>
-            </h2>
-        </a>
-    </div>
+<![endif]--> 
+<div class="logo">
+  <a href="http://localhost:4000"><img src="/assets/logos/logo.svg" alt="logo for Four A's Five H's}"></a> 
 </div>
+<header>
+    <div class="hero">
+        <h1>Four A's Five H's</h1>
+        <h2>Books on Art, Design, Architecture, et al.</h2>
+    </div>
+</header>
+<main role="main" id="main">
+<section class="the-content">
+<a href="/">
+    <h2 style="text-decoration:underline">this page doesn't exist
+        <br>※※※※※※※※※※※※※※※※※※※※※※※※
+        <h2 style="text-decoration:underline">you're not really here
+            <br>※※※※※※※※※※※※※※※※※※※※※※※※
+            <h2 style="text-decoration:underline">you didn't see this
+                <h2 style="text-decoration:underline">※※※※※※※※※※※※※※※</h2>
+            </h2>
+        </h2>
+    </h2>
+</a>
+</section>
   
 </main>
-
 <footer>
     <div class="footer-content">
-        <h2>Four A's Five H's</h2>
-        <h3>Books on Art, Design, Architecture, et al.</h3>
-             <p>&copy; 2018++</p>
-    </div>
-
-        <ul>
+        <h4>Four A's Five H's<br>
+        Books on Art, Design, Architecture, et al.</h4> 
+        <p>built and maintained by <a href="https://discoform.com"> discoform</a><br>
+        &copy; 2018 - 2019</p>
+            <ul>
         <li>
             <i class="fa fa-cc-stripe" aria-hidden="true"></i>
         </li>
@@ -133,13 +124,17 @@
         </li>
     </ul>
 
+    </div>
+
 <div class="contact">
     <a href="mailto:hello@aaaahhhhh.com"><i class="fa fa-envelope" aria-hidden="true"></i>
 </a>
 </div>
 </footer>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<!-- Modernizr -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script><!-- Modernizr -->
 <script src="http://localhost:4000/js/min/modernizr-min.js"></script>
 <!-- main.js -->
 <!-- fonts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -147,7 +142,6 @@
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans" rel="stylesheet">
 <link rel='stylesheet' id='fontawesome-css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=4.9.6'
     type='text/css' media='all' />
-<!-- Compiled and minified CSS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <!-- Resource Snipcart -->
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MGU4ZGQ1YjItZWU3Ni00OTkwLWE0NzMtMmZhYWVjZjIxODc5NjM2MjgzOTM4OTY3MjkwNjE3" id="snipcart" data-autopop="true"></script>

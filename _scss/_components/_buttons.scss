@@ -1,31 +1,20 @@
 button.pure-button {
-    width: calc(50% - #{$base-spacing * 1.7});
+    width: 100%;
     padding: 0 1.5em;
     border: 2px solid $black;
     margin-right: $base-spacing;
     text-transform: uppercase;
     text-align: center;
     font-family: $body;
-    background: transparent;
     padding: $base-spacing / 2;
     margin: 0;
     position: relative;
 
-    
-
-    @media (max-width: $medium) {
-        width: 100%;
-        margin-right: 0;
-    }
-
     .fa {
-        font-size: 15px;
-        float: left;
         position: absolute;
         left: 2px;
         top: 2px;
-        color: white;
-        padding: ($base-spacing / 1.5) ($base-spacing / 1.5);
+        padding: ($base-spacing / 1.15) ($base-spacing / 1.15);
         background: $brand;
         color: $black;
     }

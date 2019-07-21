@@ -1,16 +1,13 @@
 header {
     @include flex-container;
-
-    min-height: 70vh;
-    background: $brand;
-
+    min-height: auto;
     @media (min-width: $medium) {
-        min-height: 50vh;
+        min-height: 30vh;
+        background: transparent;
+
     }
 
     .hero {
-        padding: $base-spacing / 2;
-        background: $brand;
         margin: auto;
         text-align: center;
         width: 100%;
@@ -18,48 +15,22 @@ header {
         @media (min-width: $medium) {
             margin: auto;
             padding: $base-spacing;
-            background: $whitea;
             width: auto;
         }
     }
 
-    &.product-page-header {
-        margin-top: 100px;
-        background: transparent;
-        min-height: 0vh;
-        width: 100%;
 
-        @media (min-width: $small) {
-            height: auto;
-            width: 100%;
-        }
-
-        @media (min-width: $medium) {
-            min-height: auto;
-            max-height: auto;
-            
-        }
-
-        h1 {
-            display: none;
-
-            @media (min-width: $medium) {
-                display: block;
-                padding: $base-spacing ($base-spacing / 4);
-                text-align: left;
-            }
-
-            @media (min-width: $desktop) {
-                padding: $base-spacing 0;
-            }
-        }
-    }
 }
 
 .logo {
-    width: $base-spacing * 2;
-    position: fixed;
+    width: $base-spacing * 1.5;
     z-index: 1000;
     top: 0;
     left: $base-spacing / 2;
+    position: absolute;
+
+    @media (min-width: $desktop) {
+        position: fixed;
+        width: $base-spacing * 2;
+    }
 }

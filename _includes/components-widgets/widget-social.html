@@ -1,0 +1,32 @@
+{% if site.instagram_username or site.twitter_username or site.linkedIn_username or site.github_username %}
+<div class="widget social">
+    <h4>Follow us on Social Media</h4>
+    <ul>
+        {% if site.twitter_username %}
+        <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter
+            </a>
+        </li>
+        {% endif %} {% if site.github_username %}
+        <li>
+            <a href="https://github.com/{{ site.github_username }}">
+                <i class="fa fa-github-square" aria-hidden="true"></i> Github
+            </a>
+        </li>
+        {% endif %} {% if site.linkedIn_username %}
+        <li>
+            <a href="https://www.linkedin.com/in/{{ site.linkedIn_username }}">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+            </a>
+        </li>
+        {% endif %} {% if site.instagram_username %}
+        <li>
+            <a href="https://www.instagram.com/{{ site.instagram_username }}"> Instagram
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+</div>
+{% endif %}

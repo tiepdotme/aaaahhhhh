@@ -1,6 +1,43 @@
-$headings: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-
-$body: "Open Sans", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+$headings: "Josefin Sans",
+-apple-system,
+BlinkMacSystemFont,
+"Avenir Next",
+"Avenir",
+"Segoe UI",
+"Lucida Grande",
+"Helvetica Neue",
+"Helvetica",
+"Fira Sans",
+"Roboto",
+"Noto",
+"Droid Sans",
+"Cantarell",
+"Oxygen",
+"Ubuntu",
+"Franklin Gothic Medium",
+"Century Gothic",
+"Liberation Sans",
+sans-serif;
+$body: "Open Sans",
+-apple-system,
+BlinkMacSystemFont,
+"Avenir Next",
+"Avenir",
+"Segoe UI",
+"Lucida Grande",
+"Helvetica Neue",
+"Helvetica",
+"Fira Sans",
+"Roboto",
+"Noto",
+"Droid Sans",
+"Cantarell",
+"Oxygen",
+"Ubuntu",
+"Franklin Gothic Medium",
+"Century Gothic",
+"Liberation Sans",
+sans-serif;
 
 body {
     font-family: $body;
@@ -9,21 +46,32 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
+    font-weight: 700;
     font-family: $headings;
+    margin-bottom: 1rem;
+
+    &.page-header {
+        margin-bottom: 2rem;
+
+    }
+
+    &.product-title {
+        margin-bottom: 0;
+    }
+}
+
+h1 {
+    line-height: 3rem;
 }
 
 h1 {
     font-size: 2.242rem;
-    line-height: 2.5rem;
-    font-weight: 700;
+
 }
 
 h2 {
     font-size: 1.428rem;
-    line-height: 2.0rem;
 }
 
 h3 {
@@ -33,28 +81,43 @@ h3 {
         font-size: 1.5em;
         margin: ($base-spacing / 2) 0;
     }
+
+    &.product-author {
+        opacity: .5;
+        font-weight: 100;
+        line-height: 2;
+    }
 }
 
 h4 {
-    font-size: 0.907rem;
-    text-decoration: underline;
+
+    font-size: 1.25rem;
 }
 
+h3,
+h4,
 h5 {
-    font-size: 0.4713333333333333rem;
+
+    margin-bottom: 2rem;
+
+    &.product-author {
+        margin-bottom: .25rem;
+
+    }
+
 }
 
-h6 {
-    font-size: 0.3535rem;
-}
+
+
+
 
 /* Paragraphs and Links */
 p {
     text-align: left;
-    font-size: .9em;
-    opacity: .5;
+    font-size: 1em;
+    opacity: .95;
     padding: ($base-spacing / 2) 0;
-    line-height: 1.25;
+    line-height: 1.8;
 }
 
 /*  Links Within Paragraphs*/
@@ -77,7 +140,8 @@ figcaption {
     max-width: 400px;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+    /* Code for Firefox */
     color: $white;
     background: $black;
 }
@@ -86,4 +150,3 @@ figcaption {
     color: $white;
     background: $black;
 }
-

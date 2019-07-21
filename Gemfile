@@ -10,7 +10,3 @@ gem "jekyll", "~> 3.8"
 # gem 'jekyll-compress-images'
 
 
-group :jekyll_plugins do
-    gem 'jekyll-algolia'
-  end
-  

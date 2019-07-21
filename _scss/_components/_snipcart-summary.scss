@@ -1,10 +1,29 @@
 .snipcart-summary {
-    position: fixed;
-    right: $base-spacing / 2;
-    top: $base-spacing / 2;
-    z-index: 99;
-    padding: $base-spacing / 2;
-    border: 2px solid $black;
+    a {
+        position: fixed;
+        right: $base-spacing / 2;
+        top: $base-spacing / 2;
+        z-index: 99;
+        padding: $base-spacing / 2;
+        background: $brand;
+
+
+
+
+
+        @media (min-width: $large) {
+            position: relative;
+            top: 0;
+            background: transparent;
+
+
+
+        }
+
+        &:hover {
+            background: $brand;
+        }
+    }
 }
 
 .snip-layout .snip-product__thumbnail img {

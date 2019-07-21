@@ -3,7 +3,7 @@
 {% if page.title == "Home" %}
 <div class="product">
     <h2 class="product-title">{{product.title}}</h2>
-    <p class="product-author">{{product.author}}</p>
+    <h3 class="product-author">{{product.author}}</h3>
    <a href="{{product.url}}"><img src="{{site.url}}/spinner.svg" data-src="{{ site.url }}/assets/images/product-images/{{product.slug}}/{{product.featured_image}}" alt="image of {{ product.title }} by {{ product.author }}"></a>
     <p>{{product.summary}}</p>
     <h3>${{product.price}}</h3>
@@ -11,8 +11,7 @@
         <br>ISBN: {{product.ISBN}}
         <br>
     </p>
-    {% include buy-and-share.html %}
-    <hr>
+    {% include components-snipcart/snipcart-cart.html %}
 </div>
 {% endif %} 
 {% endif %} {% endfor %}

@@ -1,33 +1,49 @@
 body {
-    background: $grey;
+    @media (min-width: $small) {
+
+        background: $grey;
+    }
 }
 
 main {
     max-width: $max-width-main;
     margin: auto;
+    padding: ($base-spacing * 2) ($base-spacing / 2);
 
-    section {
-        //margin: $base-spacing auto;
-
-        h1 {
-            width: 100%;
-            float: left;
-            padding: $base-spacing ($base-spacing / 6);
-            font-size: 30px;
-            text-align: center;
-
-            @media (min-width: $small) {
-                padding: $base-spacing ($base-spacing / 6) ($base-spacing / 2);
-                font-size: 30px;
-            }
-
-            @media (min-width: $max-width) {
-                text-align: left;
-            }
-        }
+    @media (min-width: $small) {
+        padding: ($base-spacing * 2) ($base-spacing);
     }
 
+    @media (min-width: $medium) {
+        padding: ($base-spacing * 2.5) ($base-spacing * 2.5);
+    }
+
+
+
     .the-content {
-        @include flex-container;
+
+
+        &.gallery {
+            @include flex-container;
+
+        }
+
+        @media (min-width: $small) {
+            width: auto;
+            margin: auto;
+
+        }
+
+        @media (min-width: $large) {
+
+            max-width: calc(100% - 300px - 1rem);
+            margin-bottom: ($base-spacing * 2);
+
+            &.has-sidebar {
+                float: left;
+                margin-bottom: ($base-spacing * 2);
+
+            }
+        }
     }
 }

@@ -32,7 +32,7 @@ videoCaption: Na Kim talks about her process of creating a large advertising bil
 ## Taxonimies
 ###############################################################
 slug: Na-Kim-Set
-category: design
+category: Graphic Design
 tags: [Na Kim, Set design, art]
 published: true
 ---

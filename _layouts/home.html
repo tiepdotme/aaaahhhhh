@@ -1,8 +1,8 @@
-{% include components-base/head.html %} 
+{% include components-base/head.html %}
 {% include components-base/header.html %}
-<main role="main" id="main">
-    <section class="the-content gallery">
-        <h1>New in the Shop</h1>
-        {% include components-product/page-products-test-2.html %}
-    </section>
- {% include components-base/footer.html %}
+<h1 class="page-header">New in the Shop</h1>
+<section class="the-content gallery has-sidebar">
+    {% include components-product/page-home-product-gallery.html %}
+</section>
+{% include components-base/aside.html %}
+{% include components-base/footer.html %}

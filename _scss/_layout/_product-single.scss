@@ -1,83 +1,30 @@
-section.single-product {
-    max-width: $max-width;
-    display: flex;
+.single-product {
+    padding: $base-spacing * 2;
+    background: $white;
 
-    @media (min-width: $desktop) {
-        margin: auto;
+    .product-info {
+
+        width: 100%;
+        float: left;
+
+        .image-and-buy {
+            float: left;
+            max-width: 300px;
+            margin: 0 ($base-spacing*2) $base-spacing 0;
+
+        }
+
+       
+
+        ul {
+            margin: 0 0 ($base-spacing * 2) 0;
+
+        }
+
     }
 
-    .product {
-        // padding: ($base-spacing / 2) $base-spacing;
-        position: relative;
-        padding: 0 ($base-spacing / 2);
+    .product-description {
+        float: left;
 
-        @media (min-width: $desktop) {
-            //border: 2px solid $black;
-            margin-top: 100px;
-            padding: 0;
-        }
-
-        .title {
-            width: calc(100%);
-            float: left;
-            padding: ($base-spacing * 2) 0 0;
-
-            @media (min-width: $medium) {
-                width: calc(50%);
-                padding: $base-spacing 0;
-                float: left;
-            }
-        }
-
-        .description {
-            width: 100%;
-            float: left;
-
-            P {
-                margin: 0 0 $base-spacing 0;
-            }
-        }
-
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            float: left;
-        }
-
-        iframe {
-            background: $white;
-            margin-top: $base-spacing / 2;
-            float: left;
-        }
-    }
-}
-
-.product-gallery {
-    position: relative;
-
-    h3 {
-        background: $white;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: ($base-spacing / 2) ($base-spacing / 1.5) ($base-spacing / 3);
-        box-shadow: $shadow;
-        opacity: .5;
-    }
-
-    margin: 0;
-    background: $whitea;
-    padding: ($base-spacing * 2) ($base-spacing / 2) ($base-spacing / 2);
-    width: auto;
-    float: left;
-
-    img {
-        height: 100px;
-        width: auto;
-
-        //margin: 0 ($base-spacing / 2) ($base-spacing / 2) 0;
-        margin: 5px;
-        box-shadow: $shadow;
     }
 }

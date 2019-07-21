@@ -1,5 +1,5 @@
 ---
 layout: products
-title: Products
-navigation_weight: 
+title: Products Table
+navigation_weight: 3
 ---

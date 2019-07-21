@@ -1,20 +1,19 @@
   
 </main>
-
 <footer>
     <div class="footer-content">
-        <h2>{{site.title}}</h2>
-        <h3>{{site.description}}</h3>
-             <p>&copy; 2018++</p>
+        <h4>{{site.title}}<br>
+        {{site.description}}</h4> 
+        <p>built and maintained by <a href="{{site.authorURL}}"> {{site.author}}</a><br>
+        &copy; 2018 - {{ site.time | date: '%Y' }}</p>
+        {% include components-menus/navPayments.html %}
     </div>
 
-    {% include components-menus/navPayments.html %}
 <div class="contact">
     <a href="mailto:hello@aaaahhhhh.com"><i class="fa fa-envelope" aria-hidden="true"></i>
 </a>
 </div>
 </footer>
 {% include javascript.html %}
-
 </body>
 </html>

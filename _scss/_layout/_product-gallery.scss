@@ -1,33 +1,23 @@
 @mixin flex-content-3 {
     position: relative;
-    padding: $base-spacing ($base-spacing / 2);
-
     @media (min-width: $small) {
-        width: calc(90%); /* Or whatever */
         padding: $base-spacing;
-        margin: $base-spacing auto;
-    }
-
-    @media (min-width: $medium) {
-        width: calc(96%/2); /* Or whatever */
+        margin: 1rem auto 0;
+        width: calc(50% - .5rem); /* Or whatever */
     }
 
     @media (min-width: $large) {
-        margin: ($base-spacing / 2) auto;
+        width: calc(50% - .5rem); /* Or whatever */
     }
 
-    @media (min-width: $desktop) {
-        width: calc(95%/3); /* Or whatever */
+    @media (min-width: $kick) {
+        width: calc(33% - .5rem); /* Or whatever */
     }
 
     .buy-and-share {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        margin-bottom: $base-spacing;
+       
 
         button {
-            margin: ($base-spacing / 4) 0;
 
             @media (min-width: $small) {
                 width: 100%;
@@ -43,15 +33,51 @@
 ///////////////////////////////
 
 section.gallery {
-    @include flex-container;
 
     .product {
         @include flex-content-3;
+        padding-bottom: $base-spacing * 1.5;
+
+        @media (min-width: $small) {
+            background: white;
+            padding-bottom: $base-spacing / 2;
+            margin-top:0;
+            margin-bottom:$base-spacing;
+        
+
+        &:nth-of-type(1n) {
+            float: left;
+            margin-left: 0;
+        }
+
+        &:nth-of-type(2n) {
+            float: right;
+            margin-right: 0;
+        }
+    }
+
+    @media (min-width: $kick) {
+        background: white;
+        padding-bottom: $base-spacing / 2;
+    
+
+    &:nth-of-type(1n) {
+        float: left;
+        margin-left: 0;
+    }
+
+    &:nth-of-type(2n+1) {
+        float: none;
+       
+    }
+    &:nth-of-type(2n+1) {
+        float: right;
+        margin-right: 0;
+    }
+}
 
         hr {
             border: 1px solid $grey;
         }
-
-        background: white;
     }
 }

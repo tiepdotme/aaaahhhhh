@@ -19,7 +19,7 @@ dust_jacket_condition:
 ###############################################################
 ## Product Images and Videos
 ###############################################################
-featured_image: Na-Kim-Set.png
+featured_image: Na-Kim-Set.jpg
 thumbnail_images:
         - 1.jpg
         - 2.jpg

@@ -23,7 +23,7 @@
     <meta charset="utf-8"> {% if page.url == "/" %}
     <title>{{ site.title }} | {{ site.subtitle }}</title>
     <meta name="description" content="New arrivals in the shop by {% for product in site.products %}{{product.author}}, {% endfor %}and more at {{ site.title }} | {{ site.description }}">{% else %}
-    <title>{{ page.title }}' by {{page.author}} | {{ site.title }} - {{site.description}}</title>
+    <title>{{ page.title }} by {{page.author}} | {{ site.title }} - {{site.description}}</title>
     <meta name="description" content="Purchase '{{ page.title }}' by {{page.author}}, or see more at {{ site.title }}, {{ site.subtitle }}"> {% endif %}
     <meta name="author" content="{{site.author}}">
     <!-- Mobile Specific Metas

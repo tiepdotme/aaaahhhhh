@@ -6,6 +6,7 @@ author: Studio Fm
 publisher: Corraini Edizioni Mantova
 publicationDate: 2017
 condition: New
+format: Softcover
 binding: 288 p, ills colour, 21 x 26 cm, pb, Italian/English
 ISBN: 9788875706128
 price: 36

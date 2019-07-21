@@ -6,6 +6,7 @@ author: Nigel Peake
 publisher: Nigel Peake
 publicationDate: 2017
 condition: New
+format: Softcover
 binding: 50 p, illus colour, 17 x 24 cm, pb, English
 ISBN: 9780957213784
 price: 35

@@ -6,6 +6,7 @@ author: Experimental Jetset
 publisher: Roma
 publicationDate: 2017
 condition: New
+format: Softcover
 binding: 592 p, ills colour & bw, 11 x 18 cm, pb, English
 ISBN: 9789491843860
 price: 40

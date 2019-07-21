@@ -1,7 +1,7 @@
 nav#social {
     padding: $base-spacing / 2;
 
-    .fa {
+    .fa , .fab{
         font-size: 1.15em;
     }
 }
@@ -24,8 +24,6 @@ ul.icons {
         a{ color: $grey;
     
     }
-       
-
 
         &:hover {
             color: $brand;

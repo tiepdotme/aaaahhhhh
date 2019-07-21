@@ -8,6 +8,7 @@ author: Karel Martens
 publisher: Roma
 publicationDate: 2017
 condition: new
+format: Softcover
 binding: 304 p, ills colour & bw, 21 x 29 cm, pb, English
 ISBN: 9789491843853
 price: 50

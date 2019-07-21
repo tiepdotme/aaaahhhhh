@@ -6,6 +6,7 @@ author: Serge Onnen
 publisher: Serge Onnen (Amsterdam)
 publicationDate: 2017
 condition: New
+format: Softcover
 binding: 184 p, ills colour, 13 x 20 cm, pb, Chinese/English
 ISBN: 9789198393415
 price: 36

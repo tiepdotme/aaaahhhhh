@@ -4,10 +4,12 @@
 ###############################################################
 title: Na Kim - Set
 subTitle: (Revised Edition)
+edition: Second Edition
 author: Na Kim
 publisher: Roma
 publicationDate: 2017
 condition: New
+format: Softcover
 binding: 136 p, ills colour & bw, 23 x 30 cm, pb, Korean/English
 ISBN: 9789491843914
 price: 40

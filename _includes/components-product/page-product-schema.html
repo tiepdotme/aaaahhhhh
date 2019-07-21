@@ -3,7 +3,7 @@
         "@context": "https://schema.org/",
         "@type": "Product",
         "name": "{{ page.title }} {% if page.subTitle %}{{ page.subTitle }}{% endif %}",
-        "image": "{{ site.url }}/assets/images/product-images/{{page.slug}}/{{featured_image}}",
+        "image": "{{ site.url }}/assets/images/product-images/{{page.slug}}/{{page.featured_image}}",
         "description": "{{ page.summary }}",
         "mpn": "{{ page.ISBN }}",
         "sku": "{{ page.ISBN }}",

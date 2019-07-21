@@ -21,23 +21,10 @@
         /* Or whatever */
     }
 
-    .buy-and-share {
-
-
-        button {
-
-            @media (min-width: $small) {
-                width: 100%;
-                margin: ($base-spacing / 2) 0;
-            }
-        }
-    }
+   
 }
 
 //////////////////////////////////////////////////////////////
-///////////////////////////////
-///////////////////////////////
-///////////////////////////////
 
 section.gallery {
 
@@ -47,45 +34,11 @@ section.gallery {
 
         @media (min-width: $small) {
             background: white;
-            padding-bottom: $base-spacing / 2;
+            padding-bottom: $base-spacing  ;
             margin-top: 0;
             margin-bottom: $base-spacing;
 
-
-            &:nth-of-type(1n) {
-                float: left;
-                margin-left: 0;
-            }
-
-            &:nth-of-type(2n) {
-                float: right;
-                margin-right: 0;
-            }
         }
 
-        @media (min-width: $kick) {
-            background: white;
-            padding-bottom: $base-spacing / 2;
-
-
-            &:nth-of-type(1n) {
-                float: left;
-                margin-left: 0;
-            }
-
-            &:nth-of-type(2n+1) {
-                float: none;
-
-            }
-
-            &:nth-of-type(2n+1) {
-                float: right;
-                margin-right: 0;
-            }
-        }
-
-        hr {
-            border: 1px solid $grey;
-        }
     }
 }

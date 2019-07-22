@@ -22,6 +22,7 @@ email: hello@aaaahhhhh.com
 description: Books on Art, Design, Architecture, et al.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.aaaahhhhh.com" # the base hostname & protocol for your site, e.g. http://example.com
+
 ###############################################################
 ## Social Media Variables
 ###############################################################
@@ -29,20 +30,24 @@ twitter_username: discoform
 github_username: discoform
 linkedIn_username: matthew-h-49303a139/
 instagram_username: discoform
+
 ###############################################################
 ## Author Variables
 ###############################################################
 author: discoform
 authorURL: https://discoform.com
 headerImage:
+
 ###############################################################
 ## Snipcart 
 ###############################################################
 Snipcart_API: YOUR_API
+
 ###############################################################
 ## Build settings
 ###############################################################
 markdown: kramdown
+
 ###############################################################
 ## Plugins etc
 ###############################################################
@@ -52,6 +57,7 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+
 ###############################################################
 ## Sass Settings
 ###############################################################
@@ -59,6 +65,7 @@ sass:
     sass_dir: _scss
     sass:
     style: compressed
+    
 ###############################################################
 ## Collections
 ###############################################################

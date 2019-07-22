@@ -4,7 +4,6 @@ _aaaahhhhh_ is an eCommerce theme for the static site generator [Jekyll](https:/
 ---
 ## You will need a [SnipCart](https://snipcart.com/) account in order to use this theme for eCommerce
 
----
 
 After you've installed the Theme you'll need to fill out the `_config.yml` with your profile information, Google Analytics, and Snipcart API key.
 
@@ -26,11 +25,13 @@ The theme is built with speed, SEO, and accessibility in mind, and it's doing we
  
  Note that the performance rating decreases by more than 10 points if you use the video embed feature of the theme, and image optimizations will also have an effect.
 
-## PageSpeed Isights, Desktop
+
+## PageSpeed Inights, Desktop
 
 ![page speed insights](/assets/readme/pagespeed.png)
 
-Page speed insights for mobile devices is 85 on a basic product page, desktop devices rates at 100: 
+Page speed insights for mobile devices is 85 on a basic product page, desktop devices rates at 100
+
 
 ## Schema Ouptut for Products
 

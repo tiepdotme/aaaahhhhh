@@ -21,14 +21,14 @@ You can see a working version of the theme at the [Four A's Five H's](https://ww
 
 The theme is built with speed, SEO, and accessibility in mind, and it's doing well but has some room for improvement in the performance, best practices and speed categeries. 
 
-## Here's a basic product page measured by Google [Lighthouse](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://www.aaaahhhhh.com/).
+## Here's a basic product page measured by [Lighthouse](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://www.aaaahhhhh.com/).
 
 
 ![Lighthouse](/assets/readme/lightspeed-1.png)
 
- Most, if not all, of the performance losses are from third party scripts, of which there are very few (Snipcart, Google Analytics, FontAwesome, Google Fonts. 
+ Most, if not all, of the performance losses are from third party scripts, of which there are very few (Snipcart, Google Analytics, FontAwesome, Google Fonts) 
  
- Note that the performance rating decreases by more than 10 points if you use the video embed feature of the theme, and image optimizations will also have an effect.
+ Note that the performance rating decreases by more than 10 points if you use the video embed feature of the theme (vimeo and youtube are supported), and image optimizations will also have an effect.
 
 
 ## PageSpeed Insights, Desktop
@@ -48,4 +48,6 @@ The theme example at [Four A's Five H's](https://www.aaaahhhhh.com/) is deployed
 
 I'm planning to add [Netlify CMS](https://www.netlifycms.org/) to the theme in the near future, and the post pages have yet to be developed.
 
-Reach out if you have any questions, suggestions, or would like to contribute to the project. [Discoform](mailto:hello@discoform.com?subject=Four%20A's%20Five%20H's%20theme)
+Reach out if you have any questions, suggestions, or would like to contribute to the project
+
+[Discoform](mailto:hello@discoform.com?subject=Four%20A's%20Five%20H's%20theme)

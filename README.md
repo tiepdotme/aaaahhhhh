@@ -48,4 +48,4 @@ The theme example at [Four A's Five H's](https://www.aaaahhhhh.com/) is deployed
 
 I'm planning to add [Netlify CMS](https://www.netlifycms.org/) to the theme in the near future, and the post pages have yet to be developed.
 
-Reach out if you have any questions, suggestions, or would like to contribute to the project. [Discoform](mailto:hello@discoform.com?subject=Four%20A's%20Five%20H's%20heme)
+Reach out if you have any questions, suggestions, or would like to contribute to the project. [Discoform](mailto:hello@discoform.com?subject=Four%20A's%20Five%20H's%20theme)

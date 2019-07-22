@@ -1,4 +1,7 @@
 # Jekyll theme for E-Commerce with Snipcart 
+
+![config file](/assets/readme/4a5h_homepage.png)
+
 _aaaahhhhh_ is an eCommerce theme for the static site generator [Jekyll](https://jekyllrb.com/), and with a shopping and checkout cart platform by [SnipCart](https://snipcart.com/).
 
 ---
@@ -7,7 +10,7 @@ _aaaahhhhh_ is an eCommerce theme for the static site generator [Jekyll](https:/
 
 After you've installed the Theme you'll need to fill out the `_config.yml` with your profile information, Google Analytics, and Snipcart API key.
 
-![Lighthouse](/assets/readme/snipcart_api.png)
+![config file](/assets/readme/snipcart_api.png)
 
 
 The only plug-in installed is [compress_images](https://github.com/valerijaspasojevic/jekyll-compress-images).
